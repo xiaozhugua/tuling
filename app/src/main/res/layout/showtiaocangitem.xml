@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	    
+	    <RelativeLayout 
+	       android:id="@+id/showtiaocang_head"
+           android:layout_width="match_parent"
+           android:layout_height="45dp"
+           android:background="@color/tljr_bj">
+           
+	        <ImageView
+	            android:id="@+id/tiaocangdian"
+	            android:layout_width="10dp"
+	            android:layout_height="10dp"
+	            android:contentDescription="@null"
+	            android:layout_alignParentLeft="true"
+	            android:layout_centerVertical="true"
+	            android:layout_marginLeft="10dp"
+	            android:src="@drawable/img_dian1"/>
+	        
+       		<TextView
+       		    android:id="@+id/showtiaocangitem_time"
+       		    android:layout_toRightOf="@+id/tiaocangdian"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:gravity="left"
+            	android:paddingBottom="5dp"
+            	android:paddingLeft="20dp"
+            	android:paddingTop="5dp"
+            	android:layout_marginLeft="7dp"
+            	android:layout_centerVertical="true"
+            	android:layout_alignParentLeft="true"
+            	android:textSize="13sp"
+            	android:textColor="@color/tiaocangitemtextcolor"
+            	android:text="2015.08.03" />
+            
+       		<ImageView 
+       		    android:id="@+id/tljr_zx_xiangxicangweiimage"
+       		    android:layout_width="25dp"
+       		    android:layout_height="25dp"
+       		    android:layout_alignParentRight="true"
+       		    android:layout_centerVertical="true"
+       		    android:layout_marginRight="10dp"
+       		    android:contentDescription="@null"
+       		    android:src="@drawable/img_gurecordjiantou"/>
+       		
+           <TextView 
+               android:id="@+id/tljr_zx_xiangxicangwei"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_centerVertical="true"
+               android:layout_marginRight="10dp"
+               android:textSize="13sp"
+               android:textColor="@color/tiaocangitemtextcolor"
+               android:layout_toLeftOf="@+id/tljr_zx_xiangxicangweiimage"/>
+            
+       </RelativeLayout>
+    
+	   <ImageView 
+	       android:layout_width="match_parent"
+	       android:layout_height="0.5dp"
+	       android:scaleType="fitXY"
+	       android:contentDescription="@null"
+	       android:src="@drawable/img_200fengexian"/> 
+	    
+	   <LinearLayout 
+	       android:id="@+id/tiaocangtiem"
+	       android:layout_width="match_parent"
+	       android:layout_height="wrap_content"
+	       android:orientation="vertical"
+	       android:visibility="gone"/>
+	    
+</LinearLayout>

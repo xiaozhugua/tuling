@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#e6e6e6"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/tljr_grp_app_di"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="#fafafa"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/tljr_g_bg"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/img_lv1"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tljr_g_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/dp_fourteen" />
+
+        <TextView
+            android:id="@+id/tljr_g_now"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tljr_g_name"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textSize="@dimen/dp_sixteen" />
+
+        <TextView
+            android:id="@+id/tljr_g_change"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tljr_g_now"
+            android:layout_marginBottom="1dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textSize="@dimen/dp_twelve" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/tljr_grp_app_di1"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_weight="1"
+        android:background="#e6e6e6" >
+    </View>
+
+</LinearLayout>

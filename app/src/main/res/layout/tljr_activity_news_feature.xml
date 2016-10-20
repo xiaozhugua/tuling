@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/tljr_title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="?attr/TitleHeight"
+        android:paddingTop="?attr/TitlePadding"
+        android:background="?attr/TitleBj"
+        android:visibility="visible" >
+
+        <TextView
+            android:id="@+id/tljr_txt_news_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        android:paddingTop="?attr/TitlePadding"
+            android:layout_centerInParent="true"
+            android:text="@string/activity_news_feature"
+            android:textColor="?attr/TitleTextColor"
+            android:textSize="?attr/TitleTextSize" />
+ 
+
+        <include
+            android:id="@+id/tljr_img_news_back"
+            layout="@layout/tljr_view_back" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tljr_ly_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tljr_title_bar" >
+
+        <RelativeLayout
+            android:id="@+id/tljr_lny_noNet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffffff"
+            android:gravity="center"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/img_noNet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/action_settings"
+                android:src="@drawable/img_load_news_default" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_noNet"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="29dp"
+                android:text="暂无网路连接，请点击重试"
+                android:textColor="@color/lightgray" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tljr_lv_content_hqss"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fafafa"
+            android:visibility="visible" >
+
+            <com.abct.tljr.zrclistview.ZrcListView
+                android:id="@+id/tljr_zListView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:dividerHeight="0.1px"
+                android:listSelector="@drawable/tljr_listview_selector" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

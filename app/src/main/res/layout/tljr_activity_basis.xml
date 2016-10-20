@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/tljr_bj" >
+
+    <LinearLayout
+        android:id="@+id/tljr_titleGroup"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/TitleHeight"
+        android:paddingTop="?attr/TitlePadding"
+        android:background="?attr/TitleBj"
+        android:orientation="horizontal" >
+
+        <include
+            android:id="@+id/tljr_activity_basis_back"
+            layout="@layout/tljr_view_back" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tljr_titleGroup1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tljr_titleGroup"
+        android:orientation="vertical"
+        android:paddingBottom="5dp" >
+
+        <ImageView
+            android:id="@+id/tljr_check"
+            android:layout_width="wrap_content"
+            android:layout_height="3dp"
+            android:background="@color/tljr_white"
+            android:scaleType="fitXY" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/tljr_activity_basis_info"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/tljr_titleGroup1" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@drawable/img_222fengexian" >
+        </View>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/img_222fengexian" >
+        </View>
+
+        <TextView
+            android:id="@+id/tljr_activity_basis_dif"
+            android:layout_width="80dp"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="当前价格"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/sp_fourteen" />
+
+        <TextView
+            android:id="@+id/tljr_activity_basis_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/sp_fourteen" />
+
+        <TextView
+            android:id="@+id/tljr_activity_basis_now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/tljr_activity_basis_change"
+            android:textSize="@dimen/sp_fourteen" />
+
+        <TextView
+            android:id="@+id/tljr_activity_basis_changep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tljr_activity_basis_change"
+            android:textSize="@dimen/sp_fourteen" />
+
+        <CheckBox
+            android:id="@+id/tljr_activity_basis_cb"
+            android:layout_width="20dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tljr_activity_basis_changep"
+            android:background="@drawable/tljr_syzd"
+            android:button="@null"
+            android:enabled="false" />
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/tljr_basis_vp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/tljr_activity_basis_info" >
+    </android.support.v4.view.ViewPager>
+
+</RelativeLayout>

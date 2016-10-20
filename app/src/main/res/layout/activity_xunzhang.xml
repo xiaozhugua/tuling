@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent" >
+    <RelativeLayout
+        android:id="@+id/tljr_news_top"
+        android:layout_width="fill_parent"
+        android:layout_height="?attr/TitleHeight"
+        android:paddingTop="?attr/TitlePadding"
+        android:background="?attr/TitleBj" >
+        <TextView
+            android:id="@+id/tljr_txt_news_from_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:maxLength="15"
+       		 android:paddingTop="?attr/TitlePadding"
+            android:visibility="visible"
+            android:text="勋章"
+            android:textColor="?attr/TitleTextColor"
+            android:textSize="?attr/TitleTextSize"  />
+        <include
+            android:id="@+id/tljr_img_news_back"
+            layout="@layout/tljr_view_back" />
+    </RelativeLayout>
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical" >
+
+        <RadioButton
+            android:id="@+id/all"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:layout_height="match_parent"
+            android:checked="true"
+            android:gravity="center"
+            android:textColor="@drawable/selector_text_color"
+            android:text="全部勋章" />
+
+        <RadioButton
+            android:id="@+id/have"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:button="@null"
+             android:gravity="center"
+            android:layout_height="match_parent"
+            android:textColor="@drawable/selector_text_color"
+            android:text="已有勋章" />
+
+    </RadioGroup>
+    <ImageView
+        android:id="@+id/tljr_changepercent_tab_driver"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_dingtiao" />
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#DEDEDE"
+        />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

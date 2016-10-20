@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:background="@color/bj"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tljr_txt_share_title"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="提示"
+        android:textColor="@color/gray"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/img_space_hight"
+        android:background="@drawable/img_shape_space" />
+
+    <TextView
+        android:id="@+id/tljr_dialog_exit_msg"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="确定退出图灵金融？"
+        android:textColor="@color/drakgray"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/tljr_dialog_exit_et"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_margin="3dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/tljr_shape_editbj"
+        android:maxLength="250"
+        android:textColor="@color/drakgray"
+        android:textSize="@dimen/sp_sixteen"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/img_space_hight"
+            android:background="@color/blue" />
+
+        <TextView
+            android:id="@+id/tljr_dialog_exit_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/tljr_dialog_exit_fgx"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/lightgray"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/tljr_dialog_exit_fgx"
+            android:layout_width="@dimen/img_space_hight"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:background="@color/blue" />
+
+        <TextView
+            android:id="@+id/tljr_dialog_exit_ok"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/tljr_dialog_exit_fgx"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/blue"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</LinearLayout>

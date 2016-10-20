@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/img_beijing" >
+    <!-- 
+       <LinearLayout
+        android:id="@+id/yzx_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+            <LinearLayout
+                android:id="@+id/ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="horizontal" >
+ 
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1" >
+                   <EditText
+                        android:id="@+id/im_send_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/im_text_input"
+                        android:singleLine="true"
+                        android:hint="输入内容"
+                        android:inputType="textMultiLine"
+                        android:maxLength="500"
+                        android:maxLines="4"
+                        android:minLines="2"
+                        android:paddingLeft="5dip"
+                        android:paddingRight="25dip"
+                        android:textColor="#383838" />
+                </RelativeLayout>
+ 
+                <TextView
+                    android:id="@+id/im_send_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="4"
+                    android:clickable="false"
+                    android:gravity="center"
+                    android:text="发送"
+                    android:textColor="#67b83d"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+    </LinearLayout>
+     -->
+     <RelativeLayout 
+        android:id="@+id/write"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#DDDDDD">
+         <TextView 
+             android:layout_width="fill_parent"
+             android:layout_height="0.5dp"
+             android:background="@color/xian_gray"/>
+        <RelativeLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="10dp"
+            android:background="@color/white">
+            <TextView 
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/xian_gray"/>
+            <TextView 
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/xian_gray"/>
+            <TextView 
+                android:layout_width="0.5dp"
+                android:layout_height="fill_parent"
+                android:background="@color/xian_gray"/>
+            <TextView 
+                android:layout_width="0.5dp"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:background="@color/xian_gray"/>
+            <ImageView 
+                android:id="@+id/im"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/srockrss_input_edit_img"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"/>
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="输入内容"
+                android:layout_toRightOf="@id/im"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/gray_light"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    
+   <android.support.v4.widget.SwipeRefreshLayout
+       android:id="@+id/wuseeview_refresh"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       
+     <ListView
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="@null"
+        android:listSelector="#00000000"
+        android:layout_above="@id/write"/>
+       
+   </android.support.v4.widget.SwipeRefreshLayout>  
+     
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/xian_gray"
+        android:layout_below="@id/wuseeview_refresh"/>
+    <RelativeLayout 
+        android:id="@+id/bedown"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="20dp"
+        android:visibility="gone"
+        android:layout_above="@id/write"
+        android:layout_alignParentRight="true"
+        >
+        <ImageView 
+            android:src="@drawable/img_weiduxinxi"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"/>
+        <TextView 
+            android:id="@+id/bedown_unumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="0"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+    <TextView 
+        android:id="@+id/jiazai"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:text="努力加载中..."
+        android:textColor="@color/black"
+        android:textSize="18sp"/>
+ 
+</RelativeLayout>

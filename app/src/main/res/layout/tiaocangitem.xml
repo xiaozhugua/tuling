@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tljr_bj"
+    android:orientation="vertical">
+    
+    <RelativeLayout
+    	android:layout_width="match_parent"
+    	android:layout_height="50dp"
+    	android:orientation="vertical"
+    	android:background="@color/white">
+    
+    	<TextView 
+        	android:id="@+id/tljr_zx_tiaocangname"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentLeft="true"
+        	android:layout_marginTop="6dp"
+        	android:layout_marginLeft="10dp"
+        	android:textSize="18sp"/>
+    
+    	<TextView
+    	    android:id="@+id/tljr_zx_tiaocangcode"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_alignParentLeft="true"
+    	    android:layout_marginLeft="10dp"
+    	    android:layout_below="@+id/tljr_zx_tiaocangname"
+    	    android:textSize="13sp"
+    	    android:textColor="@color/tljr_gray"/>
+    	
+    	
+    	<TextView 
+       	 	android:id="@+id/tljr_zx_topercent"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentRight="true"
+        	android:layout_marginRight="10dp"
+        	android:textSize="15sp"
+        	android:layout_centerVertical="true"/>
+    
+    	<ImageView
+        	android:id="@+id/tljr_zx_percentjiantou"
+        	android:layout_width="20dp"
+        	android:layout_height="20dp"
+        	android:contentDescription="@null"
+        	android:layout_toLeftOf="@+id/tljr_zx_topercent"
+        	android:layout_centerVertical="true"
+       	 	android:src="@drawable/img_tiaojiantou"/>
+    
+		<TextView 
+	    	android:id="@+id/tljr_zx_srcpercenti"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_centerVertical="true"
+	    	android:textSize="15sp"
+	    	android:layout_toLeftOf="@+id/tljr_zx_percentjiantou"/>    
+    
+	</RelativeLayout>
+    
+    <ImageView 
+        android:layout_width="match_parent"
+        android:contentDescription="@null"
+        android:src="@drawable/img_200fengexian"
+        android:layout_height="0.5dp"
+        android:scaleType="fitXY"/>
+    
+</LinearLayout>

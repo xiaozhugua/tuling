@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fafafa"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="?attr/TitleHeight"
+        android:paddingTop="?attr/TitlePadding"
+        android:background="?attr/TitleBj" >
+
+        <TextView
+            android:id="@+id/tljr_txt_kname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+        android:paddingTop="?attr/TitlePadding"
+            android:textColor="?attr/TitleTextColor"
+            android:textSize="?attr/TitleTextSize"  />
+
+        <include
+            android:id="@+id/tljr_img_kfanhui"
+            layout="@layout/tljr_view_back" />
+    </RelativeLayout>
+
+    <com.github.mikephil.charting.charts.CandleStickChart
+        android:id="@+id/tljr_chart1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:visibility="gone" />
+
+    <com.github.mikephil.charting.charts.CandleStickChart
+        android:id="@+id/tljr_chart4"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:visibility="gone" />
+
+    <com.github.mikephil.charting.charts.CandleStickChart
+        android:id="@+id/tljr_chart5"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:visibility="gone" />
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/tljr_chart6"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:visibility="gone" />
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/tljr_chart3"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:visibility="gone" />
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/tljr_chart2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="2" />
+
+    <com.abct.tljr.kline.SeekBarPressure
+        android:id="@+id/tljr_seekBar1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp" />
+
+</LinearLayout>

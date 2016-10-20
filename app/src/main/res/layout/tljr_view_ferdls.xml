@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tljr_ferdls_grp"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#00000000" >
+    <TextView
+         android:id="@+id/top"
+         android:layout_width="fill_parent"
+         android:layout_height="10dp"
+         android:visibility="gone" />
+    <ImageView
+        android:id="@+id/im"
+        android:layout_width="fill_parent"
+        android:layout_below="@id/top"
+        android:layout_height="0.5dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_222fengexian" />
+
+    <RelativeLayout
+        android:id="@+id/tljr_ferdls_title"
+        android:layout_below="@id/im"
+        android:layout_width="fill_parent"
+        android:layout_height="38dp"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@+id/tljr_ferdls_icon"
+            android:layout_width="4dp"
+            android:layout_height="10dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_yanjiusuoicon" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@+id/tljr_ferdls_icon"
+            android:gravity="center_vertical"
+            android:text="Ferdls研究所"
+            android:textColor="?attr/Black"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/count"
+            android:layout_toRightOf="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:textColor="?attr/Black"
+            android:textSize="14dp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true" >
+
+            <TextView
+                android:id="@+id/tljr_txt_symore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="2dp"
+                android:text="查看更多"
+                android:textColor="?attr/GRAY"
+                android:textSize="11dp" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tljr_txt_symore"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_gengduojiantou" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/tljr_ferdls_viewpager"
+        android:layout_width="fill_parent"
+        android:background="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tljr_ferdls_title" />
+
+    <LinearLayout
+        android:id="@+id/tljr_ferdls_viewGroup"
+        android:layout_width="match_parent"
+        android:layout_height="10dip"
+        android:background="@color/white"
+        android:layout_below="@+id/tljr_ferdls_viewpager"
+        android:gravity="center"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/tljr_ferdls_viewGroup"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_222fengexian" />
+
+</RelativeLayout>

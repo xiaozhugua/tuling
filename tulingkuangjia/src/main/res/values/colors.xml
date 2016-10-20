@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="redtitlebj">#dd4339</color>
+    <color name="bj">#f5f5f5</color>
+    <color name="transparent">#00000000</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="rippleColor">#969696</color>
+    <color name="lightGray">#969696</color>
+    <color name="gray">#555555</color>
+    <color name="black">#000000</color>
+    <color name="titlebj">#f0f0f0</color>
+    <color name="red">#EB5041</color>
+    <color name="blue">#1ec2ff</color>
+    <color name="purple">#a8a4de</color>
+    <color name="orange">#ff8d1e</color>
+    <color name="pink">#ff98bf</color>
+    <color name="green">#09C990</color>
+    <color name="yellow">#FFE84F</color>
+    <color name="white">#FFFFFF</color>
+    <!-- <color name="green">#09C990</color> -->
+    <color name="morelightgray">#dedede</color>
+    <color name="moremorelightgray">#f5f5f5</color>
+    <color name="moremoremorelightgray">#fcfcfc</color>
+    <color name="tljr_click">#19FFFFFF</color>
+    <color name="tljr_transparent">#00000000</color>
+    <color name="xian_gray">#d6d6d6</color>
+    <!-- <color name="tljr_statusbarcolor">#eb5041</color> -->
+    <color name="tljr_statusbarcolor">#323232</color>
+    <color name="lightgray">#969696</color>
+    <color name="drakgray">#323232</color>
+    <color name="tljr_bj_tp">#be000000</color>
+    <color name="tljr_bj">#f5f5f5</color>
+    <color name="tljr_bjtitle">#f0f0f0</color>
+    <color name="tljr_bjatitle">#64f0f0f0</color>
+    <color name="tljr_djbj">#e6e6e6</color>
+    <color name="tljr_white">#FFFFFF</color>
+    <color name="tljr_black">#000000</color>
+    <color name="tljr_gray">#aaaaaa</color>
+    <color name="tljr_text_blue">#3666b4</color>
+    <color name="tljr_text_comment_content">#ff333333</color>
+    <color name="tljr_text_default2">#ff555555</color>
+    <color name="tljr_pro_redpressed">#ad3b30</color>
+    <!-- <color name="tljr_c_red">#820c1a</color> -->
+    <color name="tljr_pro_red">#EB5041</color>
+    <!-- <color name="tljr_c_green">#0cb773</color> -->
+    <!-- <color name="tljr_c_green">#207905</color> -->
+    <color name="tljr_c_green">#149628</color>
+    <color name="tljr_c_greendown">#0c5c18</color>
+    <color name="tljr_c_yellow">#ffe84f</color>
+    <color name="tljr_c_orageyellow">#f3583c</color>
+    <color name="tljr_zx_allgu_headbg">#0099ff</color>
+    <color name="tljr_balck">#000000</color>
+    <color name="tljr_bule">#3666b4</color>
+    <color name="tljr_zx_bg">#555555</color>
+    <color name="gray_light">#969696</color>
+    <color name="grey_deep">#555555</color>
+    <color name="red_click">#a2372d</color>
+    <color name="testred">#F05A3C</color>
+    <color name="tiaocangitemtextcolor">#AAAAAA</color>
+    <color name="tiaocangdriver">#EFF3F6</color>
+    <color name="gary_dan">#969696</color>
+    <color name="gary_shen">#555555</color>
+    <color name="tiaocangstatus">#FF7700</color>
+    <color name="moneyrevest_title_backg">#404040</color>
+    <color name="c_bule">#3666b4</color>
+    <color name="c_red_text">#ed4848</color>
+    <color name="c_gray_text">#e6e6e6</color>
+    <color name="card_item_background_default">#ffffff</color>
+    <color name="card_item_background_pressed">#eeeeee</color>
+    <color name="card_item_shadow">#10000000</color>
+    <color name="tljr_hq_zx_header">#f9f9f9</color>
+    <color name="tljr_hq_zx_divider">#DEDEDE</color>
+    <color name="tljr_hq_zx_up">#EB5041</color>
+    <color name="tljr_hq_zx_down">#09C990</color>
+    <color name="tljr_hq_zh_dapan">#DCF5FB</color>
+    <color name="tljr_hq_zh_percenttext">#ff7e00</color>
+
+    <!-- 频道管理 start -->
+
+    <color name="default_text_night">#ff747474</color>
+    <color name="subscribe_item_drag_stroke">#ffd2d2d2</color>
+    <color name="subscribe_item_drag_bg">#fff5f5f5</color>
+    <color name="subscribe_item_selected_bg">#ffffffff</color>
+    <color name="subscribe_item_selected_stroke">#ffcc3131</color>
+    <color name="subscribe_item_disabled_stroke">#ffd9d9d9</color>
+    <color name="subscribe_item_disabled_bg">#ffefefef</color>
+    <color name="subscribe_item_pressed_stroke">#ffcdcdcd</color>
+    <color name="subscribe_item_pressed_bg">#fff9f9f9</color>
+    <color name="subscribe_item_normal_stroke">#ffcdcdcd</color>
+    <color name="subscribe_item_normal_bg">#fff5f5f5</color>
+
+    <item name="subscribe_item_text_color_normal" type="color">@color/default_text</item>
+
+    <color name="default_text">#ff454545</color>
+    <color name="subscribe_item_text_color_pressed">#ffb9b9b9</color>
+    <color name="title_text_color">#ffffffff</color>
+    <color name="subscribe_bg">#fff5f5f5</color>
+    <color name="subscribe_seperate_line">#ffcdcdcd</color>
+    <!-- 频道管理 end -->
+
+    <color name="tljr_mark_bg">#7beb5041</color>
+    <color name="zh_item_progress">#DCF5FB</color>
+    <color name="zhmenubg">#999999</color>
+    <color name="waihui_actionbars">#D5D5D8</color>
+    <color name="waihui_item">#FFFFFF</color>
+    <color name="tljr_seekbar_bj2">#c8c8c8</color>
+    <color name="tljr_seekbar_bj">#66ffffff</color>
+    <color name="background_tab_pressed">#6633B5E5</color>
+    <color name="oneperson_bg">#B11A18</color>
+    <color name="oneperson_divider">#F4F4F4</color>
+    <color name="title_color">#333333</color>
+    <color name="tljr_select_list">#cccccc</color>
+    <color name="tljr_channel_red">#EB5041</color>
+    <color name="seek_progress">#21BBFC</color>
+    <color name="yousuanitembg">#F1F1F1</color>
+    <color name="yousuanshiyongbu">#EBAA41</color>
+    <color name="zhiyanround">#4FB861</color>
+    <color name="zhiyan_finish_item1">#F2C627</color>
+    <color name="zhiyan_finish_item3">#29B01C</color>
+</resources>

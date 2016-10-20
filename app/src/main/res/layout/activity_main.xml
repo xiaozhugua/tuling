@@ -1,0 +1,191 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ripple="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/img_space_hight"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="54dp"
+        android:background="@drawable/img_shape_space" />
+
+    <com.abct.tljr.ui.widget.FragementViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/line" />
+
+    <LinearLayout
+        android:id="@+id/tljr_grp_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="54dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingTop="7dp" >
+
+        <com.abct.tljr.ui.widget.RippleView
+            android:id="@+id/tljr_img_hq"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            ripple:rv_alpha="0" >
+
+            <ImageView
+                android:id="@+id/zixuan"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/img_iconhangqing2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/zixuan"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+                android:text="@string/fragement_zixuan"
+                android:textColor="@color/red"
+                android:textSize="11dp" />
+        </com.abct.tljr.ui.widget.RippleView>
+
+        <com.abct.tljr.ui.widget.RippleView
+            android:id="@+id/tljr_img_hqyw"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            ripple:rv_alpha="0" >
+
+            <ImageView
+                android:id="@+id/zhiyan"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/img_iconxinwen1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/zhiyan"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+                android:text="@string/fragement_zixun"
+                android:textSize="11dp" />
+        </com.abct.tljr.ui.widget.RippleView>
+
+        <com.abct.tljr.ui.widget.RippleView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            ripple:rv_alpha="0" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true" />
+        </com.abct.tljr.ui.widget.RippleView>
+
+        <com.abct.tljr.ui.widget.RippleView
+            android:id="@+id/tljr_img_scqx"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            ripple:rv_alpha="0" >
+
+            <ImageView
+                android:id="@+id/zixun"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/img_iconzhiyan1" />
+
+            <TextView
+                android:id="@+id/zhiyant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/zixun"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+                android:text="@string/fragement_zhiyan"
+                android:textSize="11dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:layout_toRightOf="@+id/zhiyant"
+                android:text="™"
+                android:textSize="20dp" />
+        </com.abct.tljr.ui.widget.RippleView>
+
+        <com.abct.tljr.ui.widget.RippleView
+            android:id="@+id/tljr_img_grxx"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            ripple:rv_alpha="0" >
+
+            <ImageView
+                android:id="@+id/touzi"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/img_yousuan1" />
+
+            <TextView
+                android:id="@+id/touzit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/touzi"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+                android:text="@string/fragement_yousuan"
+                android:textSize="11dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:layout_toRightOf="@+id/touzit"
+                android:text="™"
+                android:textSize="20dp" />
+        </com.abct.tljr.ui.widget.RippleView>
+    </LinearLayout>
+
+    <com.abct.tljr.ui.widget.RippleView
+        android:id="@+id/main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ripple:rv_alpha="0" >
+
+        <ImageView
+            android:layout_width="59dp"
+            android:layout_height="70.5dp"
+            android:contentDescription="@null"
+            android:src="@drawable/img_dibubeijing" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:contentDescription="@null"
+            android:layout_centerInParent="true"
+            android:src="@drawable/img_dibulogo"/>
+        
+    </com.abct.tljr.ui.widget.RippleView>
+
+</RelativeLayout>

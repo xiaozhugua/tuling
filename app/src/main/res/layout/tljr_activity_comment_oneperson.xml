@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white" >
+    <RelativeLayout
+        android:id="@+id/tljr_grp_futures_join_title"
+        android:layout_width="fill_parent"
+        android:layout_height="?attr/TitleHeight"
+        android:background="?attr/TitleBj">
+         <include
+            android:id="@+id/tljr_img_futures_join_back"
+            layout="@layout/tljr_click_back" />
+       <TextView
+            android:id="@+id/tljr_img_futures_join_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="个人评论"
+            android:textColor="?attr/TitleTextColor"
+            android:textSize="?attr/TitleTextSize" />
+    </RelativeLayout>
+    
+    <com.abct.tljr.kline.comments.XScrollView 
+      android:id="@+id/tljr_sy_sc"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent">
+       <LinearLayout 
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent"
+           android:orientation="vertical">
+           <LinearLayout
+               android:id="@+id/header_layout"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center_horizontal|top"
+               android:orientation="vertical" />
+           <RelativeLayout 
+               android:layout_width="fill_parent"
+               android:layout_height="80dp"
+               android:background="@color/blue">
+                <!-- 
+                   <com.abct.tljr.ui.widget.CircularImage
+                    -->
+               <com.abct.tljr.ui.widget.CircularImage
+                   android:id="@+id/im"
+                   android:layout_width="40dp"
+                   android:layout_height="40dp"
+                   android:src="@drawable/person"
+                   android:layout_centerHorizontal="true"
+                   android:layout_marginTop="10dp"
+                   />
+               <TextView 
+                   android:id="@+id/name"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="name"
+                   android:layout_below="@id/im"
+                   android:textColor="@color/white"
+                   android:layout_centerHorizontal="true"/>
+           </RelativeLayout>
+           <LinearLayout 
+               android:id="@+id/list"
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:background="@color/white"
+               android:orientation="vertical">
+               
+           </LinearLayout>
+           <TextView 
+               android:id="@+id/load"
+               android:layout_width="fill_parent"
+               android:layout_height="40dp"
+               android:background="@color/gray_light"
+               android:text="加载更多"
+               android:visibility="gone"
+               android:textColor="@color/white"
+               android:gravity="center"/>
+           
+       </LinearLayout>
+    </com.abct.tljr.kline.comments.XScrollView>
+    
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp" >
+
+    <ImageView
+        android:id="@+id/tljr_rank_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:src="@drawable/img_avatar" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toLeftOf="@+id/tljr_rank_mark"
+        android:layout_toRightOf="@+id/tljr_rank_icon"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tljr_rank_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="总收益榜"
+            android:textColor="@color/gray"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tljr_rank_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tljr_rank_name"
+            android:layout_marginTop="2dp"
+            android:maxLines="2"
+            android:text="CFA,阳光资产管理公司高级投资经理。\n23232人关注"
+            android:textColor="@color/lightgray"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+    <CheckBox
+        android:id="@+id/tljr_rank_mark"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/tljr_follow"
+        android:button="@null"
+        android:checked="false"
+        android:gravity="center"
+        android:text="+关注"
+        android:textColor="@color/tljr_txt_checkwhite"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_fengexian1" />
+
+</RelativeLayout>

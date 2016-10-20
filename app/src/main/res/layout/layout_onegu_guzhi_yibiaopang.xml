@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <!-- onegu中的估值fragment的四个仪表盘 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <!--
+                     <com.abct.tljr.kline.gegu.view.GaugeChart01View
+                    android:id="@+id/gc1"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp" />
+                -->
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp" >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="13dp"
+                        android:src="@drawable/img_yibiaopan" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp" >
+
+                        <ImageView
+                            android:id="@+id/zhizheng1"
+                            android:layout_width="20dp"
+                            android:layout_height="55dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/img_zhizhen" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="94dp"
+                        android:src="@drawable/img_zhouxin" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="市净率排名（PE）"
+                    android:textColor="#000000"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <!-- <com.abct.tljr.kline.gegu.view.GaugeChart01View
+                    android:id="@+id/gc2"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp" /> -->
+                    
+                    <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp" >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="13dp"
+                        android:src="@drawable/img_yibiaopan" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp" >
+
+                        <ImageView
+                            android:id="@+id/zhizheng2"
+                            android:layout_width="20dp"
+                            android:layout_height="55dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/img_zhizhen" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="94dp"
+                        android:src="@drawable/img_zhouxin" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="总市值排名"
+                    android:textColor="#000000"
+                    android:textSize="16dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <!-- <com.abct.tljr.kline.gegu.view.GaugeChart01View
+                    android:id="@+id/gc3"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp" /> -->
+                    
+                    <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp" >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="13dp"
+                        android:src="@drawable/img_yibiaopan" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp" >
+
+                        <ImageView
+                            android:id="@+id/zhizheng3"
+                            android:layout_width="20dp"
+                            android:layout_height="55dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/img_zhizhen" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="94dp"
+                        android:src="@drawable/img_zhouxin" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/tv3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="市盈率排名（PB）"
+                    android:textColor="#000000"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <!-- <com.abct.tljr.kline.gegu.view.GaugeChart01View
+                    android:id="@+id/gc4"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp" /> -->
+                    <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp" >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="13dp"
+                        android:src="@drawable/img_yibiaopan" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp" >
+
+                        <ImageView
+                            android:id="@+id/zhizheng4"
+                            android:layout_width="20dp"
+                            android:layout_height="55dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/img_zhizhen" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="94dp"
+                        android:src="@drawable/img_zhouxin" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/tv4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="净资产收益率排名"
+                    android:textColor="#000000"
+                    android:textSize="16dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

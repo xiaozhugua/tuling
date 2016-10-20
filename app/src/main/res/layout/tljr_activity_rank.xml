@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tljr_bj" >
+
+    <RelativeLayout
+        android:id="@+id/tljr_grp_rank_title"
+        android:layout_width="fill_parent"
+        android:layout_height="?attr/TitleHeight"
+        android:paddingTop="?attr/TitlePadding"
+        android:background="?attr/TitleBj" >
+
+        <TextView
+            android:id="@+id/tljr_txt_rank_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+        android:paddingTop="?attr/TitlePadding"
+            android:text="@string/rank"
+            android:textColor="?attr/TitleTextColor"
+            android:textSize="?attr/TitleTextSize" />
+
+        <include
+            android:id="@+id/tljr_img_rank_fanhui"
+            layout="@layout/tljr_view_back" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/tljr_activity_rankview_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tljr_grp_rank_title" >
+
+        <LinearLayout
+            android:id="@+id/tljr_grp_rank_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"/>
+
+    </ScrollView>
+
+</RelativeLayout>

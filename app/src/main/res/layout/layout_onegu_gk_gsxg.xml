@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FAFAFA"
+    android:orientation="vertical" >
+
+    <!-- onegu——概况——    公司相关 -->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/img_222fengexian" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:background="#ffffff" >
+
+        <ImageView
+            android:id="@+id/layout_onegu_gk_gsxg_img"
+            android:layout_width="3dp"
+            android:layout_height="10dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="3dp"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_shequniurenbang" />
+
+        <TextView
+            android:id="@+id/layout_onegu_gk_gsxg_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/layout_onegu_gk_gsxg_img"
+            android:text="公司相关"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@drawable/img_222fengexian" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FAFAFA"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:text="所属行业"
+            android:textColor="#969696" />
+
+        <LinearLayout
+            android:id="@+id/layout_onegu_gk_gsxg_sshy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="#FAFAFA"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <View style="@style/onegufenge" />
+
+            <TextView
+                android:id="@+id/layout_onegu_gk_gsxg_sshy_text"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="----"
+                android:textColor="#000000" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:text="相关行业"
+            android:textColor="#969696" />
+
+        <LinearLayout
+            android:id="@+id/layout_onegu_gk_gsxg_xghy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <View style="@style/onegufenge" />
+
+            <TextView
+                android:id="@+id/layout_onegu_gk_gsxg_xghy_text"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="----"
+                android:textColor="#000000" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FAFAFA"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:text="所属主题"
+            android:textColor="#969696" />
+
+        <LinearLayout
+            android:id="@+id/layout_onegu_gk_gsxg_sszt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="#FAFAFA"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <View style="@style/onegufenge" />
+
+            <TextView
+                android:id="@+id/layout_onegu_gk_gsxg_sszt_text"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="----"
+                android:textColor="#000000" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@drawable/img_222fengexian" />
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/tljr_bj"  >
+
+        <ImageView
+            android:id="@+id/img_news_feature"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/img_morentupian" />
+
+        <TextView
+            android:id="@+id/tv_title_news_feature"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/img_news_feature"
+            android:layout_marginRight="15dp"
+            android:lines="2"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@+id/img_news_feature"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/tv_time_news_feature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/img_news_feature"
+            android:layout_alignRight="@+id/tv_title_news_feature"
+            android:text="TextView" />
+        
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/red" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/img_tishibeijing">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginTop="12dp"
+            android:layout_centerHorizontal="true"
+            android:text="请输入分组名"/>	
+        
+        <EditText
+            android:id="@+id/addzu_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="分组名"
+            android:layout_centerInParent="true"/>
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" >
+
+            <Button
+                android:id="@+id/addzu_quxiao"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginRight="15dp"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:background="@drawable/tljr_zu_quxiaobu_bg"
+                android:layout_marginBottom="10dp"
+                android:text="取消" />
+
+            <Button
+                android:id="@+id/addzu_quedin"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:textSize="12sp"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/white"
+                android:background="@drawable/tljr_zu_quedinbu_bg"
+                android:layout_marginBottom="10dp"
+                android:text="确定" />
+        </LinearLayout>
+        
+    </RelativeLayout>
+
+</LinearLayout>

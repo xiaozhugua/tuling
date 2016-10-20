@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.abct.tljr.ui.widget.XScrollView
+        android:id="@+id/tljr_scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/tljr_bj"
+        android:scrollbars="none" >
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+           
+           <LinearLayout
+               android:id="@+id/header_layout"               
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center_horizontal"
+               android:orientation="vertical">
+           </LinearLayout> 
+            
+            
+           <LinearLayout
+          	android:id="@+id/tljr_page_guzhi_grp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:showDividers="end"
+            android:divider="@drawable/img_200fengexian"/> 
+            
+        </LinearLayout>
+        
+            
+    </com.abct.tljr.ui.widget.XScrollView>
+
+</RelativeLayout>

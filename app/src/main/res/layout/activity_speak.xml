@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:id="@+id/tljr_grp_news_title"
+        android:layout_weight="0.12"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:paddingTop="?attr/TitlePadding" 
+        android:background="?attr/TitleBj" >
+ 
+        <TextView
+            android:id="@+id/tljr_txt_news_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="评论"
+        android:paddingTop="?attr/TitlePadding"
+            android:textColor="?attr/TitleTextColor"
+            android:textSize="?attr/TitleTextSize" />
+ 
+        <TextView
+            android:id="@+id/tljr_hqss_news_titlebelow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tljr_txt_news_title"
+            android:layout_centerHorizontal="true"
+        android:paddingTop="?attr/TitlePadding"
+            android:text=""
+            android:textColor="?attr/TitleTextColor"
+            android:textSize="8dp" />
+     <include
+            android:id="@+id/back"
+            layout="@layout/tljr_view_back" />
+ 
+ 
+    </RelativeLayout>
+    <RelativeLayout  
+        android:id="@+id/newestlayout"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+      android:layout_weight="0.05"
+    android:background="@color/tljr_bj"  >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="5dp"
+        android:layout_height="25dp"
+        android:background="#688fdb"
+        android:textColor="#688fdb"
+        android:text="x" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textView1"
+        android:textColor="@color/drakgray"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="3dp"
+        android:text="最新评论" />
+
+</RelativeLayout>
+    <android.support.v7.widget.RecyclerView 
+        android:id="@+id/lv"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.86"
+        ></android.support.v7.widget.RecyclerView>
+    
+    
+     <TextView
+            android:id="@+id/save"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.10"
+            android:background="@color/tljr_hq_zx_up"
+            android:gravity="center"
+            android:text="发表评论"
+            android:textColor="@color/c_gray_text"
+            android:textSize="@dimen/sp_eighteen" >
+        </TextView>
+
+</LinearLayout>

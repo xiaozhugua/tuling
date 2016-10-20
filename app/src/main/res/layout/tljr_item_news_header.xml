@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff" >
+ 
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+ <TextView
+                android:id="@+id/title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="38dp"
+                android:text="标题"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_twenty_fore" />
+        
+ 
+<!--   -->
+ 
+            <ImageView
+                android:id="@+id/img_piyue"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:visibility="gone"
+                android:src="@drawable/img_yipiyue" />
+  
+ 
+        <TextView
+            android:id="@+id/news_sources"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/title"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="18dp"
+            android:text="来源"
+            
+            android:textColor="@color/redtitlebj"
+            android:textSize="14sp" />
+ 
+        <TextView
+            android:id="@+id/news_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/news_sources"
+            android:layout_alignBottom="@+id/news_sources"
+            android:layout_marginLeft="7dp"
+            android:layout_toRightOf="@+id/news_sources"
+            android:text="2015-07-21"
+            android:textColor="#838B8B"
+            android:textSize="14sp" />
+ 
+        <TextView
+            android:id="@+id/tljr_tv_news_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/news_sources"
+            android:layout_centerVertical="true"
+            android:paddingBottom="15dp"
+            android:paddingLeft="17dp"
+            android:paddingRight="17dp"
+            android:paddingTop="5dp"
+            android:text="内容"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:visibility="gone" />
+ 
+        <WebView
+            android:id="@+id/news_webview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tljr_tv_news_content"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+            android:layout_marginTop="5dp"
+            android:scrollbars="none" />
+    </RelativeLayout>
+ 
+</RelativeLayout>

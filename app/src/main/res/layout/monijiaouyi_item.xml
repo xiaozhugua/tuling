@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+     <TableLayout
+        android:id="@+id/waihui_geren_message"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <TableRow>
+
+           <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/moni_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:text="--" />
+				
+                <TextView
+                    android:id="@+id/moni_weihuicode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    android:text="--"/>                
+                
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/moni_price"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1.8"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:text="最新价" />
+
+            <TextView
+                android:id="@+id/moni_chengben"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:text="成本" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="2" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/moni_chicang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:textColor="@color/black"
+                        android:gravity="center"
+                        android:text="可用持仓" />
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="50dp"
+                        android:contentDescription="@null"
+                        android:visibility="gone"
+                        android:src="@drawable/arrow_down" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1.84" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/moni_yinkui"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:text="浮动盈亏" />
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="50dp"
+                        android:contentDescription="@null"
+                        android:src="@drawable/arrow_down"
+                        android:visibility="gone" />
+                    
+                </LinearLayout>
+            </RelativeLayout>
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

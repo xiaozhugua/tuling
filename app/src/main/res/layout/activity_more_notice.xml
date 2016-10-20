@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 更多公告的页面 -->
+
+    <RelativeLayout
+        android:id="@+id/activity_more_notice_header_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="?attr/TitleHeight"
+        android:background="?attr/TitleBj"
+        android:paddingTop="?attr/TitlePadding" >
+
+        <TextView
+            android:id="@+id/activity_more_notice_header_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingTop="?attr/TitlePadding"
+            android:textColor="?attr/TitleTextColor"
+            android:textSize="?attr/TitleTextSize" />
+
+        <include
+            android:id="@+id/activity_more_notice_header_comeback"
+            layout="@layout/tljr_view_back" />
+    </RelativeLayout>
+<!-- 
+    <ScrollView
+        android:id="@+id/activity_more_notice_sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" > -->
+
+      <!--   <LinearLayout
+            android:id="@+id/activity_more_notice_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            
+            
+        </LinearLayout> -->
+        <ListView 
+            android:id="@+id/activity_more_notice_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+            
+        </ListView>
+        
+    <!-- </ScrollView> -->
+
+    <LinearLayout
+        android:id="@+id/activity_more_notice_no_data_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

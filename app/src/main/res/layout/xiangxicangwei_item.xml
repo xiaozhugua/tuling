@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+    <TextView
+        android:id="@+id/tljr_zx_xiangxicangwei_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/textview_border"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:text="增仓"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/tljr_zx_xiangxicangwei_codename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/tljr_zx_xiangxicangwei_status"
+        android:text="农业银行"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tljr_zx_xiangxicangwei_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tljr_zx_xiangxicangwei_codename"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/tljr_zx_xiangxicangwei_status"
+        android:text="SH601288"
+        android:textColor="@color/black"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tljr_zx_zuixintopercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:text="5.0%"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/tljr_zx_zuixinpercentjiantou"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/tljr_zx_zuixintopercent"
+        android:src="@drawable/img_tiaojiantou" />
+
+    <TextView
+        android:id="@+id/tljr_zx_zuixinsrcpercenti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/tljr_zx_zuixinpercentjiantou"
+        android:text="3.0%"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:contentDescription="@null"
+        android:layout_below="@+id/tljr_zx_xiangxicangwei_code"
+        android:src="@drawable/img_200fengexian"/>
+    
+</RelativeLayout>

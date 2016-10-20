@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white" >
+
+        <RelativeLayout
+            android:id="@+id/ly_author"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tljr_listview_selector2" >
+
+            <ImageView
+                android:id="@+id/mark_avatar"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentLeft="true"
+               
+                android:layout_marginLeft="12dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/img_jiahao" />
+
+            <TextView
+                android:id="@+id/mark_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="17dp"
+                android:layout_toRightOf="@+id/mark_avatar"
+                android:layout_centerVertical="true"
+                android:text="Healthcare Re"
+                android:textSize="17sp"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:id="@+id/arrow"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                  android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/img_jiantou" />
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                
+                android:layout_marginTop="25dp"
+             android:layout_below="@+id/mark_author"
+                android:background="@color/bj" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ly_news"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ly_author"
+            android:background="@drawable/tljr_listview_selector2" >
+
+            <ImageView
+                android:id="@+id/pic_3"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/img_tishi4" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_toRightOf="@id/pic_3"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_morentupian"
+                android:text="深港通”将促使MSCI将A股纳入新兴市场指数"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/digest"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/title"
+                android:layout_below="@id/title"
+                android:layout_margin="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_morentupian"
+                android:text="截至中午收盘，沪指跌逾1%，创业板跌近2%,世界在哪里？中国在哪里？：“超级数据”绘制的全球经济地图,现在国家，最关心的是房地产去库存，进而拉动投资，稳定经济" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/digest"
+                android:layout_marginRight="5dp"
+                android:text="1小时前"
+                android:textColor="@color/lightgray"
+                android:textSize="10sp" />
+
+            <View
+                android:id="@+id/line4"
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/date"
+               
+                android:layout_marginTop="5dp"
+                android:background="@color/bj" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ly_news1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ly_news"
+            android:background="@drawable/tljr_listview_selector2" >
+
+            <ImageView
+                android:id="@+id/pic_1"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="7dp"
+                android:src="@drawable/img_tishi4" />
+
+            <TextView
+                android:id="@+id/title1"
+                android:layout_width="wrap_content"
+                    android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@id/pic_1"
+                android:lines="2"
+                android:text="新财富、水晶球请支持中泰医药孙坚团队三季度高增长延续，积极关注"
+                android:textColor="@color/tljr_text_comment_content"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/date1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/title1"
+                android:layout_marginRight="5dp"
+                android:text="1小时前"
+                android:textColor="@color/lightgray"
+                android:textSize="10sp" />
+
+            <View
+                android:id="@+id/line2"
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/date1"
+              
+                android:layout_marginTop="5dp"
+                android:background="@color/bj" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ly_news2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           
+            android:layout_below="@id/ly_news1"
+            android:background="@drawable/tljr_listview_selector2" >
+
+            <ImageView
+                android:id="@+id/pic_2"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="7dp"
+                android:src="@drawable/img_tishi4" />
+
+            <TextView
+                android:id="@+id/title2"
+                android:layout_width="wrap_content"
+                    android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@id/pic_2"
+                android:lines="2"
+                android:text="新财富、水晶球请支持中泰医药孙坚团队三季度高增长延续，积极关注"
+                android:textColor="@color/tljr_text_comment_content"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/date2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/title2"
+                android:layout_marginRight="5dp"
+                android:text="1小时前"
+                android:textColor="@color/lightgray"
+                android:textSize="10sp" />
+
+            <View
+                android:id="@+id/line3"
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/date2"
+                android:layout_marginTop="5dp"
+                android:background="@color/bj" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

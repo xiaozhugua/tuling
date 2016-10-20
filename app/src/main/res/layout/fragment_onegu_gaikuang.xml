@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 这是onegu的公告fragment -->
+
+    <com.abct.tljr.kline.gegu.view.OneguGuZhiScrollView
+        android:id="@+id/fragment_onegu_gaikuang_sv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#F5F5F5"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/fragment_onegu_gaikuang_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:descendantFocusability="blocksDescendants">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@drawable/img_222fengexian" />
+            <!-- 公司公告 -->
+
+            <include layout="@layout/layout_onegu_gk_gsgg" />
+
+            <!-- 十大股东 -->
+
+            <include layout="@layout/layout_ten_big" />
+
+            <!-- 高管列表 -->
+
+            <LinearLayout
+                android:id="@+id/fragment_onegu_gk_manager_list_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                
+            </LinearLayout>
+            <!-- 公司相关 -->
+
+            <include layout="@layout/layout_onegu_gk_gsxg" />
+
+            <!-- 公司信息 -->
+
+            <include layout="@layout/layout_onegu_gk_gsxx2" />
+        </LinearLayout>
+    </com.abct.tljr.kline.gegu.view.OneguGuZhiScrollView>
+
+</LinearLayout>

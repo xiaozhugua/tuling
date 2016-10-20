@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bj" >
+    
+    <android.support.v4.widget.SwipeRefreshLayout
+        	android:id="@+id/zhiyan_myview_refresh"
+        	android:layout_width="match_parent"
+        	android:layout_height="match_parent"
+        	android:background="@color/bj">
+        
+        <android.support.v7.widget.RecyclerView
+	    	android:id="@+id/myview_recyclerview"
+	    	android:layout_width="match_parent"
+	    	android:layout_height="match_parent"
+	    	android:paddingBottom="20dp"/>
+        
+    </android.support.v4.widget.SwipeRefreshLayout>
+    
+	    
+	<RelativeLayout 
+	    android:id="@+id/zhiyan_my_denglu"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerInParent="true"
+	    android:visibility="gone">
+	    
+	    <ImageView
+	        android:id="@+id/zhiyan_jiahao"
+	        android:layout_width="50dp"
+	        android:layout_height="50dp"
+	        android:contentDescription="@null"
+	        android:layout_centerHorizontal="true"
+	        android:src="@drawable/img_jiahao"/>
+	    
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_below="@+id/zhiyan_jiahao"
+	        android:text="请点击登录"/>
+	    
+	</RelativeLayout>
+	
+	<RelativeLayout
+          android:id="@+id/myview_reset"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:visibility="gone">
+          
+          <Button
+              android:id="@+id/zhiyan_myview_rebtn"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerHorizontal="true"
+              android:textColor="@color/white"
+              android:background="@drawable/nonet_bu_shape"
+              android:layout_marginBottom="5dp"
+              android:text="重新加载"/>
+          
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/zhiyan_myview_rebtn"
+              android:text="数据获取失败，请重新加载"/>
+          
+     </RelativeLayout>
+	
+	<RelativeLayout 
+	    android:id="@+id/nogupiao_tip"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerInParent="true"
+	    android:visibility="gone">
+	    
+	    	<TextView
+	    	    android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	    android:text="暂时没有关注的股票哦"/>
+	    
+	</RelativeLayout>	  
+	
+	
+</RelativeLayout>

@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="bottom" >
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#A0000000"></RelativeLayout>
+ 
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingBottom="5dp"
+        android:background="@drawable/yuan_beijing">
+ 
+ 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentBottom="true"
+            android:paddingTop="10dp" >
+            <RelativeLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                >
+	            <com.abct.tljr.jiaoyi.futures.view.RadioGroup
+	                android:id="@+id/tljr_rg_dialog_kset_time"
+	                android:layout_width="200dp"
+	                android:layout_height="200dp"
+	                android:layout_toRightOf="@+id/tljr_txt_dialog_kset_time"
+	                android:orientation="horizontal" >
+	 
+	                <LinearLayout
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="match_parent"
+	                    android:layout_weight="1" >
+	 
+	                    <RadioButton
+	                        android:id="@+id/rb1"
+	                        android:layout_width="fill_parent"
+	                        android:layout_height="fill_parent"
+	                        android:layout_weight="1"
+	                        android:layout_marginTop="3dp"
+	                        android:layout_marginBottom="3dp"
+	                        android:layout_marginLeft="3dp"
+	                        android:layout_marginRight="3dp"
+	                        android:background="@drawable/tljr_kselect2"
+	                        android:button="@null"
+	                        android:gravity="center"
+	                        android:text="2小时"
+	                        android:textColor="@color/black"
+	                        android:textSize="12sp" />
+	 
+	                    <RadioButton
+	                        android:id="@+id/rb2"
+	                        android:layout_width="fill_parent"
+	                        android:layout_height="fill_parent"
+	                        android:layout_marginTop="3dp"
+	                        android:layout_marginBottom="3dp"
+	                        android:layout_marginLeft="3dp"
+	                        android:layout_marginRight="3dp"
+	                        android:layout_weight="1"
+	                        android:background="@drawable/tljr_kselect2"
+	                        android:button="@null"
+	                        android:gravity="center"
+	                        android:textColor="@color/white"
+	                        android:text="1天"
+	                        android:textSize="12sp" />
+	                </LinearLayout>
+	 
+	                <LinearLayout
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="match_parent"
+	                    android:layout_weight="1" >
+	                     <RadioButton
+	                        android:id="@+id/rb3"
+	                        android:layout_width="fill_parent"
+	                        android:layout_height="fill_parent"
+	                        android:layout_marginTop="3dp"
+	                        android:layout_marginBottom="3dp"
+	                        android:layout_marginLeft="3dp"
+	                        android:layout_marginRight="3dp"
+	                        android:layout_weight="1"
+	                        android:background="@drawable/tljr_kselect2"
+	                        android:button="@null"
+	                        android:gravity="center"
+	                        android:text="2天"
+	                        android:textColor="@color/black"
+	                        android:textSize="12sp" />
+	                    <RadioButton
+	                        android:id="@+id/rb4"
+	                        android:layout_width="fill_parent"
+	                        android:layout_height="fill_parent"
+	                        android:layout_marginTop="3dp"
+	                        android:layout_marginBottom="3dp"
+	                        android:layout_marginLeft="3dp"
+	                        android:layout_marginRight="3dp"
+	                        android:layout_weight="1"
+	                        android:background="@drawable/tljr_kselect2"
+	                        android:button="@null"
+	                        android:textColor="@color/black"
+	                        android:gravity="center"
+	                        android:text="1周"
+	                        android:textSize="12sp" />
+	                    
+	 					<!-- 
+	                    <RadioButton
+	                        android:id="@+id/rb5"
+	                        android:layout_width="fill_parent"
+	                        android:layout_height="fill_parent"
+	                        android:layout_marginTop="3dp"
+	                        android:layout_marginBottom="3dp"
+	                        android:layout_marginLeft="3dp"
+	                        android:layout_marginRight="3dp"
+	                        android:layout_weight="1"
+	                        android:textColor="@color/black"
+	                        android:background="@drawable/tljr_kselect2"
+	                        android:button="@null"
+	                        android:gravity="center"
+	                        android:text="1个月"
+	                        android:textSize="12sp" />
+	                    
+	 
+	                    <RadioButton
+	                        android:id="@+id/rb6"
+	                        android:layout_width="fill_parent"
+	                        android:layout_height="fill_parent"
+	                        android:layout_weight="1"
+	                        android:layout_marginTop="3dp"
+	                        android:layout_marginBottom="3dp"
+	                        android:layout_marginLeft="3dp"
+	                        android:layout_marginRight="3dp"
+	                        android:background="@drawable/tljr_kselect2"
+	                        android:button="@null"
+	                        android:gravity="center"
+	                        android:textColor="@color/black"
+	                        android:text="3个月"
+	                        android:textSize="12sp" />
+	                        -->
+	 
+	                </LinearLayout>
+	                <!-- 
+	                <LinearLayout
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="match_parent"
+	                    android:layout_weight="1" >
+	                    <RadioButton
+	                        android:id="@+id/rb7"
+	                        android:layout_width="fill_parent"
+	                        android:layout_height="fill_parent"
+	                        android:layout_marginTop="3dp"
+	                        android:layout_marginBottom="3dp"
+	                        android:layout_marginLeft="3dp"
+	                        android:layout_marginRight="3dp"
+	                        android:layout_weight="1"
+	                        android:background="@drawable/tljr_kselect2"
+	                        android:button="@null"
+	                        android:gravity="center"
+	                        android:textColor="@color/black"
+	                        android:text="6个月"
+	                        android:textSize="12sp" />
+	 
+	                    <RadioButton
+	                        android:id="@+id/rb8"
+	                        android:layout_width="fill_parent"
+	                        android:layout_height="fill_parent"
+	                        android:layout_marginTop="3dp"
+	                        android:layout_marginBottom="3dp"
+	                        android:layout_marginLeft="3dp"
+	                        android:layout_marginRight="3dp"
+	                        android:layout_weight="1"
+	                        android:background="@drawable/tljr_kselect2"
+	                        android:button="@null"
+	                        android:gravity="center"
+	                        android:textColor="@color/black"
+	                        android:text="1年"
+	                        android:textSize="12sp" />
+	 
+	                    <RadioButton
+	                        android:id="@+id/rb9"
+	                        android:layout_width="fill_parent"
+	                        android:layout_height="fill_parent"
+	                        android:layout_marginTop="3dp"
+	                        android:layout_marginBottom="3dp"
+	                        android:layout_marginLeft="3dp"
+	                        android:layout_marginRight="3dp"
+	                        android:layout_weight="1"
+	                        android:background="@drawable/tljr_kselect2"
+	                        android:button="@null"
+	                        android:gravity="center"
+	                        android:textColor="@color/black"
+	                        android:text="2年"
+	                        android:textSize="12sp" />
+	                </LinearLayout>
+	                -->
+	            </com.abct.tljr.jiaoyi.futures.view.RadioGroup>
+	 
+	            <TextView
+	                android:id="@+id/tljr_txt_dialog_kset_time"
+	                android:layout_width="60dp"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="5dp"
+	                android:layout_alignParentLeft="true"
+	                android:layout_centerInParent="true"
+	                android:text="时间段"
+	                android:textColor="@color/tljr_balck"
+	                android:textSize="16sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true">
+            
+        <com.abct.tljr.jiaoyi.futures.view.RadioGroup
+                android:id="@+id/tljr_rg_calculator2"
+	            android:layout_width="250dp"
+		        android:layout_height="fill_parent"
+		        android:layout_centerHorizontal="true" >
+				<LinearLayout 
+				    android:layout_width="fill_parent"
+				    android:layout_height="fill_parent"
+				    android:gravity="center">
+				        
+                <RadioButton
+                    android:id="@+id/radio0" 
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/tljr_rd_check"
+                    android:button="@null"
+                    android:layout_marginLeft="40dp"
+                    android:layout_centerVertical="true"
+                    android:checked="true"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:id="@+id/radio00"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/black"
+                    android:text="线状图"
+                    android:layout_centerVertical="true"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radio1"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/tljr_rd_check"
+                    android:button="@null"
+                    android:layout_centerVertical="true"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:id="@+id/radio11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/black"
+                    android:paddingLeft="5dp"
+                    android:text="K线图"
+                    android:textSize="17dp" />
+                
+				</LinearLayout>
+            </com.abct.tljr.jiaoyi.futures.view.RadioGroup>
+            
+            <TextView 
+                android:layout_toLeftOf="@id/tljr_rg_calculator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_centerVertical="true"
+                android:layout_margin="25dp"
+                android:textSize="15dp"
+                android:text="类型 "/>
+            
+            <TextView 
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/tljr_gray"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+        
+        <!-- 
+        <TabHost
+           android:id="@+id/tljr_tabhost12"
+           android:layout_width="240dp"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="10dp"
+           android:layout_centerHorizontal="true" >
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical" >
+
+               <TabWidget
+                   android:id="@android:id/tabs"
+                   android:layout_width="match_parent"
+                   android:layout_height="30dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginRight="10dp" >
+               </TabWidget>
+
+               <FrameLayout
+                   android:id="@android:id/tabcontent"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent" >
+
+                   <ScrollView
+                       android:id="@+id/tljr_sc_xw2"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent" >
+
+                       <LinearLayout
+                           android:id="@+id/tljr_grp_xw2"
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:layout_marginLeft="15dp"
+                           android:orientation="vertical" >
+                       </LinearLayout>
+                   </ScrollView>
+
+                   <ScrollView
+                       android:id="@+id/tljr_sc_gg2"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:layout_marginLeft="15dp" >
+
+                       <LinearLayout
+                           android:id="@+id/tljr_grp_gg2"
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:orientation="vertical" >
+                       </LinearLayout>
+                   </ScrollView>
+               </FrameLayout>
+           </LinearLayout>
+       </TabHost>
+         -->
+    </RelativeLayout>
+ 
+</RelativeLayout>

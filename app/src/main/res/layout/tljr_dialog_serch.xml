@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:focusable="false"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/tljr_grp_search"
+        android:layout_width="fill_parent"
+        android:layout_height="?attr/TitleHeight"
+        android:background="?attr/TitleBj" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/tljr_txt_close"
+            android:background="@drawable/img_beijingkuang1_1" >
+
+            <ImageView
+                android:id="@+id/tljr_img_search"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/tljr_click"
+                android:padding="7dp"
+                android:src="@drawable/img_sousuo" />
+
+            <EditText
+                android:id="@+id/tljr_edit_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/tljr_img_search"
+                android:background="@null"
+                android:hint="@string/search_input"
+                android:imeOptions="actionSearch"
+                android:singleLine="true"
+                android:textColor="@color/gray"
+                android:textSize="14sp" >
+            </EditText>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tljr_txt_close"
+            android:layout_width="?attr/TitleHeight"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="关闭"
+            android:textColor="?attr/TitleTextColor"
+            android:textSize="?attr/TitleTextSize" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/tljr_lv_gplb"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tljr_grp_search"
+        android:background="#e1f5f5f5"
+        android:divider="@null"
+        android:layout_marginBottom="25dp"
+        android:listSelector="@android:color/transparent" />
+
+</RelativeLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/tljr_white" >
+
+    <View
+        android:id="@+id/tljr_item_build_spacing"
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@color/tljr_bj" >
+    </View>
+
+    <RelativeLayout
+        android:id="@+id/tljr_item_build_title"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/tljr_item_build_spacing"
+        android:background="@color/tljr_hq_zx_down" >
+
+        <TextView
+            android:id="@+id/tljr_item_build_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/tljr_white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tljr_item_build_title"
+        android:paddingTop="5dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RadioGroup
+                android:id="@+id/tljr_item_build_rg"
+                android:layout_width="fill_parent"
+                android:layout_height="25dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/tljr_item_build_rb1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text="分时"
+                    android:textColor="@color/tljr_txt_checkblack"
+                    android:textSize="@dimen/sp_sixteen" />
+
+                <RadioButton
+                    android:id="@+id/tljr_item_build_rb2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="五日"
+                    android:textColor="@color/tljr_txt_checkblack"
+                    android:textSize="@dimen/sp_sixteen" />
+
+                <RadioButton
+                    android:id="@+id/tljr_item_build_rb3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="日K"
+                    android:textColor="@color/tljr_txt_checkblack"
+                    android:textSize="@dimen/sp_sixteen" />
+            </RadioGroup>
+
+            <ImageView
+                android:id="@+id/tljr_item_build_arrow"
+                android:layout_width="10dp"
+                android:layout_height="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_huisejiantou" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/tljr_statusbarcolor" />
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="120dp" >
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/tljr_item_build_chart1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" />
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/tljr_item_build_chart2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" />
+
+                <com.github.mikephil.charting.charts.CandleStickChart
+                    android:id="@+id/tljr_item_build_chart3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" />
+            </FrameLayout>
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/tljr_item_build_chart4"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:visibility="gone"
+                android:background="@color/tljr_white" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@drawable/img_222fengexian" >
+            </View>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

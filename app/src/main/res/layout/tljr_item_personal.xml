@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/tljr_white" >
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:contentDescription="@null"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp" >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/tljr_item_personal_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/icon"
+        android:textColor="@color/gray"
+        android:textSize="16sp"
+        android:text="jack" />
+
+    <ImageView
+        android:id="@+id/tljr_item_personal_arrow"
+        android:layout_width="5sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:contentDescription="@null"
+        android:src="@drawable/img_xiaojiantou3" />
+
+    <TextView
+        android:id="@+id/tljr_item_personal_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@+id/tljr_item_personal_arrow"
+        android:textColor="@color/lightgray"
+        android:textSize="16sp"
+        android:text="jack2" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/img_space_hight"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/img_shape_space" />
+
+</RelativeLayout>

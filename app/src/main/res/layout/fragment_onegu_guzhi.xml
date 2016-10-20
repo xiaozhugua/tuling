@@ -1,0 +1,753 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/fragment_onegu_guzhi_no_data_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+        <!-- <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="正在加载中"
+             android:padding="10dp"
+             android:gravity="center"
+             android:id="@+id/fragment_onegu_guzhi_no_data_tv"/>-->
+    </LinearLayout>
+
+    <!-- 这是onegu的首页fragment -->
+
+    <com.abct.tljr.kline.gegu.view.OneguGuZhiScrollView
+        android:id="@+id/tljr_scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:descendantFocusability="blocksDescendants">
+
+
+            <LinearLayout
+                android:id="@+id/header_no_data_container"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+
+            </LinearLayout>
+
+            <!--      固定部分        -->
+            <LinearLayout
+                android:id="@+id/header_data_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <!-- 线性布局 -->
+
+                <LinearLayout
+                    android:id="@+id/bj"
+                    android:layout_width="fill_parent"
+                    android:layout_height="130dp"
+                    android:background="@color/tljr_statusbarcolor"
+                    android:orientation="vertical"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="5dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tljr_txt_hq_name1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="名字"
+                            android:textColor="@color/tljr_white"
+                            android:textSize="20sp"/>
+
+                        <TextView
+                            android:id="@+id/tljr_txt_hq_name2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="号码"
+                            android:textColor="@color/tljr_white"
+                            android:textSize="14sp"/>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp">
+
+                        <TextView
+                            android:id="@+id/tljr_txt_hq_now"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="数值"
+                            android:textColor="@color/tljr_white"
+                            android:textSize="34sp"/>
+
+                        <RelativeLayout
+                            android:id="@+id/tljr_txt_hq_item"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:id="@+id/tljr_txt_hq_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="20000"
+                                android:textColor="@color/tljr_white"
+                                android:textSize="12sp"/>
+
+                            <TextView
+                                android:id="@+id/tljr_txt_hq_first"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tljr_txt_hq_time"
+                                android:textColor="@color/tljr_white"
+                                android:textSize="12sp"/>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:paddingRight="10dp">
+
+                            <TextView
+                                android:id="@+id/tljr_txt_hq_change"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="小数点"
+                                android:textColor="@color/tljr_white"
+                                android:textSize="16sp"/>
+
+                            <TextView
+                                android:id="@+id/tljr_txt_hq_changep"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tljr_txt_hq_change"
+                                android:text="百分比"
+                                android:textColor="@color/tljr_white"
+                                android:textSize="16sp"/>
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tljr_txt_hq_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="情况"
+                        android:textColor="@color/tljr_white"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+                <!-- 原先滑动的估值部分 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@color/tljr_white"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tljr_txt_hq_jinkai"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="今开"
+                        android:textColor="@color/gray"
+                        android:textSize="12dp"/>
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/img_222fengexian"/>
+
+                    <TextView
+                        android:id="@+id/tljr_txt_hq_zuoshou"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="昨收"
+                        android:textColor="@color/gray"
+                        android:textSize="12dp"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@drawable/img_222fengexian"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/tljr_white"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tljr_txt_hq_zuidi"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:lineSpacingMultiplier="1.5"
+                        android:textColor="@color/gray"
+                        android:textSize="12dp"/>
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/img_222fengexian"/>
+
+                    <TextView
+                        android:id="@+id/tljr_txt_hq_zuigao"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:lineSpacingMultiplier="1.5"
+                        android:textColor="@color/gray"
+                        android:textSize="12dp"/>
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/img_222fengexian"/>
+
+                    <TextView
+                        android:id="@+id/tljr_txt_hq_52zhoudi"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:lineSpacingMultiplier="1.5"
+                        android:textColor="@color/gray"
+                        android:textSize="12dp"/>
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/img_222fengexian"/>
+
+                    <TextView
+                        android:id="@+id/tljr_txt_hq_52zhougao"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:lineSpacingMultiplier="1.5"
+                        android:textColor="@color/gray"
+                        android:textSize="12dp"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@drawable/img_222fengexian"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/tljr_white"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tljr_txt_hq_changes"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:lineSpacingMultiplier="1.5"
+                        android:textColor="@color/gray"
+                        android:textSize="12dp"/>
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/img_222fengexian"/>
+
+                    <TextView
+                        android:id="@+id/tljr_txt_hq_chengjiaoe"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:lineSpacingMultiplier="1.5"
+                        android:textColor="@color/gray"
+                        android:textSize="12dp"/>
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/img_222fengexian"/>
+
+                    <TextView
+                        android:id="@+id/tljr_txt_hq_shizhi"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:lineSpacingMultiplier="1.5"
+                        android:textColor="@color/gray"
+                        android:textSize="12dp"/>
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/img_222fengexian"/>
+
+                    <TextView
+                        android:id="@+id/tljr_txt_hq_chengjiaojia"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:lineSpacingMultiplier="1.5"
+                        android:textColor="@color/gray"
+                        android:textSize="12dp"/>
+
+                    <TextView
+                        android:id="@+id/tljr_txt_hq_shiyinlv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:lineSpacingMultiplier="1.5"
+                        android:textColor="@color/gray"
+                        android:textSize="12dp"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/tljr_txt_hq_zhenfu"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:lineSpacingMultiplier="1.5"
+                        android:textColor="@color/gray"
+                        android:textSize="12dp"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/tljr_txt_hq_zhouxilv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:lineSpacingMultiplier="1.5"
+                        android:textColor="@color/gray"
+                        android:textSize="12dp"
+                        android:visibility="gone"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@drawable/img_222fengexian"/>
+
+            <TabHost
+                android:id="@+id/tljr_tabhost"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@color/tljr_white"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TabWidget
+                        android:id="@android:id/tabs"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp">
+                    </TabWidget>
+
+                    <ImageView
+                        android:id="@+id/tljr_arrow1"
+                        android:layout_width="800dp"
+                        android:layout_height="10dp"
+                        android:contentDescription="@null"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_yousuanhongtiao"/>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#DEDEDE"/>
+
+                    <FrameLayout
+                        android:id="@android:id/tabcontent"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <com.github.mikephil.charting.charts.LineChart
+                            android:id="@+id/tljr_hq_chart3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="120dp"/>
+
+                        <com.github.mikephil.charting.charts.LineChart
+                            android:id="@+id/tljr_hq_chart6"
+                            android:layout_width="fill_parent"
+                            android:layout_height="120dp"
+                            android:visibility="invisible"/>
+
+                        <com.github.mikephil.charting.charts.CandleStickChart
+                            android:id="@+id/tljr_hq_chart4"
+                            android:layout_width="fill_parent"
+                            android:layout_height="120dp"
+                            android:visibility="invisible"/>
+
+                        <com.github.mikephil.charting.charts.CandleStickChart
+                            android:id="@+id/tljr_hq_chart5"
+                            android:layout_width="fill_parent"
+                            android:layout_height="120dp"
+                            android:visibility="invisible"/>
+
+                        <com.github.mikephil.charting.charts.CandleStickChart
+                            android:id="@+id/tljr_hq_chart1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="120dp"
+                            android:visibility="invisible"/>
+                    </FrameLayout>
+                </LinearLayout>
+            </TabHost>
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/tljr_hq_chart2"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@color/tljr_white"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="#F5F5F5"/>
+            <!-- 每股收益 -->
+
+            <LinearLayout
+                android:id="@+id/fragment_onegu_guzhi_meigushouyi_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@drawable/img_222fengexian"/>
+
+                <TextView
+                    android:id="@+id/fragment_onegu_guzhi_meigushouyi_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="10dp"
+                    android:text="每股收益"
+                    android:textColor="#000000"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/fragment_onegu_guzhi_meigushouyi_tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="比率"
+                    android:textColor="#9B9B9B"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/fragment_onegu_guzhi_meigushouyi_chart"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:visibility="visible">
+            </com.github.mikephil.charting.charts.BarChart>
+
+            <!-- 四个仪表盘：  市盈率， 市净率， 总市值，净市场收益率 -->
+
+            <LinearLayout
+                android:id="@+id/fragment_onegu_guzhi_ybp_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+            <!-- onegu中的估值fragment的四个仪表盘 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <!--
+                             <com.abct.tljr.kline.gegu.view.GaugeChart01View
+                            android:id="@+id/gc1"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp" />
+                        -->
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp" >
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="13dp"
+                                android:src="@drawable/img_yibiaopan" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp" >
+
+                                <ImageView
+                                    android:id="@+id/zhizheng1"
+                                    android:layout_width="20dp"
+                                    android:layout_height="55dp"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:src="@drawable/img_zhizhen" />
+                            </RelativeLayout>
+
+                            <ImageView
+                                android:layout_width="12dp"
+                                android:layout_height="12dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="94dp"
+                                android:src="@drawable/img_zhouxin" />
+                        </FrameLayout>
+
+                        <TextView
+                            android:id="@+id/tv1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="市净率排名（PE）"
+                            android:textColor="#000000"
+                            android:textSize="16dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <!-- <com.abct.tljr.kline.gegu.view.GaugeChart01View
+                            android:id="@+id/gc2"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp" /> -->
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp" >
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="13dp"
+                                android:src="@drawable/img_yibiaopan" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp" >
+
+                                <ImageView
+                                    android:id="@+id/zhizheng2"
+                                    android:layout_width="20dp"
+                                    android:layout_height="55dp"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:src="@drawable/img_zhizhen" />
+                            </RelativeLayout>
+
+                            <ImageView
+                                android:layout_width="12dp"
+                                android:layout_height="12dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="94dp"
+                                android:src="@drawable/img_zhouxin" />
+                        </FrameLayout>
+
+                        <TextView
+                            android:id="@+id/tv2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="总市值排名"
+                            android:textColor="#000000"
+                            android:textSize="16dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <!-- <com.abct.tljr.kline.gegu.view.GaugeChart01View
+                            android:id="@+id/gc3"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp" /> -->
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp" >
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="13dp"
+                                android:src="@drawable/img_yibiaopan" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp" >
+
+                                <ImageView
+                                    android:id="@+id/zhizheng3"
+                                    android:layout_width="20dp"
+                                    android:layout_height="55dp"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:src="@drawable/img_zhizhen" />
+                            </RelativeLayout>
+
+                            <ImageView
+                                android:layout_width="12dp"
+                                android:layout_height="12dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="94dp"
+                                android:src="@drawable/img_zhouxin" />
+                        </FrameLayout>
+
+                        <TextView
+                            android:id="@+id/tv3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="市盈率排名（PB）"
+                            android:textColor="#000000"
+                            android:textSize="16dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <!-- <com.abct.tljr.kline.gegu.view.GaugeChart01View
+                            android:id="@+id/gc4"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp" /> -->
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp" >
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="13dp"
+                                android:src="@drawable/img_yibiaopan" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp" >
+
+                                <ImageView
+                                    android:id="@+id/zhizheng4"
+                                    android:layout_width="20dp"
+                                    android:layout_height="55dp"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:src="@drawable/img_zhizhen" />
+                            </RelativeLayout>
+
+                            <ImageView
+                                android:layout_width="12dp"
+                                android:layout_height="12dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="94dp"
+                                android:src="@drawable/img_zhouxin" />
+                        </FrameLayout>
+
+                        <TextView
+                            android:id="@+id/tv4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="净资产收益率排名"
+                            android:textColor="#000000"
+                            android:textSize="16dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </com.abct.tljr.kline.gegu.view.OneguGuZhiScrollView>
+
+</LinearLayout>

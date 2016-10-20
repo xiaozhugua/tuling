@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+ 
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/tljr_sy_sc"
+        android:layout_width="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_height="fill_parent" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/rl2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp" >
+
+                    <RelativeLayout
+                        android:id="@+id/xiala"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content" >
+
+                        <ImageView
+                            android:id="@+id/tljr_view_title_img"
+                            android:layout_width="3dp"
+                            android:layout_height="15dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/img_dian1"
+                            android:scaleType="fitXY" />
+
+                        <TextView
+                            android:id="@+id/tv_xiala"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="18dp"
+                            android:layout_marginRight="25dp"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="泓倍一号"
+                            android:textColor="@color/drakgray"
+                            android:textSize="11dp" />
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:rotation="270"
+                            android:src="@drawable/img_zuojiantou" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                            android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true" >
+
+                        <TextView
+                            android:id="@+id/guanzhu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:text="关注"
+                            android:textColor="@color/gray"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="8dp"
+                            android:layout_toLeftOf="@id/guanzhu"
+                            android:text="2015/08/08"
+                            android:textColor="@color/gray"
+                            android:textSize="12dp" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/img_space_hight"
+                        android:layout_alignParentBottom="true"
+                        android:background="@drawable/img_shape_space" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp" >
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp"
+                            android:text="上周回报"
+                            android:textColor="@color/gray"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/tv1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="18dp"
+                            android:text="+0%"
+                            android:textColor="@color/red"
+                            android:textSize="22dp" />
+
+                        <TextView
+                            android:layout_width="0.5dp"
+                            android:layout_height="fill_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginBottom="7dp"
+                            android:layout_marginTop="7dp"
+                            android:background="@drawable/img_shape_space" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp"
+                            android:text="本月回报"
+                            android:textColor="@color/gray"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/tv2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="18dp"
+                            android:text="+0%"
+                            android:textColor="@color/red"
+                            android:textSize="22dp" />
+
+                        <TextView
+                            android:layout_width="0.5dp"
+                            android:layout_height="fill_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginBottom="7dp"
+                            android:layout_marginTop="7dp"
+                            android:background="@drawable/img_shape_space" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp"
+                            android:text="最新净值"
+                            android:textColor="@color/gray"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/tv3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="18dp"
+                            android:text="0"
+                            android:textColor="@color/red"
+                            android:textSize="22dp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/chart"
+                    android:layout_width="fill_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="305dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="12dp" >
+
+                    <GridView
+                        android:id="@+id/gridl"
+                        android:scrollbars="none"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:numColumns="2" />
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

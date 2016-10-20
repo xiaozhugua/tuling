@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/tljr_bj"
+    android:overScrollMode="never"
+    android:scrollbars="none" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/tljr_img_fx1"
+            android:layout_width="950dp"
+            android:layout_height="0.5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_fengexian1" />
+
+        <com.abct.tljr.ui.widget.ObservableScrollView
+            android:id="@+id/tljr_sv_forex_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="日期"
+                    android:textColor="@color/tljr_balck"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="0.5px"
+                    android:layout_height="fill_parent"
+                    android:background="#B8B8B8"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="当日资金流入(元)"
+                    android:textColor="@color/tljr_balck"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="0.5px"
+                    android:layout_height="fill_parent"
+                    android:background="#B8B8B8"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="当日余额(元)"
+                    android:textColor="@color/tljr_balck"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="0.5px"
+                    android:layout_height="fill_parent"
+                    android:background="#B8B8B8"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="总余额(元)"
+                    android:textColor="@color/tljr_balck"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="0.5px"
+                    android:layout_height="fill_parent"
+                    android:background="#B8B8B8"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="当日成交净买额(元)"
+                    android:textColor="@color/tljr_balck"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="0.5px"
+                    android:layout_height="fill_parent"
+                    android:background="#B8B8B8"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="买入成交额(元)"
+                    android:textColor="@color/tljr_balck"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="0.5px"
+                    android:layout_height="fill_parent"
+                    android:background="#B8B8B8"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="卖出成交额(元)"
+                    android:textColor="@color/tljr_balck"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="0.5px"
+                    android:layout_height="fill_parent"
+                    android:background="#B8B8B8"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="领涨股"
+                    android:textColor="@color/tljr_balck"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="0.5px"
+                    android:layout_height="fill_parent"
+                    android:background="#B8B8B8"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="领涨股涨跌幅"
+                    android:textColor="@color/tljr_balck"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </com.abct.tljr.ui.widget.ObservableScrollView>
+
+        <ImageView
+            android:id="@+id/tljr_img_fx"
+            android:layout_width="950dp"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/tljr_sv_forex_title"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_fengexian1" />
+
+        <com.abct.tljr.ui.widget.ObservableScrollView
+            android:id="@+id/tljr_sv_forex_items"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tljr_img_fx"
+            android:overScrollMode="never"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </com.abct.tljr.ui.widget.ObservableScrollView>
+    </RelativeLayout>
+
+</HorizontalScrollView>

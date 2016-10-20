@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#96000000" >
+
+        <RelativeLayout
+            android:id="@+id/tljr_hq_zh_menu_header"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/tljr_menu_select"
+            android:gravity="center"
+            android:layoutAnimation="@anim/list_anim_layouts" >
+
+            <ImageView
+                android:id="@+id/tljr_zh_contentimage"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_centerInParent="true"
+                android:contentDescription="@null"
+                android:gravity="center" />
+        </RelativeLayout>
+
+        <TableLayout
+            android:id="@+id/tljr_menu_select"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/tljr_white"
+            android:layoutAnimation="@anim/list_anim_layouts" >
+
+            <TableRow android:paddingTop="25dp" >
+
+                <LinearLayout
+                    android:id="@+id/tljr_grp_zxfz_tianjia"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center_horizontal"
+                        android:contentDescription="@null"
+                        android:src="@drawable/img_tianjiagupiao" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="添加股票"
+                        android:textColor="@color/zhmenubg" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tljr_grp_zxfz_percent"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center_horizontal"
+                        android:contentDescription="@null"
+                        android:src="@drawable/img_gupiaotiaocang"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="股票调仓"
+                        android:textColor="@color/zhmenubg"/>
+                    
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tljr_grp_zxfz_info"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center_horizontal"
+                        android:contentDescription="@null"
+                        android:src="@drawable/img_beizhu"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="历史回测"
+                        android:textColor="@color/zhmenubg"/>
+                    
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:paddingTop="25dp">
+
+                <LinearLayout
+                    android:id="@+id/tljr_grp_zxfz_gaiming"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center_horizontal"
+                        android:contentDescription="@null"
+                        android:src="@drawable/img_fenzugaiming" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="分组改名"
+                        android:textColor="@color/zhmenubg" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tljr_grp_zxfz_fx"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center_horizontal"
+                        android:contentDescription="@null"
+                        android:src="@drawable/img_fenxiangzuhe" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="分享组合"
+                        android:textColor="@color/zhmenubg" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tljr_grp_zxfz_shanchu"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center_horizontal"
+                        android:contentDescription="@null"
+                        android:src="@drawable/img_shanchuzuhe" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="删除组合"
+                        android:textColor="@color/zhmenubg" />
+                </LinearLayout>
+            </TableRow>
+        </TableLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

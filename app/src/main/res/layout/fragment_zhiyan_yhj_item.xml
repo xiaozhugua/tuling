@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/bj"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/img_youhuiquanbeijing"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/mon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp" >
+
+            <TextView
+                android:id="@+id/type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/money"
+                android:layout_marginBottom="3dp"
+                android:text="￥"
+                android:textColor="@color/red"
+                android:textSize="@dimen/dp_twenty" />
+
+            <TextView
+                android:id="@+id/money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/type"
+                android:textColor="@color/red"
+                android:textSize="@dimen/dp_thirty"
+                 />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="@dimen/img_space_hight"
+            android:layout_height="fill_parent"
+            android:layout_margin="20dp"
+            android:background="@drawable/img_fengexian" />
+
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/dp_fourteen"
+            android:text="asdfasdgfaskj" />
+    </LinearLayout>
+
+</RelativeLayout>

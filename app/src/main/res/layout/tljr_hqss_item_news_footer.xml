@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <TextView
+        android:id="@+id/tv_tro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="(本文来自互联网，不代表图灵金融的观点和立场)"
+        android:textColor="@color/lightgray"
+        android:textSize="@dimen/sp_twelve" />
+
+    <LinearLayout
+        android:id="@+id/linear_ly"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/tv_tro"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/ly_zan"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="14dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/img_zanrenshuwaikuang" >
+
+            <TextView
+                android:id="@+id/tv_zan_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:text="2000"
+                android:textColor="@color/lightgray"
+                android:textSize="@dimen/sp_fifteen" />
+
+            <ImageView
+                android:id="@+id/iv_zan"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/tv_zan_num"
+                android:padding="5dp"
+                android:src="@drawable/img_bot_zan" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ly_cai"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+                android:layout_marginBottom="14dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/img_zanrenshuwaikuang" >
+
+            <TextView
+                android:id="@+id/tv_cai_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:text="340"
+                android:textColor="@color/lightgray"
+                android:textSize="@dimen/sp_fifteen" />
+
+            <ImageView
+                android:id="@+id/iv_cai"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/tv_cai_num"
+                android:padding="5dp"
+                android:src="@drawable/img_bot_cai" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_ly"
+        android:text="Text\nText\n"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>

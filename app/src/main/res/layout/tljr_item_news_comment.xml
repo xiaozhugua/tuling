@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+       android:background="#ffffff" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+         android:background="#ffffff"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp" >
+
+        <ImageView
+            android:id="@+id/img_avatar"
+            android:layout_width="35.0dip"
+            android:layout_height="35.0dip"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="12.0dip"
+            android:src="@drawable/img_avatar" />
+
+        <TextView
+            android:id="@+id/tljr_comment_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tljr_comment_name"
+            android:layout_below="@+id/tljr_comment_contents"
+            android:layout_marginTop="15dp"
+            android:text="3小时前"
+            android:textColor="#ff888888"
+            android:textSize="15.0sp" />
+
+        <TextView
+            android:id="@+id/tljr_comment_contents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tljr_comment_time"
+            android:layout_below="@+id/tljr_comment_name"
+            android:layout_marginTop="5.0dip"
+            android:includeFontPadding="false"
+            android:text="这个新闻 "
+            android:textColor="@color/gray"
+            android:textSize="16.0sp" />
+
+        <TextView
+            android:id="@+id/tljr_comment_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="11.0dip"
+            android:layout_toRightOf="@id/img_avatar"
+            android:includeFontPadding="false"
+            android:text="id:9527"
+            android:singleLine="true"
+            android:maxEms="5"
+            android:ellipsize="end"
+            android:textColor="#ff888888"
+            android:textSize="15.0sp" />
+
+        <TextView
+            android:id="@+id/blue_show_zan"
+            android:layout_width="40.0dip"
+            android:layout_height="23.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tljr_comment_contents"
+            android:layout_marginRight="75.0dip"
+            android:layout_marginTop="10.0dip"
+            android:background="#ff6d92d7"
+            android:gravity="center"
+            android:text="已赞"
+            android:textColor="#ffffffff"
+            android:textSize="10.0dip"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/blue_show_cai"
+            android:layout_width="40.0dip"
+            android:layout_height="23.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tljr_comment_contents"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="10.0dip"
+            android:background="#ff6d92d7"
+            android:gravity="center"
+            android:text="已踩"
+            android:textColor="#ffffffff"
+            android:textSize="10.0dip"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/tljr_ly_news_comment_praise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/tljr_comment_time"
+            android:layout_marginRight="70.0dip"
+            android:layout_marginTop="-20dp"
+            android:layout_toLeftOf="@+id/tljr_ly_news_comment_cai"
+            android:background="@drawable/tljr_click"
+            android:padding="15dp" >
+
+            <Button
+                android:id="@+id/tljr_btn_comment_praise"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/zan_gray_c" />
+
+            <TextView
+                android:id="@+id/tljr_tx_comment_praise_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/tljr_btn_comment_praise"
+                android:text="0"
+                android:textColor="#ff888888" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tljr_ly_news_comment_cai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tljr_ly_news_comment_praise"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="-20dp"
+            android:background="@drawable/tljr_click"
+            android:drawablePadding="5.0dip"
+            android:padding="15dp" >
+
+            <Button
+                android:id="@+id/tljr_btn_comment_cai"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/cai_grey_c" />
+
+            <TextView
+                android:id="@+id/tljr_tx_comment_cai_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/tljr_btn_comment_cai"
+                android:text="0"
+                android:textColor="#ff888888" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_comment_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tljr_comment_time"
+            android:layout_below="@+id/tljr_comment_contents"
+            android:textSize="@dimen/sp_twelve"
+            android:textColor="@color/blue"
+              android:visibility="invisible"
+            android:text="删除" />
+
+        <TextView
+            android:id="@+id/tv_comment_vote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/tljr_ly_news_comment_cai"
+            android:layout_alignTop="@+id/img_avatar"
+            android:text="举报"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/sp_twelve"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout1"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_200fengexian" />
+
+</RelativeLayout><!--
+           <ImageView
+            android:id="@+id/img_remenpinglun"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/img_remenpinglun" />
+-->

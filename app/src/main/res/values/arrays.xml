@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="tljr_dot">
+        <item>@drawable/img_yanjiusuoicon</item>
+        <item>@drawable/img_shuju</item>
+        <item>@drawable/img_shequmonichaogudasai</item>
+        <item>@drawable/img_shequniurenbang</item>
+    </string-array>
+    <string-array name="bank_list">
+        <item>0102-中国工商银行</item>
+        <item>0103-中国农业银行</item>
+        <item>0104-中国银行</item>
+        <item>0105-中国建设银行</item>
+        <item>0403-国家邮政局邮政储汇局</item>
+        <item>0307-平安银行股份有限公司</item>
+        <item>0305-中国民生银行</item>
+        <item>0303-中国光大银行</item>
+        <item>0306-广东发展银行</item>
+        <item>0302-中信实业银行</item>
+        <item>0309-兴业银行</item>
+        <item>0304-华夏银行</item>
+        <item>0301-交通银行</item>
+        <item>0308-招商银行</item>
+        <item>0310-上海浦东发展银行</item>
+    </string-array>
+	
+</resources>

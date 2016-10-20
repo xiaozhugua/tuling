@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/img_beijing">
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white">
+	    <TextView 
+	        android:layout_width="fill_parent"
+	        android:layout_height="0.5dp"
+	        android:background="@color/xian_gray"/>
+	    
+	    <RelativeLayout 
+	        android:id="@+id/ask"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="15dp"
+	        android:layout_marginRight="15dp">
+	        <TextView 
+	            android:id="@+id/wen"
+	            android:text="问"
+	            android:textColor="@color/white"
+	            android:layout_width="17dp"
+	            android:layout_height="17dp"
+	            android:gravity="center"
+	            android:textSize="13dp"
+	            android:layout_marginTop="10dp"
+	            android:background="@drawable/textshixi_blue"/>
+	        <TextView 
+	            android:id="@+id/name"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="暮色萧萧"
+	            android:textColor="@color/gray_light"
+	            android:layout_marginTop="10dp"
+	            android:layout_toRightOf="@id/wen"
+	            android:layout_marginLeft="10dp"/>
+	        
+	        <TextView 
+	            android:id="@+id/time"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textColor="@color/gray_light"
+	            android:text="14:04"
+	            android:layout_alignParentRight="true"
+	            android:layout_marginTop="10dp"/>
+	        
+	        <TextView 
+	            android:id="@+id/content"
+	            android:layout_below="@id/name"
+	            android:layout_width="fill_parent"
+	            android:textColor="@color/black"
+	            android:textSize="15dp"
+	            android:layout_marginTop="5dp"
+	            android:layout_height="44dp"
+	            android:lineSpacingMultiplier="1.2"
+	            android:layout_marginBottom="1dp"
+	            android:text="小明来问题：问小明怎么来问问题...小明来问题：问小明怎么来问问题...小明来问题：问小明怎么来问问题...小明来问题：问小明怎么来问问题...小明来问题：问小明怎么来问问题...小明来问题：问小明怎么来问问题..."/>
+	        
+	    </RelativeLayout>
+	    
+	    
+	    <RelativeLayout 
+	        android:id="@+id/rl_blew"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="15dp"
+	        android:layout_marginRight="15dp"
+	        android:layout_marginTop="5dp"
+	        android:layout_below="@id/ask"
+	        >
+	        <TextView 
+		        android:id="@+id/fenge"
+		        android:layout_width="fill_parent"
+		        android:layout_height="0.5dp"
+		        android:background="@color/xian_gray"/>
+	        <TextView 
+	            android:id="@+id/da"
+	            android:text="答"
+	            android:textColor="@color/white"
+	            android:layout_width="17dp"
+	            android:layout_height="17dp"
+	            android:gravity="center"
+	            android:textSize="13dp"
+	            android:layout_marginTop="10dp"
+	            android:background="@drawable/textshixi"/>
+	        <TextView 
+	            android:id="@+id/name2"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="股海舵手"
+	            android:layout_marginTop="10dp"
+	            android:layout_toRightOf="@id/da"
+	            android:textColor="@color/gray_light"
+	            android:layout_marginLeft="10dp"/>
+	        
+	        <TextView 
+	            android:id="@+id/time2"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textColor="@color/gray_light"
+	            android:text="14:04"
+	            android:layout_alignParentRight="true"
+	            android:layout_marginTop="10dp"/>
+	        
+	        <TextView 
+	            android:id="@+id/content2"
+	            android:layout_width="fill_parent"
+	            android:textColor="@color/c_red_text"
+	            android:layout_below="@id/name2"
+	            android:layout_marginTop="5dp"
+	            android:textSize="15dp"
+	            android:layout_height="40dp"
+	            android:lineSpacingMultiplier="1.2"
+	            android:layout_marginBottom="5dp"
+	            android:text="老师来答问题：为什么老师就要来答问题...老师来答问题：为什么老师就要来答问题...老师来答问题：为什么老师就要来答问题...老师来答问题：为什么老师就要来答问题...老师来答问题：为什么老师就要来答问题..."/>
+	    </RelativeLayout>
+	    <TextView 
+	        android:layout_width="fill_parent"
+	        android:layout_height="0.5dp"
+	        android:layout_below="@id/rl_blew"
+	        android:background="@color/xian_gray"
+	        android:layout_marginTop="5dp"/>
+	    
+	    
+    </RelativeLayout>
+
+</RelativeLayout>

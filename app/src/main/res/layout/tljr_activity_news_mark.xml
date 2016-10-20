@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fafafa" >
+
+    <RelativeLayout
+        android:id="@+id/tljr_grp_newsmark_title"
+        android:layout_width="fill_parent"
+        android:layout_height="?attr/TitleHeight"
+        android:paddingTop="?attr/TitlePadding"
+        android:background="?attr/TitleBj" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+        android:paddingTop="?attr/TitlePadding"
+            android:text="名家观点"
+            android:textColor="?attr/TitleTextColor"
+            android:textSize="?attr/TitleTextSize"  />
+
+        <include
+            android:id="@+id/tljr_img_newsmark_back"
+            layout="@layout/tljr_view_back" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/tljr_titleGroup"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/tljr_grp_newsmark_title"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/tljr_txt_my"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="已关注名家"
+                android:textColor="#555555"
+                android:textSize="14dp" />
+
+            <ImageView
+                android:id="@+id/tljr_imageView1"
+                android:layout_width="1dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_230sekuai" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tljr_txt_all"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="全部名家"
+            android:textColor="#555555"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/tljr_mViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tljr_titleGroup1" >
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:id="@+id/tljr_titleGroup1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tljr_titleGroup"
+        android:background="#fafafa"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/tljr_check"
+            android:layout_width="wrap_content"
+            android:layout_height="2dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/dingbu2" />
+
+        <ImageView
+            android:id="@+id/tljr_imageView3"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_200fengexian" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tljr_titleGroup2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:visibility="gone"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/img_jiahao" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="暂无订阅，点击添加"
+            android:textSize="20sp"
+            android:textColor="@color/lightgray" />
+    </LinearLayout>
+
+</RelativeLayout>

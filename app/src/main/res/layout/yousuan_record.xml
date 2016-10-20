@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/bj"/>
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white">
+        <ImageView
+            android:id="@+id/yousuan_record_dian"
+            android:layout_width="10dp"
+            android:layout_height="15dp"
+            android:contentDescription="@null"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/img_dian2"/>
+        <TextView
+            android:id="@+id/record_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/yousuan_record_dian"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:text="交易记录"/>
+    </RelativeLayout>
+    <!-- 记录  -->
+    <RelativeLayout
+        android:id="@+id/zixuan_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white" >
+        <TextView
+            android:id="@+id/tljr_page_zixuan_name"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:text="标的"
+            android:textColor="@color/drakgray"                                                                          
+            android:background="@color/bj"
+            android:textSize="15sp" />
+        <ImageView
+            android:id="@+id/tljr_page_zixuan_fx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tljr_page_zixuan_name"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_fengexian1" />
+        <com.abct.tljr.ui.widget.ObservableScrollView
+            android:id="@+id/tljr_yousuanrecord_title"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tljr_page_zixuan_fx"
+            android:scrollbars="none">
+            <LinearLayout
+                android:id="@+id/tljr_yousuanrecord_title_linear"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" />
+        </com.abct.tljr.ui.widget.ObservableScrollView>
+        <HorizontalScrollView
+            android:id="@+id/tljr_page_zixuan_horizontalScrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tljr_page_zixuan_name"
+            android:scrollbars="none"
+            android:background="@color/bj" >
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+                <ScrollView
+                    android:id="@+id/tljr_page_zixuan_sv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none" >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal" >
+                        <TextView
+                            android:id="@+id/tljr_yousuanrecord_maimai"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="买卖"
+                            android:background="@color/bj"
+                            android:textColor="@color/drakgray"
+                            android:textSize="15sp" />
+                        <TextView
+                            android:id="@+id/tljr_yousuanrecord_shoushu"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="手数"
+                            android:background="@color/bj"
+                            android:textColor="@color/drakgray"
+                            android:textSize="15sp" />
+                        <TextView
+                            android:id="@+id/tljr_yousuanrecord_kaitime"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="开仓时间"
+                            android:background="@color/bj"
+                            android:textColor="@color/drakgray"
+                            android:textSize="15sp" />
+                        <TextView
+                            android:id="@+id/tljr_yousuanrecord_kaiprice"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="开仓价格"
+                            android:background="@color/bj"
+                            android:textColor="@color/drakgray"
+                            android:textSize="15sp" />
+                        <TextView
+                            android:id="@+id/tljr_yousuanrecord_pingtime"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="平仓时间"
+                            android:background="@color/bj"
+                            android:textColor="@color/drakgray"
+                            android:textSize="15sp" />
+                        <TextView
+                            android:id="@+id/tljr_yousuanrecord_pingprice"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="平仓价格"
+                            android:background="@color/bj"
+                            android:textColor="@color/drakgray"
+                            android:textSize="15sp" />
+                        <TextView
+                            android:id="@+id/tljr_yousuanrecord_shouxufei"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="手续费"
+                            android:background="@color/bj"
+                            android:textColor="@color/drakgray"
+                            android:textSize="15sp" />
+                        <TextView
+                            android:id="@+id/tljr_yousuanrecord_pingcangyinkui"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="平仓盈亏"
+                            android:background="@color/bj"
+                            android:textColor="@color/drakgray"
+                            android:textSize="15sp" />
+                        <TextView
+                            android:id="@+id/tljr_yousuanrecord_leijiyinkui"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="累计盈亏"
+                            android:background="@color/bj"
+                            android:textColor="@color/drakgray"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+                </ScrollView>
+                <ImageView
+                    android:id="@+id/tljr_img_fx"
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tljr_page_zixuan_sv_title"
+                    android:layout_marginTop="5dp"
+                    android:contentDescription="@null"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_fengexian1" />
+                <com.abct.tljr.ui.widget.ObservableScrollView
+                    android:id="@+id/tljr_yousuanrecord_items"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tljr_img_fx"
+                    android:scrollbars="none" >
+                    <LinearLayout
+                        android:id="@+id/tljr_yousuanrecord_items_linear"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" />
+                </com.abct.tljr.ui.widget.ObservableScrollView>
+            </RelativeLayout>
+        </HorizontalScrollView>
+    </RelativeLayout>
+</LinearLayout>

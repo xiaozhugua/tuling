@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/tljr_mdy_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:digits="0123456789qwertyuiopasdfghjklzxcvbnm,.*_QWERTYUIOPASDFGHJKLZXCVBNM@#-()"
+        android:hint="请输入原密码"
+        android:inputType="textPassword"
+        android:maxLength="20" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/tljr_mdy_n_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:digits="0123456789qwertyuiopasdfghjklzxcvbnm,.*_QWERTYUIOPASDFGHJKLZXCVBNM@#-()"
+        android:hint="请输入新的密码"
+        android:inputType="textPassword"
+        android:maxLength="20" />
+
+    <EditText
+        android:id="@+id/tljr_mdy_n_rpwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:digits="0123456789qwertyuiopasdfghjklzxcvbnm,.*_QWERTYUIOPASDFGHJKLZXCVBNM@#-()"
+        android:hint="请确认输入新的密码"
+        android:inputType="textPassword"
+        android:maxLength="20" />
+
+</LinearLayout>

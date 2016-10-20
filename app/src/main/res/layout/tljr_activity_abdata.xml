@@ -1,0 +1,135 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/tljr_bj"
+    android:orientation="vertical" >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/activity_ah_no_data_ll"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone">
+
+
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/grp_jzjl_title"
+        android:layout_width="fill_parent"
+        android:layout_height="?attr/TitleHeight"
+        android:background="?attr/TitleBj"
+        android:paddingTop="?attr/TitlePadding" >
+
+        <TextView
+            android:id="@+id/pe_main_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingTop="?attr/TitlePadding"
+            android:text="A/B/H数据"
+            android:textColor="?attr/TitleTextColor"
+            android:textSize="?attr/TitleTextSize" />
+
+        <include
+            android:id="@+id/pe_img_jzjl_fanhui"
+            layout="@layout/tljr_view_back" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/abh_activity_show_ui"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/abdatagrp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/agsj"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:text="@+string/adata"
+                android:textColor="@color/red" />
+
+            <View
+                android:layout_width="0.5px"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:background="#000000"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/bgsj"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:text="@+string/bdata"
+                android:textColor="@+color/black" />
+
+            <View
+                android:id="@+id/ahsj1"
+                android:layout_width="0.5px"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:background="#000000"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/ahsj"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:text="@+string/ahdata"
+                android:textColor="@+color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/img_lanxian"
+                android:layout_width="80dp"
+                android:layout_height="3dp"
+                android:layout_marginLeft="18dp"
+                android:background="@drawable/dingbu2"
+                android:scaleType="fitStart" />
+        </LinearLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+
+      <LinearLayout
+        android:id="@+id/abh_activity_show_error_ui"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical" >
+          
+          
+          
+      </LinearLayout>
+    
+    
+</LinearLayout>

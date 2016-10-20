@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#fafafa"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <View
+                android:id="@+id/seperate_line2222"
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/subscribe_seperate_line"
+                android:visibility="gone"
+               />
+    
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/seperate_line2222"
+        android:background="#fafafa"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="6.0" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent" >
+
+                <View
+                    android:id="@+id/line_down"
+                    android:layout_width="1.3dip"
+                    android:layout_height="24dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="1dp"
+                   
+                    android:background="#eb5041" />
+
+                <ImageView
+                    android:id="@+id/live_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line_down"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/live_point" />
+                
+                <View
+                    android:id="@+id/line_down2"
+                    android:layout_width="1.3dip"
+                    android:layout_height="fill_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="1dp"
+                   android:layout_below="@+id/live_image"
+                    android:background="#eb5041" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/tljr_title_layout_real"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="10.0dip"
+            android:layout_marginTop="10.0dip"
+            android:layout_weight="1.0" >
+
+            <RelativeLayout
+                android:id="@+id/tljr_title_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp" >
+
+                    <TextView
+                    android:id="@+id/tljr_newstime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:textColor="@color/lightgray"
+                    android:text="今天 14:02"
+                    android:textSize="14.0sp" />
+                
+                
+                <TextView
+                    android:id="@+id/tljr_newstitle"
+                    android:layout_below="@+id/tljr_newstime"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dp"
+                    android:layout_marginRight="10.0dip"
+                    android:ellipsize="end"
+                    android:maxLines="5"
+                    android:text="这是标题"
+                    android:textSize="16sp"
+                    android:textColor="@color/gray" />
+
+                
+                <!-- 
+                     <TextView
+                    android:id="@+id/space_hqss"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tljr_newstitle"
+                    android:maxLines="1"
+                    android:text="这是标题"
+                    android:textColor="@color/tljr_text_default"
+                    android:visibility="invisible" />
+                 -->
+                
+           
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

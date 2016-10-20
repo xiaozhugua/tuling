@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F5F5F5"
+    android:orientation="vertical" >
+    
+
+    <!-- main的fragment中的图灵数据九宫格部分的视图 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#ffffff" >
+
+        <ImageView
+            android:id="@+id/layout_rankview_img"
+            android:layout_width="3dp"
+            android:layout_height="10dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="3dp"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_shequniurenbang" />
+
+        <TextView
+            android:id="@+id/layout_rankview_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/layout_rankview_img"
+            android:text="图灵数据"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_222fengexian" />
+    <!-- 在这里添加九宫格部分 -->
+
+    <LinearLayout
+        android:id="@+id/layout_tuling_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:layout_marginBottom="30dp" >
+    </LinearLayout>
+
+</LinearLayout>

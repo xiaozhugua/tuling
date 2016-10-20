@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/tljr_bj" >
+
+    <ImageView
+        android:id="@+id/tljr_img_onezc_bj"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitXY" />
+
+    <RelativeLayout
+        android:id="@+id/tljr_grp_onezc_bj"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tljr_img_onezc_bj"
+        android:background="@color/tljr_bjatitle" >
+
+        <TextView
+            android:id="@+id/tljr_img_onezc_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="图灵金融™票据理财"
+            android:textColor="@color/tljr_white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tljr_img_onezc_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tljr_img_onezc_title"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="8.8%年化收益率,0服务费"
+            android:textColor="@color/tljr_white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/tljr_img_onezc_locate"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/tljr_grp_onezc_bj"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/img_locate" />
+
+    <TextView
+        android:id="@+id/tljr_txt_onezc_locate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tljr_img_onezc_locate"
+        android:layout_marginLeft="3dp"
+        android:layout_toRightOf="@+id/tljr_img_onezc_locate"
+        android:text="广东深圳"
+        android:textColor="@color/gray"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/tljr_img_onezc_type"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignBottom="@+id/tljr_txt_onezc_locate"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/tljr_txt_onezc_locate"
+        android:src="@drawable/img_type" />
+
+    <TextView
+        android:id="@+id/tljr_txt_onezc_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tljr_img_onezc_type"
+        android:layout_marginLeft="3dp"
+        android:layout_toRightOf="@+id/tljr_img_onezc_type"
+        android:text="理财服务"
+        android:textColor="@color/gray"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tljr_txt_onezc_now"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tljr_img_onezc_locate"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="预热中，可预约认购提交投资意愿"
+        android:textColor="@color/tljr_c_green" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tljr_txt_onezc_now"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:id="@+id/tljr_txt_onezc_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:text="2015-06-30"
+            android:textColor="@color/gray"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tljr_txt_onezc_time"
+            android:layout_below="@+id/tljr_txt_onezc_time"
+            android:text="上线时间"
+            android:textColor="@color/gray"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tljr_txt_onezc_goal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="￥8888万"
+            android:textColor="@color/gray"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tljr_txt_onezc_goal"
+            android:layout_below="@+id/tljr_txt_onezc_goal"
+            android:text="目标金额"
+            android:textColor="@color/gray"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tljr_txt_onezc_cost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:text="￥8万"
+            android:textColor="@color/gray"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tljr_txt_onezc_cost"
+            android:layout_below="@+id/tljr_txt_onezc_cost"
+            android:text="单笔出资额"
+            android:textColor="@color/gray"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

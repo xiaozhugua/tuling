@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/toplayout"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="6.0" >
+
+            <View
+                android:id="@+id/line_down2"
+                android:layout_width="1px"
+                android:layout_height="fill_parent"
+                   android:layout_centerHorizontal="true"
+                   android:layout_marginBottom="10dp"
+                android:background="@color/tljr_select_list" />
+ 
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_date"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0" >
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+           	android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:ellipsize="end"
+                android:layout_marginTop="17dp"
+                android:maxLines="5"
+                android:text="2016/04/06 19:00"
+                android:textColor="@color/lightgray"
+                android:textSize="13sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/seperate_line2222"
+    
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="6.0" >
+
+           
+
+            <ImageView
+                android:id="@+id/img_cricle"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="3dp" 
+                 android:layout_centerHorizontal="true"
+              android:src="@drawable/img_morentupian"
+                />
+              <View
+                android:layout_width="1px"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/img_cricle"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@color/tljr_select_list" />
+           
+            
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tljr_title_layout_real"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="6dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1.0" >
+
+            <RelativeLayout
+                android:id="@+id/layout_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+            
+               android:layout_marginBottom="15dp"
+                android:background="@drawable/img_xinwenqipao"
+              >
+                  
+                   <TextView
+                       android:id="@+id/digest"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content" 
+                       android:paddingRight="5dp"
+                       android:text="昨日强势题材熄火，两市跳水沪指半日跌0.76%昨日强势题材熄火，两市跳水沪指半日跌0.76%昨日强势题材熄火，两市跳水沪指半日跌0.76%"
+                       android:textColor="@color/lightgray"
+                       android:textSize="12sp" />
+
+                   <TextView
+                       android:id="@+id/red_tips"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_alignRight="@+id/digest"
+                       android:layout_below="@+id/digest"
+                       android:textColor="@color/redtitlebj"
+                       android:text="查看详情＞＞" />
+ 
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

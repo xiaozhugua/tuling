@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/id_swipe_ly"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ScrollView
+            android:id="@+id/news_scroll"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/ttttop"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="17dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="38dp"
+                        android:text="标题"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp_twenty_fore" />
+
+                    <!--  -->
+
+                    <ImageView
+                        android:id="@+id/img_piyue"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:src="@drawable/img_yipiyue"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/news_sources"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/title"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="18dp"
+                        android:text="来源"
+                        android:textColor="@color/redtitlebj"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/news_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/news_sources"
+                        android:layout_alignBottom="@+id/news_sources"
+                        android:layout_marginLeft="7dp"
+                        android:layout_toRightOf="@+id/news_sources"
+                        android:text="2015-07-21"
+                        android:textColor="#838B8B"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <WebView
+                        android:id="@+id/webView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginRight="13dp"
+                        android:layout_marginTop="5dp" />
+
+                    <TextView
+                        android:id="@+id/tv_tro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/webView1"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:text="(本文来自互联网，不代表图灵金融的观点和立场)"
+                        android:textColor="@color/lightgray"
+                        android:textSize="@dimen/sp_twelve" />
+
+                    <LinearLayout
+                        android:id="@+id/linear_ly"
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:layout_below="@+id/tv_tro"
+                        android:orientation="horizontal"
+                        android:visibility="invisible" >
+
+                        <RelativeLayout
+                            android:id="@+id/ly_zan"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginBottom="14dp"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginRight="25dp"
+                            android:layout_marginTop="14dp"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/img_zanrenshuwaikuang" >
+
+                            <TextView
+                                android:id="@+id/tv_zan_num"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="5dp"
+                                android:gravity="center"
+                                android:text="2000"
+                                android:textColor="@color/lightgray"
+                                android:textSize="@dimen/sp_fifteen" />
+
+                            <ImageView
+                                android:id="@+id/iv_zan"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_centerVertical="true"
+                                android:layout_toLeftOf="@id/tv_zan_num"
+                                android:padding="5dp"
+                                android:src="@drawable/img_bot_zan" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/ly_cai"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginBottom="14dp"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginRight="25dp"
+                            android:layout_marginTop="14dp"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/img_zanrenshuwaikuang" >
+
+                            <TextView
+                                android:id="@+id/tv_cai_num"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="5dp"
+                                android:gravity="center"
+                                android:text="340"
+                                android:textColor="@color/lightgray"
+                                android:textSize="@dimen/sp_fifteen" />
+
+                            <ImageView
+                                android:id="@+id/iv_cai"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_centerVertical="true"
+                                android:layout_toLeftOf="@id/tv_cai_num"
+                                android:padding="5dp"
+                                android:src="@drawable/img_bot_cai" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/cmt_tip"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/linear_ly"
+                        android:background="@color/tljr_bj"
+                        android:visibility="invisible" >
+
+                        <ImageView
+                            android:id="@+id/color2"
+                            android:layout_width="5dp"
+                            android:layout_height="15dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/img_dian2" />
+
+                        <TextView
+                            android:id="@+id/cmt_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="9dp"
+                            android:layout_toRightOf="@+id/color2"
+                            android:text="最新评论"
+                            android:textColor="@color/drakgray"
+                            android:textSize="15sp" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/cmt_ly"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/cmt_tip"
+                        android:orientation="vertical" >
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/btn_more"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@null"
+                    android:text="点击查看更多评论"
+                    android:textColor="@color/tljr_pro_red"
+                    android:textSize="18sp"
+                    android:visibility="gone" >
+                </Button>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Text\nText\n"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+        </ScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <!-- android:background="#ffe3e3e3" -->
+
+    <FrameLayout
+        android:id="@+id/tljr_news_bottom_f"
+        android:layout_width="fill_parent"
+        android:layout_height="44.0dip"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@color/white" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/tljr_ly_btn_news_addCollect"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/tljr_listview_selector2" >
+
+               
+
+                <TextView
+                    android:id="@+id/tljr_btn_news_addCollect_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:layout_centerInParent="true" 
+                    android:layout_marginLeft="5dp"
+               
+                    android:text="收藏"
+                    android:textColor="@color/lightgray"
+                    android:textSize="@dimen/sp_fifteen" />
+                
+                 <Button
+                    android:id="@+id/tljr_btn_news_addCollect"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/tljr_btn_news_addCollect_tv"
+                    android:background="@drawable/img_news_shoucang1" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/tljr_ly_btn_news_AddComment"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/tljr_listview_selector2" >
+
+                
+
+                <TextView
+                    android:id="@+id/tljr_btn_news_AddComment_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                      android:layout_centerInParent="true" 
+                    android:layout_marginLeft="8dp"
+                    android:text="评论"
+                    android:textColor="@color/lightgray"
+                    android:textSize="@dimen/sp_fifteen" />
+                
+                <Button
+                    android:id="@+id/tljr_btn_news_AddComment"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerInParent="true"
+                    android:layout_toLeftOf="@id/tljr_btn_news_AddComment_tv"
+                    android:background="@drawable/img_news_pinglun" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/tljr_ly_btn_news_share"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/tljr_listview_selector2"
+                android:visibility="visible" >
+
+            
+
+                <TextView
+                    android:id="@+id/tljr_btn_news_share_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="5dp"
+                   
+                    android:text="分享"
+                    android:textColor="@color/lightgray"
+                    android:textSize="@dimen/sp_fifteen" />
+                
+                    <Button
+                    android:id="@+id/tljr_btn_news_share"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/tljr_btn_news_share_tv"
+                    android:background="@drawable/img_news_fenxiang" />
+            </RelativeLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/loadinglayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white" >
+
+        <com.abct.tljr.news.widget.CircularProgressView
+            android:id="@+id/web_progress_view"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+        	android:layout_marginBottom="50dp"
+            app:cpv_animAutostart="true"
+            app:cpv_indeterminate="true"
+            app:cpv_thickness="4dp" />
+    </FrameLayout>
+
+</RelativeLayout>

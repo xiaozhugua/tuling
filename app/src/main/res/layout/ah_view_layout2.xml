@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <View
+        android:layout_width="0.5px"
+        android:layout_height="fill_parent"
+        android:background="#B8B8B8"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/ah_code"
+        android:layout_width="30dip"
+        android:layout_height="16dip"
+        android:textColor="#CD3700"
+        android:textSize="8sp" />
+
+    <View
+        android:layout_width="0.5px"
+        android:layout_height="fill_parent"
+        android:background="#B8B8B8"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/ah_name"
+        android:layout_width="70dip"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="8sp" />
+
+    <View
+        android:layout_width="0.5px"
+        android:layout_height="fill_parent"
+        android:background="#B8B8B8"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/h_code"
+        android:layout_width="35dip"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="8sp" />
+
+    <View
+        android:layout_width="0.5px"
+        android:layout_height="fill_parent"
+        android:background="#B8B8B8"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/a_price"
+        android:layout_width="35dip"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="8sp" />
+
+    <View
+        android:layout_width="0.5px"
+        android:layout_height="fill_parent"
+        android:background="#B8B8B8"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/a_inc"
+        android:layout_width="40dip"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="8sp" />
+
+    <View
+        android:layout_width="0.5px"
+        android:layout_height="fill_parent"
+        android:background="#B8B8B8"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/h_price"
+        android:layout_width="42dip"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="8sp" />
+
+    <View
+        android:layout_width="0.5px"
+        android:layout_height="fill_parent"
+        android:background="#B8B8B8"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/h_price_rmb"
+        android:layout_width="30dip"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="8sp" />
+
+    <View
+        android:layout_width="0.5px"
+        android:layout_height="fill_parent"
+        android:background="#B8B8B8"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/h_inc"
+        android:layout_width="35dip"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="8sp" />
+
+    <View
+        android:layout_width="0.5px"
+        android:layout_height="fill_parent"
+        android:background="#B8B8B8"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/ha_ratio"
+        android:layout_width="40dip"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="8sp" />
+
+    <View
+        android:layout_width="0.5px"
+        android:layout_height="fill_parent"
+        android:background="#B8B8B8"
+        android:visibility="visible" />
+
+</LinearLayout>

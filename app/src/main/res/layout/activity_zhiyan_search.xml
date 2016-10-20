@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:flatui="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_beijing" >
+
+    <RelativeLayout
+        android:id="@+id/bar_top"
+        android:layout_width="fill_parent"
+        android:layout_height="?attr/TitleHeight"
+        android:background="?attr/TitleBj"
+        android:paddingTop="?attr/TitlePadding" >
+
+        <TextView
+            android:id="@+id/research_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:includeFontPadding="false"
+            android:paddingTop="?attr/TitlePadding"
+            android:text="发起研究"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+        <include
+            android:id="@+id/btn_back"
+            layout="@layout/tljr_view_back" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/im"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bar_top"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/img_zhiyanxitong" />
+
+    <RelativeLayout
+        android:id="@+id/kuan"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/im"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/biankuan3" >
+
+        <ImageView
+            android:id="@+id/immm"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/img_sousuo" />
+
+        <EditText
+            android:id="@+id/edit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/immm"
+            android:background="#00000000"
+            android:gravity="center"
+            android:hint="请输入股票代码、缩写、名称"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/lightGray"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <com.abct.tljr.ui.widget.ShapeTextView
+        android:id="@+id/chaxun"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/kuan"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/biankuan"
+        android:gravity="center"
+        android:text="确认"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        flatui:bottomLeftRadius="6dp"
+        flatui:bottomRightRadius="6dp"
+        flatui:solidColor="@color/red"
+        flatui:stroke_Color="#D11B1E"
+        flatui:stroke_Width="0dp"
+        flatui:topLeftRadius="6dp"
+        flatui:topRightRadius="6dp"
+        flatui:touchSolidColor="#F5B2B9" />
+
+</RelativeLayout>

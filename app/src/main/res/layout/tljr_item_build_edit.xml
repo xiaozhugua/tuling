@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical" >
+
+            <CheckBox
+                android:id="@+id/tljr_build_edit_cb_type"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="7"
+                android:background="@drawable/tljr_check"
+                android:button="@null"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/tljr_build_edit_type"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="6"
+                android:background="@drawable/img_buildshurukuang" >
+
+                <ImageView
+                    android:id="@+id/tljr_build_edit_typearrow"
+                    android:layout_width="5dp"
+                    android:layout_height="5dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="3dp"
+                    android:src="@drawable/jiantou_03" />
+
+                <TextView
+                    android:id="@+id/tljr_build_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="+"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/sp_fourteen" />
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/tljr_build_edit_et_type"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="6"
+                android:background="@drawable/img_buildshurukuang"
+                android:gravity="center"
+                android:hint="输入系数值"
+                android:inputType="numberDecimal"
+                android:text="1.0"
+                android:textColor="@color/gray"
+                android:textColorHint="@color/lightgray"
+                android:textSize="@dimen/sp_fourteen" >
+
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tljr_build_edit_grp_type"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/img_buildshurukuang"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tljr_build_edit_code"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="类型"
+                android:textColor="@color/gray"
+                android:textColorHint="@color/lightgray"
+                android:textSize="@dimen/sp_fourteen" />
+
+            <ImageView
+                android:id="@+id/tljr_build_edit_codearrow"
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="3dp"
+                android:src="@drawable/jiantou_03" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tljr_build_edit_grp_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/img_buildshurukuang"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tljr_build_edit_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="--"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/sp_fourteen" />
+
+            <ImageView
+                android:id="@+id/tljr_build_edit_namearrow"
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="3dp"
+                android:src="@drawable/jiantou_03" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/img_222fengexian" />
+
+</RelativeLayout>

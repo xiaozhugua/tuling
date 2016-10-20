@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/tljr_white" >
+
+    <View
+        android:id="@+id/tljr_item_basis_spacing"
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@color/tljr_bj" >
+    </View>
+
+    <RelativeLayout
+        android:id="@+id/tljr_item_basis_title"
+        android:layout_width="fill_parent"
+        android:layout_height="25dp"
+        android:layout_below="@+id/tljr_item_basis_spacing" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@drawable/img_222fengexian" >
+        </View>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/img_222fengexian" >
+        </View>
+
+        <TextView
+            android:id="@+id/tljr_item_basis_dif"
+            android:layout_width="80dp"
+            android:layout_height="fill_parent"
+            android:background="@color/tljr_hq_zx_up"
+            android:gravity="center"
+            android:text="-70.82"
+            android:textColor="@color/tljr_white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tljr_item_basis_name"
+            android:layout_width="80dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/img_huise"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:text="IF1511"
+            android:textColor="@color/tljr_white"
+            android:textSize="@dimen/sp_fourteen" />
+
+        <TextView
+            android:id="@+id/tljr_item_basis_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="----"
+            android:textColor="@color/green"
+            android:textSize="@dimen/sp_fourteen" />
+
+        <TextView
+            android:id="@+id/tljr_item_basis_now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/tljr_item_basis_change"
+            android:text="----"
+            android:textColor="@color/green"
+            android:textSize="@dimen/sp_fourteen" />
+
+        <TextView
+            android:id="@+id/tljr_item_basis_changep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tljr_item_basis_change"
+            android:text="----"
+            android:textColor="@color/green"
+            android:textSize="@dimen/sp_fourteen" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tljr_item_basis_title"
+        android:paddingTop="5dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RadioGroup
+                android:id="@+id/tljr_item_basis_rg"
+                android:layout_width="fill_parent"
+                android:layout_height="25dp"
+                android:layout_marginLeft="10dp"
+                    android:visibility="gone"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/tljr_item_basis_rb1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text="分时"
+                    android:textColor="@color/tljr_txt_checkblack"
+                    android:textSize="@dimen/sp_sixteen" />
+
+                <RadioButton
+                    android:id="@+id/tljr_item_basis_rb2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="5日"
+                    android:textColor="@color/tljr_txt_checkblack"
+                    android:textSize="@dimen/sp_sixteen" />
+
+                <RadioButton
+                    android:id="@+id/tljr_item_basis_rb3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="20日"
+                    android:textColor="@color/tljr_txt_checkblack"
+                    android:textSize="@dimen/sp_sixteen" />
+            </RadioGroup>
+
+            <ImageView
+                android:id="@+id/tljr_item_basis_arrow"
+                android:layout_width="10dp"
+                android:layout_height="5dp"
+                    android:visibility="gone"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_huisejiantou" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                    android:visibility="gone"
+                android:background="@color/tljr_statusbarcolor" />
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="120dp" >
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/tljr_item_basisc_chart1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" />
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/tljr_item_basisc_chart2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:visibility="gone" />
+
+                <com.github.mikephil.charting.charts.CandleStickChart
+                    android:id="@+id/tljr_item_basisc_chart3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@drawable/img_222fengexian" >
+            </View>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

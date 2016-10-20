@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:background="@color/white">
+    
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/yousuan_chart"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_weight="1.5"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        android:layout_margin="5dp"
+        android:layout_marginBottom="5dp" />
+
+	<LinearLayout
+	    android:layout_width="0dp"
+	    android:layout_height="150dp"
+	    android:layout_weight="2"
+        android:layout_marginTop="5dp"
+	    android:layout_marginRight="10dp"
+	    android:orientation="vertical">
+	    
+	    <RelativeLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+			android:layout_weight="1"
+	        android:layout_marginTop="5dp"
+	        android:visibility="gone">
+	        
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentLeft="true"
+	            android:textColor="@color/gray_light"
+	            android:text="作者:"/>
+	        
+			<TextView
+			    android:id="@+id/yousuan_author"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentRight="true"
+	            android:textColor="@color/red"
+	            android:text="生生不息"/>                                                                                                                                                                                                                          /	          
+	        
+	       <ImageView
+	           android:layout_width="match_parent"
+	           android:layout_height="0.5dp"
+	           android:contentDescription="@null"
+	           android:scaleType="fitXY"
+	           android:layout_marginTop="2dp"
+	           android:layout_alignParentBottom="true"
+	           android:src="@drawable/img_yousuanxuxian"/>
+	        
+	    </RelativeLayout>
+	    
+	     <RelativeLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+			android:layout_weight="1"
+	        android:layout_marginTop="5dp">
+	        
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentLeft="true"
+	            android:textColor="@color/gray_light"
+	            android:text="当月收益率:"/>
+	        
+			<TextView
+			    android:id="@+id/yousuan_shuoyilu"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentRight="true"
+	            android:textColor="@color/red"
+	            android:text="21.99%"/>                                                                                                                                                                                                                          /	          
+	        
+	       <ImageView
+	           android:layout_width="match_parent"
+	           android:layout_height="0.5dp"
+	           android:contentDescription="@null"
+	           android:scaleType="fitXY"
+	           android:layout_alignParentBottom="true"
+	           android:src="@drawable/img_yousuanxuxian"
+	           android:layout_marginTop="2dp"/>
+	        
+	    </RelativeLayout>
+	    
+	     <RelativeLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+			android:layout_weight="1"
+	        android:layout_marginTop="5dp">
+	        
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentLeft="true"
+	            android:textColor="@color/gray_light"
+	            android:text="最大回撤值:"/>
+	        
+			<TextView
+			    android:id="@+id/yousuan_huice"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentRight="true"
+	            android:textColor="@color/red"
+	            android:text="-4883.38"/>                                                                                                                                                                                                                          /	          
+	        
+	       <ImageView
+	           android:layout_width="match_parent"
+	           android:layout_height="0.5dp"
+	           android:contentDescription="@null"
+	           android:scaleType="fitXY"
+	           android:layout_marginTop="2dp"
+	           android:layout_alignParentBottom="true"
+	           android:src="@drawable/img_yousuanxuxian"/>
+	        
+	    </RelativeLayout>
+	     
+	      <RelativeLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+			android:layout_weight="1"
+	        android:layout_marginTop="5dp">
+	        
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentLeft="true"
+	            android:textColor="@color/gray_light"
+	            android:text="最近更新时间:"/>
+	        
+			<TextView
+			    android:id="@+id/yousuan_updatetime"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentRight="true"
+	            android:textColor="@color/red"
+	            android:text="2小时前"/>                                                                                                                                                                                                                          /	          
+	        
+	       <ImageView
+	           android:layout_width="match_parent"
+	           android:layout_height="0.5dp"
+	           android:contentDescription="@null"
+	           android:scaleType="fitXY"
+	           android:layout_marginTop="2dp"
+	           android:src="@drawable/img_yousuanxuxian"
+	           android:layout_alignParentBottom="true"/>
+	        
+	    </RelativeLayout>
+	     
+	      <RelativeLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+			android:layout_weight="1"
+	        android:layout_marginTop="5dp">
+	        
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentLeft="true"
+	            android:textColor="@color/gray_light"
+	            android:text="饱和度:"/>
+	        
+			<TextView
+			    android:id="@+id/yousuan_baohedu"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentRight="true"
+	            android:textColor="@color/red"
+	            android:text="正常"/>                                                                                                                                                                                                                          /	          
+	        
+	        
+	    </RelativeLayout> 
+	      
+	</LinearLayout>
+    
+    
+</LinearLayout>

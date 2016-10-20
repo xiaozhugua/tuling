@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5" >
+
+    <RelativeLayout
+        android:id="@+id/tljr_activity_grp"
+        android:layout_width="fill_parent"
+        android:layout_height="220dp"
+        android:background="@drawable/img_denglubeijing"
+        android:paddingBottom="20dp" >
+
+        <RelativeLayout
+            android:id="@+id/tljr_grp_login_top"
+            android:layout_width="fill_parent"
+            android:layout_height="?attr/TitleHeight"
+            android:paddingTop="?attr/TitlePadding" >
+
+            <TextView
+                android:id="@+id/tljr_txt_ltext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingTop="?attr/TitlePadding"
+                android:visibility="gone"
+                android:text="登录"
+                android:textColor="?attr/TitleTextColor"
+                android:textSize="?attr/TitleTextSize" />
+
+            <TextView
+                android:id="@+id/tljr_img_regiest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:paddingTop="?attr/TitlePadding"
+                android:text="注册"
+                android:textColor="?attr/TitleTextColor"
+                android:textSize="?attr/TitleTextSize" />
+
+            <include
+                android:id="@+id/tljr_btn_lfanhui"
+                layout="@layout/tljr_view_back" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tljr_grp_login_top"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/img_denglulogo" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tljr_grp_login"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tljr_activity_grp" >
+
+        <RelativeLayout
+            android:id="@+id/tljr_grp_login_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_margin="15dp"
+            android:background="@drawable/shape_circlewhitebj" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@drawable/img_222fengexian"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/img_222fengexian"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/img_zhanghaoicon" >
+            </ImageView>
+
+            <EditText
+                android:id="@+id/tljr_et_lname"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:digits="0123456789qwertyuiopasdfghjklzxcvbnm,.*_QWERTYUIOPASDFGHJKLZXCVBNM@#-()"
+                android:ems="10"
+                android:hint="图灵金融用户名/手机号"
+                android:inputType="phone"
+                android:maxLength="16"
+                android:paddingLeft="30dp"
+                android:textColor="@color/gray"
+                android:textColorHint="@color/lightgray"
+                android:textSize="14sp" >
+            </EditText>
+
+            <ImageView
+                android:id="@+id/tljr_img_login_fgx"
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/tljr_et_lname"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/img_222fengexian"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/tljr_img_login_fgx"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/img_mimaicon" >
+            </ImageView>
+
+            <EditText
+                android:id="@+id/tljr_et_lpwd"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/tljr_img_login_fgx"
+                android:layout_marginLeft="10dp"
+                android:layout_toLeftOf="@+id/tljr_img_scmm"
+                android:background="@null"
+                android:digits="0123456789qwertyuiopasdfghjklzxcvbnm,.*_QWERTYUIOPASDFGHJKLZXCVBNM@#-()"
+                android:ems="10"
+                android:hint="密码"
+                android:inputType="textPassword"
+                android:maxLength="16"
+                android:paddingLeft="30dp"
+                android:textColor="@color/gray"
+                android:textColorHint="@color/lightgray"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/tljr_img_scmm"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@+id/tljr_img_login_fgx"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="12.5dp"
+                android:layout_toLeftOf="@+id/tljr_txt_wjmm"
+                android:src="@drawable/img_shanchumima"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tljr_txt_wjmm"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tljr_img_login_fgx"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:paddingRight="10dp"
+                android:text="忘记密码？"
+                android:textColor="@color/gray"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/tljr_btn_ldenglu"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/tljr_grp_login_edit"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/img_yuananniu"
+            android:text="登  录"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tljr_activity_grp_tishi"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:layout_below="@+id/tljr_grp_login"
+        android:layout_marginTop="20dp" >
+
+        <TextView
+            android:id="@+id/tljr_login_txt_tishi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="或使用以下社交帐号快速登录"
+            android:textColor="@color/gray"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/tljr_login_txt_tishi"
+            android:background="@drawable/img_fengexian"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tljr_login_txt_tishi"
+            android:background="@drawable/img_fengexian"
+            android:scaleType="fitXY" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tljr_activity_grp_tishi"
+        android:layout_marginTop="30dp" >
+
+        <ImageView
+            android:id="@+id/tljr_img_lweibo"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/img_xinlangdenglu" />
+
+        <ImageView
+            android:id="@+id/tljr_img_lweixin"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="40dp"
+            android:layout_toLeftOf="@+id/tljr_img_lweibo"
+            android:src="@drawable/img_weixindenglu" />
+
+        <ImageView
+            android:id="@+id/tljr_img_lqq"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@+id/tljr_img_lweibo"
+            android:src="@drawable/img_qqdenglu" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#66000000"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/img_zhuceanniu"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_above="@id/cancel"
+            android:layout_marginBottom="20dp" >
+
+            <TextView
+                android:id="@+id/youxiang"
+                style="@style/layout_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/img_zhuceanniu"
+                android:gravity="center"
+                android:text="通过邮箱找回"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/phone"
+                style="@style/layout_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/img_zhuceanniu"
+                android:gravity="center"
+                android:text="通过手机找回"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

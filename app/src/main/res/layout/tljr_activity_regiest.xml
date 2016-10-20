@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tljr_bj" >
+
+    <RelativeLayout
+        android:id="@+id/tljr_grp_regiest_title"
+        android:layout_width="fill_parent"
+        android:layout_height="?attr/TitleHeight"
+        android:paddingTop="?attr/TitlePadding"
+        android:background="?attr/TitleBj" >
+
+        <include
+            android:id="@+id/tljr_img_regiest_back"
+            layout="@layout/tljr_view_back" />
+
+        <TextView
+            android:id="@+id/tljr_textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+        android:paddingTop="?attr/TitlePadding"
+            android:text="注册"
+            android:textColor="?attr/TitleTextColor"
+            android:textSize="?attr/TitleTextSize" />
+
+        <TextView
+            android:id="@+id/tljr_txt_regiest_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        android:paddingTop="?attr/TitlePadding"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="普通注册"
+            android:textColor="?attr/TitleTextColor"
+            android:textSize="16dp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/tljr_scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tljr_grp_regiest_title"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp" >
+
+                <ImageView
+                    android:id="@+id/tljr_ImageView03"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/img_150fengexian" />
+
+                <EditText
+                    android:id="@+id/tljr_et_regiest_phone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@null"
+                    android:digits="0123456789"
+                    android:ems="11"
+                    android:gravity="left|center_vertical"
+                    android:hint="请输入手机号码"
+                    android:inputType="phone"
+                    android:maxLength="11" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/tljr_btn_regiest_regiest"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/btn_login"
+                android:text="下一步"
+                android:textColor="@color/tljr_white"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/tljr_textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:text="点击上面按钮“下一步”"
+                android:textColor="@color/lightgray" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

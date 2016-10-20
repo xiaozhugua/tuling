@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:round_tv_attrs="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent" >
+
+
+ 
+
+    <TextView
+        android:id="@+id/tljr_tv_hqss_tags"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+ 	android:textColor="@color/tljr_white" 
+ 	 	android:paddingLeft="2.2dip"
+ 	 	android:paddingRight="2.2dip"
+ 	 	android:paddingTop="0.8dip"
+	android:paddingBottom="0.8dip" 	
+ 	 android:includeFontPadding="false"
+            android:textSize="9sp"
+        android:text="TextView" />
+  
+    
+     <TextView
+                android:id="@+id/chil_tx"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" 
+                android:text="" />
+    
+</RelativeLayout>
+
+ 

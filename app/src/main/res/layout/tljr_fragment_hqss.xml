@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"  >
+
+    <FrameLayout
+        android:id="@+id/tljr_grp_news_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/content_frame_newsfragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RelativeLayout
+                android:id="@+id/tljr_lny_noNet_hqss"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/img_noNet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/action_settings"
+                    android:src="@drawable/img_load_news_default" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img_noNet"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="29dp"
+                    android:text="暂无网络连接，请恢复网络连接后点击重试"
+                    android:textColor="@color/lightgray" />
+            </RelativeLayout>
+            
+             <RelativeLayout
+                android:id="@+id/tljr_lny_noCollect"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/img_noCollect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/action_settings"
+                    android:src="@drawable/img_load_news_default" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img_noCollect"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="29dp"
+                    android:text="暂无收藏，请添加收藏后重试"
+                    android:textColor="@color/lightgray" />
+            </RelativeLayout>
+            
+
+            <RelativeLayout
+                android:id="@+id/tljr_lv_content_hqss"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <android.support.v4.widget.SwipeRefreshLayout
+                    android:id="@+id/id_swipe_ly"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <ListView
+                        android:id="@+id/listview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+                    </ListView>
+                </android.support.v4.widget.SwipeRefreshLayout>
+
+             
+                <!-- 
+                   <ImageView
+                    android:id="@+id/select_date"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginLeft="4dp"
+                    android:visibility="visible"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/img_rili_icon" />
+                
+                 -->
+                
+            </RelativeLayout>
+        </RelativeLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp" >
+
+        <RelativeLayout
+            android:id="@+id/toast_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#e6e6e6"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/toast_refresh_text"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="为您推荐20篇新文章"
+                android:textColor="#969696"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 0.9风格 -->
+    <style name="MyThemeDefault" parent="AppTheme">
+        <item name="StatusBarColor">@color/tljr_balck</item>
+        <item name="TitlePadding">20dip</item>
+        <item name="TitleHeight">70dip</item>
+        <item name="TitleTextSize">18sp</item>
+        <item name="TitleBj">@drawable/img_biaotilan</item>
+        <item name="SearchIcon">@drawable/btn_chazhao</item>
+        <item name="BackIcon">@drawable/btn_fanhui</item>
+        <item name="SettingIcon">@drawable/img_shezhi</item>
+        <item name="leidasaomiao">@drawable/leidasaomiao</item>
+        <item name="leidasaoguang">@drawable/leidasaoguang</item>
+        <item name="tianjiazuhe">@drawable/btn_tianjiazuhe</item>
+        <item name="flushIcon">@drawable/img_shuaxin</item>
+        <item name="avatarbj">@drawable/img_touxiang</item>
+        <item name="synchronizeIcon">@drawable/img_yunduantongbu11</item>
+        <item name="synchronizeIcon1">@drawable/img_yunduantongbu22</item>
+        <item name="arrowDown">@drawable/img_xialajiantou</item>
+        <item name="addGroup">@drawable/img_tianjia11</item>
+        <item name="calculator">@drawable/img_jisuanqi1</item>
+        <item name="TitleTextColor">@color/tljr_text_blue</item>
+        <item name="TitleTishiTextColor">@color/lightgray</item>
+        <item name="Black">@color/gray</item>
+        <item name="GRAY">@color/lightgray</item>
+        <item name="tab_center">@drawable/tabcenter</item>
+        <item name="tab_left">@drawable/tableft</item>
+        <item name="tab_right">@drawable/tabright</item>
+        <item name="tab_color">@color/tljr_txt_checkwhite</item>
+        <item name="BackClick">@drawable/tljr_back</item>
+    </style>
+    <!-- 1.0风格 -->
+    <style name="MyTheme" parent="AppTheme">
+        <item name="android:windowAnimationStyle">@style/AnimFade2</item> 
+        <item name="StatusBarColor">@color/tljr_pro_red</item>
+        <item name="TitlePadding">20dip</item>
+        <item name="TitleHeight">70dip</item>
+        <item name="TitleTextSize">16sp</item>
+        <!-- <item name="TitleBj">@drawable/img_dingtiao</item> -->
+        <item name="TitleBj">@drawable/img_biaotibeijing</item>
+        <item name="SearchIcon">@drawable/img_sousuoicon</item>0
+        <item name="BackIcon">@drawable/img_fanhui</item>
+        <item name="SettingIcon">@drawable/img_shezhi1</item>
+        <item name="leidasaomiao">@drawable/img_leidasaomiao</item>
+        <item name="leidasaoguang">@drawable/img_leidasaoguang</item>
+        <item name="tianjiazuhe">@drawable/btn_tianjiazuhe1</item>
+        <item name="flushIcon">@drawable/img_shuaxin1</item>
+        <item name="avatarbj">@drawable/img_touxiang1</item>
+        <item name="synchronizeIcon">@drawable/img_yunduantongbu1</item>
+        <item name="synchronizeIcon1">@drawable/img_yunduantongbu2</item>
+        <item name="arrowDown">@drawable/img_xialajiantou1</item>
+        <item name="addGroup">@drawable/img_tianjia12</item>
+        <item name="calculator">@drawable/img_jisuanqi2</item>
+        <item name="TitleTextColor">@color/tljr_white</item>
+        <item name="TitleTishiTextColor">@color/tljr_white</item>
+        <item name="Black">@color/tljr_balck</item>
+        <item name="GRAY">@color/lightgray</item>
+        <item name="tab_center">@drawable/tabcenter1</item>
+        <item name="tab_left">@drawable/tableft1</item>
+        <item name="tab_right">@drawable/tabright1</item>
+        <item name="tab_color">@color/tljr_txt_checkwhiteblack</item>
+        <item name="BackClick">@drawable/tljr_back1</item>
+    </style>
+
+    
+
+</resources>

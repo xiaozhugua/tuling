@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+    
+     <TextView
+        android:id="@+id/tljr_zx_nottiaocangdata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:textSize="20sp"
+        android:visibility="gone"
+	    android:text="没有调仓记录"/>
+    
+	<ScrollView
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent">
+		<LinearLayout 
+	    	android:id="@+id/tljr_zx_showtiaocang_linear"
+	    	android:layout_width="match_parent"
+	    	android:layout_height="match_parent"
+	    	android:orientation="vertical">
+		</LinearLayout>
+	</ScrollView>
+    
+</RelativeLayout>

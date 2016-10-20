@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/bj"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/img_youhuiquanbeijing" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/line"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/dp_fourteen" />
+
+            <TextView
+                android:id="@+id/desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:textColor="@color/lightgray"
+                android:textSize="@dimen/dp_ten" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="@dimen/img_space_hight"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toLeftOf="@+id/money"
+            android:background="@drawable/img_fengexian" />
+
+        <TextView
+            android:id="@+id/money"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawableTop="@drawable/img_fenxiang"
+            android:gravity="center"
+            android:text="分享"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/dp_fourteen" />
+    </RelativeLayout>
+
+</RelativeLayout>

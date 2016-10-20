@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tljr_white" >
+
+    <RelativeLayout
+        android:id="@+id/tljr_news_top"
+        android:layout_width="fill_parent"
+        android:layout_height="?attr/TitleHeight"
+        android:paddingTop="?attr/TitlePadding"
+        android:background="?attr/TitleBj" >
+
+        <include
+            android:id="@+id/tljr_img_news_back"
+            layout="@layout/tljr_view_back" />
+
+        <TextView
+            android:id="@+id/tljr_txt_news_from_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          android:paddingTop="?attr/TitlePadding"
+            android:layout_centerHorizontal="true"
+            android:maxLength="15"
+            android:text="@string/news_search"
+            android:textColor="?attr/TitleTextColor"
+            android:textSize="?attr/TitleTextSize" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tljr_news_top"
+        android:background="@color/tljr_bj" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/img_beijingkuang1_1" >
+
+            <ImageView
+                android:id="@+id/img_sousuo"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:padding="10dp"
+                android:src="@drawable/img_sousuo" />
+
+            <ImageView
+                android:id="@+id/img_delete"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="2dp"
+                android:layout_toLeftOf="@+id/img_sousuo"
+                android:padding="10dp"
+                android:src="@drawable/img_shanchumima"
+                android:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/et_seach"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_toLeftOf="@+id/img_delete"
+                android:background="@null"
+                android:gravity="left|center_vertical"
+                android:hint="输入查询的关键字"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:maxLength="50"
+                android:paddingLeft="8dp"
+                android:singleLine="true"
+                android:textColor="@color/gray"
+                android:textSize="15sp" >
+
+                <requestFocus />
+            </EditText>
+        </RelativeLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.01px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/subscribe_seperate_line" />
+        
+        
+    </RelativeLayout>
+
+    
+     <RelativeLayout
+        android:id="@+id/searchContent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/tljr_bj"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout1" >
+        
+         
+        
+        <com.abct.tljr.zrclistview.ZrcListView
+        android:id="@+id/tljr_news_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null" />
+        
+    </RelativeLayout>
+         
+    
+    
+
+    
+
+</RelativeLayout>

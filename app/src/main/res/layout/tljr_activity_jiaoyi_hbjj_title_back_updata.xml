@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/TitleBj" >
+
+    <include
+        android:id="@+id/im_back"
+        layout="@layout/tljr_view_back" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/recharge_tv_title"
+        android:textColor="?attr/TitleTextColor"
+        android:textSize="?attr/TitleTextSize" />
+
+    <RelativeLayout
+        android:id="@+id/title_fresh"
+        android:layout_width="@dimen/dp_fifty"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="center" >
+
+        <ImageView
+            android:layout_width="@dimen/dp_thirtyfive"
+            android:layout_height="@dimen/dp_thirtyfive"
+            android:src="@drawable/title_image_newrefresh" />
+    </RelativeLayout>
+
+</RelativeLayout>

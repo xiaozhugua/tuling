@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/tljr_view_item_newsmark"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/tljr_bjtitle" >
+
+        <ImageView
+            android:id="@+id/tljr_view_item_newsmark_lv"
+            android:layout_width="3dp"
+            android:layout_height="25dp"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_lvtiao" />
+
+        <TextView
+            android:id="@+id/tljr_view_item_newsmark_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tljr_view_item_newsmark_lv"
+            android:text="B"
+            android:textColor="@color/gray"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/tljr_view_item_newsmark_arrow"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/img_zuojiantou" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_height="0.5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_fengexian1" />
+
+    </RelativeLayout>
+
+    <com.abct.tljr.news.mark.CustomListView
+        android:id="@+id/tljr_view_item_newsmark_grp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tljr_view_item_newsmark"
+        android:divider="@color/tljr_transparent"
+        android:dividerHeight="0dp"
+        android:scrollbars="none"
+        android:orientation="vertical" />
+
+</RelativeLayout>

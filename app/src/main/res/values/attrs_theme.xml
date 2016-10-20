@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="StatusBarColor" format="color" />
+    
+	<attr name="TitleHeight" format="dimension" />
+    <attr name="TitlePadding" format="dimension" />
+	<attr name="TitleTextSize" format="dimension" />
+    <attr name="TitleBj" format="reference|color" />
+    <attr name="OccftTitleBj" format="reference|color" />
+    <attr name="SearchIcon" format="reference|color" />
+    <attr name="BackIcon" format="reference|color" />
+    <attr name="SettingIcon" format="reference|color" />
+    <attr name="leidasaomiao" format="reference|color" />
+    <attr name="leidasaoguang" format="reference|color" />
+    <attr name="tianjiazuhe" format="reference|color" />
+    <attr name="flushIcon" format="reference|color" />
+    <attr name="avatarbj" format="reference|color" />
+    <attr name="synchronizeIcon" format="reference|color" />
+    <attr name="synchronizeIcon1" format="reference|color" />
+    <attr name="arrowDown" format="reference|color" />
+    <attr name="addGroup" format="reference|color" />
+    <attr name="calculator" format="reference|color" />
+    <attr name="TitleTextColor" format="color" />
+    <attr name="TitleTishiTextColor" format="color" />
+    <attr name="Black" format="color" />
+    <attr name="GRAY" format="color" />
+
+    
+    
+    <attr name="tab_center" format="reference" />
+    <attr name="tab_left" format="reference" />
+    <attr name="tab_right" format="reference" />
+    <attr name="tab_color" format="color" />
+    <attr name="BackClick" format="reference" />
+    
+  
+    
+</resources>

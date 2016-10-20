@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="80dp"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="7dp"
+        android:layout_marginTop="2dp" >
+
+        <RelativeLayout
+            android:id="@+id/tljr_grp_biditem"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" >
+
+            <TextView
+                android:id="@+id/tljr_page_zixuan_nowprice"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:singleLine="true"
+                android:text="--"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+            
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="80dp"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="7dp"
+        android:layout_marginTop="2dp" >
+        <RelativeLayout
+            android:id="@+id/tljr_grp_changeitem"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" >
+            <TextView
+                android:id="@+id/tljr_page_zixuan_change"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:singleLine="true"
+                android:text="--"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+    
+    <TextView
+        android:id="@+id/tljr_page_zixuan_changeprice"
+        android:layout_width="80dp"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="--"
+        android:textStyle="bold"
+        android:textColor="@color/lightgray"
+        android:textSize="14sp" />
+
+    <RelativeLayout
+        android:id="@+id/tljr_grp_askitem"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent" >
+
+        <TextView
+            android:id="@+id/tljr_page_zixuan_yclose"
+            android:layout_width="80dp"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="--"
+            android:textStyle="bold"
+            android:textColor="@color/lightgray"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tljr_page_zixuan_kaipanjia"
+        android:layout_width="80dp"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="--"
+        android:textStyle="bold"
+        android:textColor="@color/lightgray"
+        android:textSize="14sp" />
+
+</LinearLayout>

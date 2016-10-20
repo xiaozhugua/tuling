@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+ 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="38dp" >
+ 
+        <ImageView
+            android:id="@+id/rankview_img"
+            android:layout_width="3dp"
+            android:layout_height="10dp"
+            android:scaleType="fitXY"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="3dp"
+            android:contentDescription="@null"
+            android:src="@drawable/img_shequmonichaogudasai" />
+ 
+        <TextView
+            android:id="@+id/rankview_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/rankview_img"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:text="图灵555" />
+ 
+        <TextView
+            android:id="@+id/tljr_rankview_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/rankview_text"
+            android:textColor="@color/black"
+            android:layout_marginLeft="5dp"
+            android:text="sdfas"/>
+        
+        <LinearLayout
+            android:id="@+id/tljr_rankview_more"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal">
+ 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="7dp"
+                android:textColor="?attr/GRAY"
+                android:textSize="11dp" 
+                android:text="更多" />
+            
+            <ImageView
+                android:id="@+id/tljr_rankview_more_image"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:contentDescription="@null"
+                android:layout_gravity="center_vertical"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_gengduojiantou"/>
+            
+        </LinearLayout>
+        
+    </RelativeLayout>
+ 
+    <android.support.v4.view.ViewPager
+        android:id="@+id/tljr_rankview_jingwu_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="240dp" />
+ 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp" >
+ 
+        <LinearLayout
+            android:id="@+id/rankview_footer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" />
+        
+    </RelativeLayout>
+ 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_222fengexian" />
+ 
+</LinearLayout>

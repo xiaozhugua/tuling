@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/ly_faqi"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dp_eighty_five"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/moremoremorelightgray" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout4"
+            android:layout_width="@dimen/dp_fifty_five"
+            android:layout_height="@dimen/dp_fifty_five"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_ten"
+            android:background="@drawable/img_touxiangkuang" >
+
+            <ImageView
+                android:id="@+id/img_avatar"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:src="@drawable/touxiang" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/relativeLayout4"
+            android:layout_marginLeft="@dimen/dp_ten"
+            android:layout_toEndOf="@+id/relativeLayout4"
+            android:layout_toRightOf="@+id/relativeLayout4"
+            android:text="暮色萧萧"
+            android:textSize="@dimen/sp_twelve" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignLeft="@+id/tv_user_name"
+            android:layout_below="@+id/tv_user_name"
+            android:layout_marginTop="@dimen/dp_five"
+            android:src="@drawable/img_dav1" />
+
+        <TextView
+            android:id="@+id/tv_user_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageView"
+            android:layout_marginLeft="@dimen/dp_eight"
+            android:layout_toEndOf="@+id/imageView"
+            android:layout_toRightOf="@+id/imageView"
+            android:text="Lv 12"
+            android:textColor="@color/lightgray"
+            android:textSize="@dimen/sp_fifteen" />
+
+        <TextView
+            android:id="@+id/tv_user_support"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_user_name"
+            android:layout_below="@+id/imageView"
+            android:layout_marginTop="@dimen/dp_five"
+            android:text="累计发起: 3 / 累计支持: 20"
+            android:textColor="@color/lightgray"
+            android:textSize="@dimen/sp_twelve" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="@dimen/dp_eighty_five"
+            android:layout_height="@dimen/dp_twentyfive"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/dp_five"
+            android:layout_toRightOf="@+id/tv_user_name"
+            android:background="@drawable/img_zhichibeijing"
+            android:gravity="center"
+            android:text="支持:10元"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_thirteen" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/textView2"
+            android:layout_toRightOf="@+id/textView2" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/focus"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/img_research_follow"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="18dp"
+                        android:src="@drawable/img_guanzhu" />
+
+                    <TextView
+                     android:id="@+id/focust"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img_research_follow"
+                        android:gravity="center"
+                        android:text="关注"
+                        android:textColor="@color/lightgray"
+                        android:textSize="@dimen/sp_twelve" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="@dimen/dp_ten"
+                    android:background="@color/moremorelightgray" >
+                </View>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:id="@+id/img_research_treefriend"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="18dp"
+                        android:src="@drawable/img_haoyou" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img_research_treefriend"
+                        android:gravity="center"
+                        android:text="加为好友"
+                        android:textColor="@color/lightgray"
+                        android:textSize="@dimen/sp_twelve" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/moremorelightgray" >
+        </View>
+    </RelativeLayout>
+
+</RelativeLayout>

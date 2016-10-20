@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+     android:background="#ff000000"
+    android:orientation="vertical" >
+
+    
+    
+    <RelativeLayout
+        android:id="@+id/tljr_news_top"
+        android:layout_width="fill_parent"
+        android:layout_height="?attr/TitleHeight"
+        android:paddingTop="?attr/TitlePadding"
+        android:background="?attr/TitleBj" >
+
+        <include
+            android:id="@+id/tljr_img_news_back"
+            layout="@layout/tljr_view_back" />
+
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/tljr_click"
+            android:onClick="svaePic" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:onClick="svaePic"
+                android:text="保存"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tljr_txt_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="14dp"
+            android:maxLength="15"
+            android:text="1/1"
+            android:textColor="?attr/TitleTextColor"
+            android:textSize="?attr/TitleTextSize"
+            android:visibility="visible" />
+        
+    </RelativeLayout>
+    
+    
+    
+    
+    
+    <com.abct.tljr.news.widget.ImageViewPager
+                    android:id="@+id/imgeview_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                />
+    
+    
+     
+
+     
+
+</LinearLayout>

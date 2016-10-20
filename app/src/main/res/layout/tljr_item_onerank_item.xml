@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="@color/tljr_white" >
+
+    <ImageView
+        android:id="@+id/tljr_rank_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_margin="15dp"
+        android:background="@drawable/img_zuidashouyi" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/tljr_rank_icon"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tljr_rank_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="总收益榜"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/sp_fourteen" />
+
+        <TextView
+            android:id="@+id/tljr_rank_high"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tljr_rank_name"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/lightgray"
+            android:textSize="@dimen/sp_twelve"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tljr_rank_high1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tljr_rank_high"
+            android:layout_toRightOf="@+id/tljr_rank_high"
+            android:textColor="@color/red"
+            android:textSize="@dimen/sp_twelve"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tljr_rank_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/tljr_rank_arrow"
+        android:text="时间说明一切"
+        android:textColor="@color/lightgray"
+        android:textSize="@dimen/sp_twelve" />
+
+    <ImageView
+        android:id="@+id/tljr_rank_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/img_xiaojiantou3" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="0.2dp"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_fengexian1" />
+
+</RelativeLayout>

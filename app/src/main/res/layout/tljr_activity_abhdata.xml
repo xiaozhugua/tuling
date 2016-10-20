@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/tljr_bj" 
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/grp_jzjl_title"
+        android:layout_width="fill_parent"
+        android:layout_height="?attr/TitleHeight"
+        android:paddingTop="?attr/TitlePadding"
+        android:background="?attr/TitleBj" >
+
+        <TextView
+            android:id="@+id/pe_main_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        android:paddingTop="?attr/TitlePadding"
+            android:layout_centerInParent="true"
+            android:text="沪港通数据"
+            android:textColor="?attr/TitleTextColor"
+            android:textSize="?attr/TitleTextSize" />
+
+        <include
+            android:id="@+id/pe_img_jzjl_fanhui"
+            layout="@layout/tljr_view_back" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/agsj"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:text="沪股通历史数据"
+            android:textColor="@color/red" />
+
+        <View
+            android:layout_width="0.5px"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:background="#000000"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/bgsj"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:text="港股通历史数据"
+            android:textColor="@+color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/img_lanxian"
+            android:layout_width="80dp"
+            android:layout_height="3dp"
+            android:layout_marginLeft="18dp"
+            android:background="@drawable/dingbu2"
+            android:scaleType="fitStart" />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</LinearLayout>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dslv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     
+    
+    <RelativeLayout
+        android:id="@+id/tljr_delete_header"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/TitleHeight"
+        android:background="?attr/TitleBj"
+        android:baselineAligned="false">
+        
+        <include
+            android:id="@+id/tljr_tiaocang_fanhui"
+            layout="@layout/tljr_view_back"
+            android:layout_width="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_height="50dp" />
+       
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="编辑"/>
+        
+        <TextView
+            android:id="@+id/deletequanxian"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/white"
+            android:layout_marginRight="10dp"
+            android:text="全选"/>
+        
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:id="@+id/delete_header"
+        android:layout_below="@+id/tljr_delete_header"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+        
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:gravity="left|center"
+            android:paddingLeft="30dp"
+            android:textColor="@color/black"
+            android:text="名称"/>
+        
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="置顶"/>
+        
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:gravity="right|center"
+            android:paddingRight="30dp"
+            android:textColor="@color/black"
+            android:text="拖动"/>
+        
+    </LinearLayout>
+    
+    <ImageView
+        android:id="@+id/headerdivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        android:layout_below="@+id/delete_header"
+        android:src="@drawable/img_200fengexian"/>
+    
+    <LinearLayout 
+        android:id="@+id/deletelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+        
+        <Button
+            android:id="@+id/deletezixuangu_quxiao"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@color/white"
+            android:text="取消"/>
+    
+        <ImageView
+            android:layout_height="50dp"
+            android:layout_width="1dp"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_200fengexian"/>
+        
+        <Button
+            android:id="@+id/deletezixuangu_sure"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@color/white"
+            android:text="删除"/>
+        
+    </LinearLayout>
+    
+    <ImageView
+        android:id="@+id/layoutdivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        android:layout_above="@+id/deletelayout"
+        android:src="@drawable/img_200fengexian"/>
+    
+    <com.abct.tljr.hangqing.widget.dragsortlistview.DragSortListView
+        android:id="@+id/deletelist"
+        android:layout_above="@+id/layoutdivider"
+        android:layout_below="@+id/headerdivider"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        dslv:collapsed_height="1px"  
+        dslv:drag_enabled="true"  
+        dslv:drag_handle_id="@id/sortdrog"  
+        dslv:drag_scroll_start="0.33"  
+        dslv:slide_shuffle_speed="0.3"
+        dslv:float_alpha="0.6"
+        dslv:sort_enabled="true"
+        dslv:drag_start_mode="onMove"
+        dslv:float_background_color="@color/bj"/>
+    
+    
+</RelativeLayout>

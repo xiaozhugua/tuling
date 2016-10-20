@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_222fengexian" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        android:background="@color/bj" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="合约"
+            android:textColor="@color/drakgray"
+            android:textSize="15sp" />
+
+        <RelativeLayout
+            android:id="@+id/forign_nowprice_relative"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1.5" >
+            <ImageView
+                android:id="@+id/forign_nowprice_arrow"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@null"
+                android:src="@drawable/img_arraw_up"
+                android:visibility="invisible"/>
+            <TextView
+                android:id="@+id/zixuan_nowprice"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_toLeftOf="@+id/forign_nowprice_arrow"
+                android:gravity="right|center"
+                android:text="当前价"
+                android:textColor="@color/drakgray"
+                android:textSize="15sp" />
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/forign_zhangdiefu_relative"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1" >
+            <ImageView
+                android:id="@+id/forign_zhangdiefu_arrow"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@null"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/img_arraw_up"
+                android:visibility="invisible"/>
+            <TextView
+                android:id="@+id/forign_zhangdiefu"
+                android:layout_toLeftOf="@+id/forign_zhangdiefu_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:gravity="center"
+                android:text="涨跌幅"
+                android:textColor="@color/drakgray"
+                android:textSize="15sp" />
+        </RelativeLayout>
+        
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_222fengexian" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/foreign_swiperefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/foreign_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+   </android.support.v4.widget.SwipeRefreshLayout>
+
+   	<RelativeLayout
+        android:id="@+id/forign_reset"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/foreign_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="数据获取失败,请重新加载" />
+        
+         <Button
+            android:id="@+id/forign_rebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:background="@drawable/nonet_bu_shape"
+            android:layout_above="@+id/foreign_tip"
+            android:layout_marginBottom="10dp"
+            android:text="重新加载" />
+        
+    </RelativeLayout>
+   	
+</LinearLayout>

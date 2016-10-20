@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tljr_hq_zx_header" >
+
+    <RelativeLayout
+        android:id="@+id/tljr_grp_onepersoninfo_title"
+        android:layout_width="fill_parent"
+        android:layout_height="?attr/TitleHeight"
+        android:paddingTop="?attr/TitlePadding"
+        android:background="@color/oneperson_bg" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:layout_toLeftOf="@+id/tljr_img_onepersoninfo_tianjia"
+            android:layout_toRightOf="@+id/tljr_img_onepersoninfo_fanhui" >
+
+            <TextView
+                android:id="@+id/tljr_txt_onepersoninfo_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:singleLine="true"
+                android:textColor="?attr/TitleTextColor"
+                android:textSize="?attr/TitleTextSize" />
+
+            <TextView
+                android:id="@+id/tljr_txt_onepersoninfo_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tljr_txt_onepersoninfo_title"
+                android:layout_centerHorizontal="true"
+                android:textColor="?attr/TitleTextColor"
+                android:textSize="10dp" />
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/tljr_img_onepersoninfo_fanhui"
+            layout="@layout/tljr_view_back" />
+
+        <RelativeLayout
+            android:id="@+id/tljr_img_onepersoninfo_tianjia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp" >
+
+            <ImageView
+                android:id="@+id/tljr_img_hq_tongbu"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="18dp"
+                android:src="?attr/addGroup" />
+
+            <TextView
+                android:id="@+id/tljr_txt_hq_tongbu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tljr_img_hq_tongbu"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="3dp"
+                android:text="加入自选"
+                android:textColor="?attr/TitleTextColor"
+                android:textSize="8dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tljr_grp_onepersoninfo_title"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/oneperson_header"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@color/oneperson_bg" >
+
+                <TextView
+                    android:id="@+id/onepersoninfo_zongtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="18dp"
+                    android:text="总收益"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tljr_txt_onepersoninfo_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/onepersoninfo_zongtext"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:text="36.75%"
+                    android:textColor="@color/white"
+                    android:textSize="40dp" />
+
+                <TextView
+                    android:id="@+id/onepersoninfo_zuhepercent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tljr_txt_onepersoninfo_all"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"
+                    android:text="总收益排行跑赢(沪深)99.71%组合"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:visibility="invisible" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="净值"
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:id="@+id/tljr_txt_onepersoninfo_jz"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="1.3625"
+                                android:textColor="@color/white" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="日收益"
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:id="@+id/tljr_txt_onepersoninfo_day"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="1.3625"
+                                android:textColor="@color/white" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="月收益"
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:id="@+id/tljr_txt_onepersoninfo_month"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="1.3625"
+                                android:textColor="@color/white" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/onepersoninfo_param"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/oneperson_header"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="beta值"
+                            android:textColor="@color/zhmenubg" />
+
+                        <TextView
+                            android:id="@+id/tljr_txt_onepersoninfo_beta"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="3dp"
+                            android:text="1.4996"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="3dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@null"
+                    android:src="@drawable/img_fengexian" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="sharpe值"
+                            android:textColor="@color/zhmenubg" />
+
+                        <TextView
+                            android:id="@+id/tljr_txt_onepersoninfo_sharpe"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="3dp"
+                            android:text="0.6587"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="3dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@null"
+                    android:src="@drawable/img_fengexian" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="alpha值"
+                            android:textColor="@color/zhmenubg" />
+
+                        <TextView
+                            android:id="@+id/tljr_txt_onepersoninfo_alpha"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="3dp"
+                            android:text="-0.0012"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="3dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@null"
+                    android:src="@drawable/img_fengexian" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="最大回撤值"
+                            android:textColor="@color/zhmenubg" />
+
+                        <TextView
+                            android:id="@+id/tljr_txt_onepersoninfo_zdhc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="3dp"
+                            android:text="-26.87%"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/onepersoninfo_beizhu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/onepersoninfo_param"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal" >
+
+                <View
+                    android:id="@+id/onepersoninfo_fengxian"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/img_space_hight"
+                    android:background="@drawable/img_shape_space"
+                    android:contentDescription="@null" />
+
+                <TextView
+                    android:layout_width="45dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/tljr_shape_circle_text"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="备注"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tljr_txt_onepersoninfo_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="65dp"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:id="@+id/onepersoninfo_show"
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/img_xiaojiantou3" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/onepersoninfo_fengxian2"
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:layout_below="@+id/onepersoninfo_beizhu"
+                android:background="@color/tljr_hq_zx_divider"
+                android:contentDescription="@null" />
+
+            <TextView
+                android:id="@+id/onepersoninfo_divider"
+                android:layout_width="match_parent"
+                android:layout_height="7dp"
+                android:layout_below="@+id/onepersoninfo_fengxian2"
+                android:background="@color/oneperson_divider" />
+
+            <TextView
+                android:id="@+id/onepersoninfo_fengxian3"
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:layout_below="@+id/onepersoninfo_divider"
+                android:background="@color/tljr_hq_zx_divider"
+                android:contentDescription="@null" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/tljr_onepersoninfo_chart"
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/onepersoninfo_fengxian2"
+                android:layout_marginBottom="7dp"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/onepersoninfo_fengxian4"
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:layout_below="@+id/tljr_onepersoninfo_chart"
+                android:background="@color/tljr_hq_zx_divider"
+                android:contentDescription="@null" />
+
+            <TextView
+                android:id="@+id/onepersoninfo_divider2"
+                android:layout_width="match_parent"
+                android:layout_height="7dp"
+                android:layout_below="@+id/onepersoninfo_fengxian4"
+                android:background="@color/oneperson_divider" />
+
+            <TextView
+                android:id="@+id/onepersoninfo_fengxian5"
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:layout_below="@+id/onepersoninfo_divider2"
+                android:background="@color/tljr_hq_zx_divider"
+                android:contentDescription="@null" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/onepersoninfo_fengxian5"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/tljr_bjtitle" >
+
+                    <View
+                        android:id="@+id/tljr_onepersoninfo_view"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_centerHorizontal="true" />
+
+                    <TextView
+                        android:id="@+id/tljr_onepersoninfo_own"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toLeftOf="@+id/tljr_onepersoninfo_view"
+                        android:gravity="center"
+                        android:text="当前持仓"
+                        android:textColor="@color/red" />
+
+                    <ImageView
+                        android:id="@+id/tljr_onepersoninfo_fengxian"
+                        android:layout_width="2dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/tljr_onepersoninfo_view"
+                        android:src="@drawable/img_fengexian" />
+
+                    <TextView
+                        android:id="@+id/tljr_onepersoninfo_history"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@+id/tljr_onepersoninfo_fengxian"
+                        android:gravity="center"
+                        android:text="历史调仓"
+                        android:textColor="@color/gray" />
+
+                    <ImageView
+                        android:id="@+id/tljr_onepersoninfo_check"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toLeftOf="@+id/tljr_onepersoninfo_view"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_hongdi" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/tljr_grp_onepersoninfo_own"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical" >
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/onepersoninfo_footer1"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:gravity="center"
+                        android:text="没有当前持仓"
+                        android:visibility="gone" />
+                    
+                </LinearLayout>
+
+                <ScrollView
+                    android:id="@+id/tljr_sv_onepersoninfo_history"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:id="@+id/tljr_grp_onepersoninfo_history"
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:orientation="vertical" />
+
+                        <TextView
+                            android:id="@+id/onepersoninfo_footer2"
+                            android:layout_width="match_parent"
+                            android:layout_height="300dp"
+                            android:gravity="center"
+                            android:text="没有历史调仓"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

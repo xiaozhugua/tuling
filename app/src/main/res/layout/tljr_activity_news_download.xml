@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"  >
+ 
+    <RelativeLayout
+        android:id="@+id/tljr_news_top"
+        android:layout_width="fill_parent"
+        android:layout_height="?attr/TitleHeight"
+        android:paddingTop="?attr/TitlePadding"
+        android:background="?attr/TitleBj" >
+ 
+        <TextView
+            android:id="@+id/tljr_txt_news_from_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLength="15"
+        android:paddingTop="?attr/TitlePadding"
+        android:layout_centerHorizontal="true"
+            android:text="离线下载管理"
+            android:textColor="?attr/TitleTextColor"
+            android:textSize="?attr/TitleTextSize" />
+ 
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/tljr_click"
+        android:paddingTop="?attr/TitlePadding"
+            android:onClick="btnStart_download" >
+ 
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:onClick="btnStart_download"
+                android:text="启动"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+        </RelativeLayout>
+ 
+        <include
+            android:id="@+id/tljr_img_news_back"
+            layout="@layout/tljr_view_back" 
+            />
+    </RelativeLayout>
+ 
+    <ScrollView
+        android:id="@+id/downloadScroll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/tljr_news_top" >
+ 
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="26dp"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical" >
+ 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="离线设置"
+                android:textColor="@color/lightgray"
+                android:textSize="12sp" />
+ 
+            <View style="@style/subscribe_seperate_line2" />
+ 
+            <RelativeLayout
+                android:id="@+id/image_download_news"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+ 
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="下载图片"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+ 
+                <CheckBox
+                    android:id="@+id/btn_image_download_news"
+                    android:layout_width="40dp"
+                    android:layout_height="22dp"
+                       android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/tljr_news_download"
+                    android:button="@null" />
+ 
+                
+ 
+            </RelativeLayout>
+ 
+            <View style="@style/subscribe_seperate_line2" />
+ 
+            <RelativeLayout
+                android:id="@+id/timing_download_news"
+                android:layout_width="wrap_content"
+                android:onClick="download_timePicker"
+                android:layout_height="wrap_content" >
+ 
+                
+                <TextView
+                    android:id="@+id/timepicker_download"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/textView3"
+                    android:layout_alignBottom="@+id/textView3"
+                    android:layout_toLeftOf="@+id/btn_timing_download_news"
+                    android:layout_marginRight="10dp"
+                           android:layout_centerVertical="true"
+                           android:textColor="@color/tljr_djbj"
+                           android:onClick="download_timePicker"
+                           android:textSize="15sp"
+                    android:text="7:30" />
+                
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="WiFi定时离线下载"
+              android:textColor="@color/black"
+              android:onClick="download_timePicker"
+                    android:textSize="16sp" />
+ 
+                <CheckBox
+                    android:id="@+id/btn_timing_download_news"
+                    android:layout_width="40dp"
+                    android:layout_height="22dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/tljr_news_download"
+                        android:layout_centerVertical="true"
+                    android:button="@null" />
+            </RelativeLayout>
+ 
+            <View style="@style/subscribe_seperate_line2" />
+ 
+                   <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="选择频道"
+                android:textColor="@color/lightgray"
+                android:layout_alignParentBottom="true"
+                android:textSize="12sp" />
+ 
+        
+             <CheckBox
+              android:id="@+id/download_choose_all"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/tljr_news_download2"
+            android:layout_marginRight="5dp"
+            android:button="@null" />
+ 
+             <TextView
+                 android:id="@+id/textView4"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignBaseline="@+id/download_choose_all"
+                 android:layout_alignBottom="@+id/download_choose_all"
+                 android:layout_toLeftOf="@+id/download_choose_all"
+                 android:text="全选" />
+ 
+              </RelativeLayout>
+ 
+            <View style="@style/subscribe_seperate_line2" />
+ 
+            <com.abct.tljr.news.channel.view.ChannelListView
+                android:id="@+id/downloadListView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:divider="@null" />
+        </LinearLayout>
+    </ScrollView>
+ 
+</RelativeLayout>

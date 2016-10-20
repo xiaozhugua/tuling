@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/tljr_bj" >
+
+    <RelativeLayout
+        android:id="@+id/tljr_mark_grp_title"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/TitleHeight"
+        android:background="?attr/TitleBj"
+        android:paddingTop="?attr/TitlePadding" >
+
+        <include
+            android:id="@+id/tljr_mark_btn_lfanhui"
+            layout="@layout/tljr_view_back" />
+
+        <TextView
+            android:id="@+id/tljr_mark_txt_ltext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingTop="?attr/TitlePadding"
+            android:text="名家动态"
+            android:textColor="?attr/TitleTextColor"
+            android:textSize="?attr/TitleTextSize" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_title_background"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_below="@+id/tljr_mark_grp_title"
+        android:background="@color/gary_dan"
+        android:orientation="vertical"
+        android:paddingTop="15dp" >
+
+        <ImageView
+            android:id="@+id/tljr_tv_news_avatar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/img_avatar" />
+
+        <TextView
+            android:id="@+id/tljr_tv_news_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tljr_tv_news_avatar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:singleLine="true"
+            android:text="标题"
+            android:textColor="@color/tljr_white"
+            android:textSize="22dp" />
+
+        <TextView
+            android:id="@+id/tljr_tv_news_info"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tljr_tv_news_name"
+           android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="17dp"
+            android:paddingRight="5dp"
+            android:lines="2"
+            android:textColor="#d2d2d2"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/tljr_mark_grp_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_title_background"
+        android:divider="@null" />
+
+</RelativeLayout>

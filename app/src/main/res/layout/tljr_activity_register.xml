@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5" >
+
+    <RelativeLayout
+        android:id="@+id/tljr_reg_img_lfengexian1"
+        android:layout_width="fill_parent"
+        android:layout_height="?attr/TitleHeight"
+        android:background="?attr/TitleBj"
+        android:paddingTop="?attr/TitlePadding" >
+
+        <TextView
+            android:id="@+id/tljr_txt_hq_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="2dp"
+            android:paddingTop="?attr/TitlePadding"
+            android:textColor="@color/gray"
+            android:textSize="8dp" />
+
+        <TextView
+            android:id="@+id/tljr_reg_txt_ltext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingTop="?attr/TitlePadding"
+            android:text="新用户注册"
+            android:textColor="?attr/TitleTextColor"
+            android:textSize="?attr/TitleTextSize" />
+
+        <include
+            android:id="@+id/tljr_reg_btn_lfanhui"
+            layout="@layout/tljr_view_back" />
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/tljr_reg_grp_lradio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tljr_reg_img_lfengexian1"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/tljr_reg_rbtn_lgeren"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:checked="true"
+            android:text="个人用户"
+            android:textColor="#555555" />
+
+        <RadioButton
+            android:id="@+id/tljr_reg_rbtn_ljigou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:text="机构用户"
+            android:textColor="#555555" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tljr_reg_grp_lradio"
+        android:background="@color/tljr_white"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/img_space_hight"
+            android:background="@drawable/img_shape_space" >
+        </View>
+
+        <EditText
+            android:id="@+id/tljr_reg_et_jigou"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:hint="机构名称(最多20字)"
+            android:maxLength="20"
+            android:paddingLeft="30dp"
+            android:textColor="@color/gray"
+            android:textColorHint="@color/lightgray"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/img_space_hight"
+            android:background="@drawable/img_shape_space" >
+        </View>
+
+        <EditText
+            android:id="@+id/tljr_reg_et_lname"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:digits="0123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM"
+            android:hint="请输入用户名(英文和数字)"
+            android:maxLength="16"
+            android:paddingLeft="30dp"
+            android:textColor="@color/gray"
+            android:textColorHint="@color/lightgray"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/img_space_hight"
+            android:background="@drawable/img_shape_space" >
+        </View>
+
+        <EditText
+            android:id="@+id/tljr_reg_et_lpwd"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:digits="0123456789qwertyuiopasdfghjklzxcvbnm,.*_QWERTYUIOPASDFGHJKLZXCVBNM@#-()"
+            android:ems="10"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:paddingLeft="30dp"
+            android:textColor="@color/gray"
+            android:textColorHint="@color/lightgray"
+            android:textSize="16sp" >
+        </EditText>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/img_space_hight"
+            android:background="@drawable/img_shape_space" >
+        </View>
+
+        <EditText
+            android:id="@+id/tljr_reg_et_repwd"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:digits="0123456789qwertyuiopasdfghjklzxcvbnm,.*_QWERTYUIOPASDFGHJKLZXCVBNM@#-()"
+            android:ems="10"
+            android:hint="请再次输入密码"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:paddingLeft="30dp"
+            android:textColor="@color/gray"
+            android:textColorHint="@color/lightgray"
+            android:textSize="16sp" >
+        </EditText>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/img_space_hight"
+            android:background="@drawable/img_shape_space" >
+        </View>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/tljr_reg_btn_zhuce"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/info"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/btn_login"
+        android:text="注   册"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+</RelativeLayout>

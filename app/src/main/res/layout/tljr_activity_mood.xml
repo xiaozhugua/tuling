@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tljr_bj"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/grp_jzjl_title"
+        android:layout_width="fill_parent"
+        android:layout_height="?attr/TitleHeight"
+        android:paddingTop="?attr/TitlePadding"
+        android:background="?attr/TitleBj" >
+
+        <TextView
+            android:id="@+id/pe_main_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        android:paddingTop="?attr/TitlePadding"
+            android:layout_centerInParent="true"
+            android:text="新闻情绪/热度"
+            android:textColor="?attr/TitleTextColor"
+            android:textSize="?attr/TitleTextSize" />
+
+        <include
+            android:id="@+id/pe_img_jzjl_fanhui"
+            layout="@layout/tljr_view_back" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/tljr_tools_mood_et"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="请输入股票代码/名称"
+            android:textSize="16sp" >
+        </EditText>
+
+        <Button
+            android:id="@+id/tljr_tools_mood_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="确定"
+            android:textColor="@color/gray"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/news_hot_name_tv"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/tljr_tools_mood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </com.github.mikephil.charting.charts.LineChart>
+
+</LinearLayout>

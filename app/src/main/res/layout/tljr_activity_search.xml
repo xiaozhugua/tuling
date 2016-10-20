@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fafafa" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="?attr/TitleHeight"
+        android:paddingTop="?attr/TitlePadding"
+        android:background="?attr/TitleBj" >
+
+        <RelativeLayout
+            android:id="@+id/tljr_grp_search"
+            android:layout_width="fill_parent"
+            android:layout_height="?attr/TitleHeight"
+            android:layout_toRightOf="@+id/back"
+            android:background="?attr/TitleBj" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/img_beijingkuang1_1" >
+
+                <ImageView
+                    android:id="@+id/tljr_img_search"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/tljr_click"
+                    android:padding="7dp"
+                    android:src="@drawable/img_sousuo" />
+
+                <EditText
+                    android:id="@+id/tljr_edit_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/tljr_img_search"
+                    android:background="@null"
+                    android:hint="@string/search_input"
+                    android:imeOptions="actionSearch"
+                    android:singleLine="true"
+                    android:textColor="@color/gray"
+                    android:textSize="14sp" >
+
+                    <requestFocus />
+                </EditText>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/back"
+            layout="@layout/tljr_view_back" />
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/title"
+        android:scrollbars="@null" >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </HorizontalScrollView>
+    <TextView 
+        android:id="@+id/xian"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/scrollview"
+        android:background="@color/xian_gray" />
+
+    <android.support.v7.widget.RecyclerView  
+        android:id="@+id/tljr_lv_gplb"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/xian"
+        android:background="#e1f5f5f5"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent" />
+
+</RelativeLayout>

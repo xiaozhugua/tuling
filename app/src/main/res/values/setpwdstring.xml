@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <string android:id="@+id/string1" android:layout_width="wrap_content" android:layout_height="wrap_content" name="setpwd_text_title">设置密码</string>
+    <string name="setpwd_text_hint">请设置6位数字图灵密码，密码将在账户资金变动和修改信息时使用，请妥善保管。</string>
+    <string name="button_next">下一步</string>
+    <string name="identity_text_title">身份信息认证</string>
+    <string name="identity_text1_hint">监管规定购买理财产品需要实名认证，认证成功后不可修改。</string>
+    <string name="identity_text2_hint">为了您的资金安全，请认证手机号。</string>
+    <string name="identity_text3_hint1">同意</string>
+    <string name="identity_text3_hint2">《快捷验证服务协议》</string>
+    <string name="identity_editext_hint">持卡人</string>
+    <string name="identity_editext2_hint">身份证号</string>
+    <string name="identity_editext3_hint">手机号</string>
+    <string name="phoneverification_text_title">手机验证</string>
+    <string name="phoneverification_text1_hint">验证码已经发送到150****5224，如长时间未收到短信，请语音获取验证码。</string>
+    <string name="phoneverification_et_hint">验证码</string>
+    <string name="phoneverification_et_hint2">没收到？</string>
+    <string name="phoneverification_et_hint3">重新获取</string>
+    <string name="phoneverification_dialog_title">输入图灵密码</string>
+    <string name="phoneverification_dialog_text_hint">输入6位数图灵密码才能完成绑定</string>
+    <string name="phoneverification_dialog_text2_hint">忘记密码？</string>
+    <string name="addbankcard_text_title">添加银行卡</string>
+    <string name="addbankcard_text1_hint">为保证账户资金安全，请绑定本人的银行卡。</string>
+    <string name="addbankcard_text2_hint">首次添加该银行卡需要进行真实性校验。</string>
+    <string name="addbankcard_text3_hint1">同意</string>
+    <string name="addbankcard_text3_hint2">《快捷验证服务协议》</string>
+    <string name="addbankcard_et1_hint">持卡人</string>
+    <string name="addbankcard_et2_hint">发卡银行</string>
+    <string name="addbankcard_et3_hint">银行卡号</string>
+    <string name="addbankcard_et4_hint">手机号</string>
+    <string name="smallverification_text_title">小额验证</string>
+    <string name="smallverification_text1_hint">招商银行（尾号9188）已部分验证通过，完成如下操作即可绑卡成功。\n图灵已在06月16日10:21:26向该卡转入1元以下的随机数额资金，请输入该数字完成验证。</string>
+    <string name="smallverification_text2_hint">·您可通过手机短信或网银查询余额变动\n·3次填写不正确将会验证失败</string>
+    <string name="smallverification_et_hint">随机数金额</string>
+    <string name="addbankcard_et5_hint">招商银行</string>
+    <string name="recharge_tv_title">充值</string>
+    <string name="recharge_et_hint">充值银行</string>
+    <string name="recharge_et_hint2">金额</string>
+    <string name="recharge_tv_hint">一次充值最多9999万</string>
+    <string name="withdraw_tv_title">提现</string>
+    <string name="withdraw_et_hint2">提现银行</string>
+    <string name="withdraw_et_hint">金额</string>
+    <string name="withdraw_tv_hint">一次提现最多9999万</string>
+    <string name="withdraw_tv_money">账户余额 ：</string>
+    <string name="item_tv_bankname">银行名</string>
+    <string name="item_tv_banknumber">xxxxxx****xxxx</string>
+    <string name="BindBank_name">已绑定银行</string>
+    <string name="pay_title">产品名</string>
+    <string name="pay_et1">我要投资</string>
+    <string name="pay_et2">余额（元）</string>
+    <string name="pay_tx1">预计收益元</string>
+    <string name="pay_tx2">支付信息</string>
+    <string name="pay_bt1">确认去支付</string>
+    <string name="pay_tx3">到期本金收益自动归还至账户余额</string>
+    <string name="pay_tx0">可投资金额：xx~xxx元</string>
+    <string name="pay_yuan">元</string>
+    
+    <string name="jiaoyi_baoben_xin">新</string>
+    <string name="jiaoyi_baoben_xinshou">新手</string>
+    <string name="jiaoyi_baoben_100">100元起投</string>
+    <string name="jiaoyi_baoben_bankpiaoju">银行票据（风险来自银行倒闭）</string>
+    <string name="jiaoyi_baoben_huobi">货币基金（100起随时取现）</string>
+    
+    
+</resources>

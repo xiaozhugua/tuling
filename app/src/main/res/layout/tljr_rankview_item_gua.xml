@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/img_bolangkuang2" >
+
+        <com.abct.tljr.hangqing.jingwu.GuaGuaKa
+              android:id="@+id/tljr_rankview_guagua"
+              android:layout_width="70dp"
+              android:layout_height="70dp"
+              android:layout_centerInParent="true"
+              android:gravity="center"/>
+        
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tljr_bj" >
+
+    <RelativeLayout
+        android:id="@+id/tljr_grp_confirm_title"
+        android:layout_width="fill_parent"
+        android:layout_height="?attr/TitleHeight"
+        android:paddingTop="?attr/TitlePadding"
+        android:background="?attr/TitleBj" >
+
+        <include
+            android:id="@+id/tljr_img_confirm_back"
+            layout="@layout/tljr_view_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        android:paddingTop="?attr/TitlePadding"
+            android:layout_centerInParent="true"
+            android:text="输入验证码"
+            android:textColor="?attr/TitleTextColor"
+            android:textSize="?attr/TitleTextSize" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tljr_txt_confirm_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tljr_grp_confirm_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="+86 139-0244-0361"
+        android:textColor="@color/tljr_text_blue"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tljr_txt_confirm_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tljr_txt_confirm_phone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="已发送验证码到上面这个手机"
+        android:textColor="@color/gray" />
+
+    <EditText
+        android:id="@+id/tljr_et_confirm"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/tljr_txt_confirm_send"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/img_yanzhengma"
+        android:inputType="number"
+        android:maxLength="6"
+        android:cursorVisible="false"
+        android:textSize="0dp" >
+    </EditText>
+
+    <LinearLayout
+        android:id="@+id/tljr_grp_confirm"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/tljr_txt_confirm_send"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tljr_txt_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tljr_et_confirm"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="接收短信大约需要60秒"
+        android:textColor="@color/gray" />
+
+</RelativeLayout>

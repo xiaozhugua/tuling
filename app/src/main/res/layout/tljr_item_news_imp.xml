@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="12.0dip"
+    android:background="@drawable/tljr_listview_selector"
+    android:paddingBottom="2.0dip"
+    android:paddingLeft="12.0dip"
+    android:paddingTop="2.0dip" >
+
+    <RelativeLayout
+        android:id="@+id/img_picture_hqss_rela"
+        android:layout_width="100.0dip"
+        android:layout_height="83.0dip"
+        android:layout_marginTop="6dp" >
+
+        <ImageView
+            android:id="@+id/imp_news_picture"
+            android:layout_width="100.0dip"
+            android:layout_height="83.0dip"
+            android:scaleType="fitXY"
+            android:contentDescription="@null"
+            android:src="@drawable/img_morentupian" />
+
+        <TextView
+            android:id="@+id/imp_news_date"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/img_hongdi"
+            android:gravity="center"
+            android:text="07月09日"
+            android:textColor="@color/tljr_white"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/holder_view"
+        android:layout_width="0.0dip"
+        android:layout_height="6.0dip"
+        android:layout_below="@+id/img_picture_hqss_rela"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/imp_hqss_news_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/img_picture_hqss_rela"
+        android:layout_marginLeft="8.0dip"
+        android:layout_marginRight="12.0dip"
+        android:layout_toRightOf="@+id/img_picture_hqss_rela"
+        android:ellipsize="end"
+        android:includeFontPadding="false"
+        android:lines="1"
+        android:text="第四届中国财经峰会举行 聚焦新常态 "
+        android:textColor="@color/tljr_text_default2"
+        android:textSize="16.0sp" />
+
+    <TextView
+        android:id="@+id/justgettime "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_summary"
+        android:layout_marginLeft="8.0dip"
+        android:layout_toRightOf="@+id/img_picture_hqss_rela" >
+
+        <LinearLayout
+            android:id="@+id/ly_hqss_tags"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_summary"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="12.0dip"
+        android:layout_alignLeft="@+id/imp_hqss_news_title"
+        android:layout_below="@+id/imp_hqss_news_title"
+        android:textColor="@color/lightgray"
+        android:lines="2"
+        android:textSize="13sp"
+        android:layout_marginTop="8dp"
+        android:lineSpacingExtra="4dp"
+        android:text="TextView" />
+    
+    <TextView
+        android:id="@+id/imp_news_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="7.0dip"
+        android:includeFontPadding="false"
+        android:layout_marginBottom="5dp"
+        android:singleLine="true"
+        android:text="5天前"
+        android:textColor="#ffaaaaaa"
+        android:layout_below="@+id/tv_summary"
+        android:layout_alignParentRight="true"
+        android:textSize="12.0sp" />
+    
+
+
+<ImageView
+    android:id="@+id/iv_imp_news_isRead"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:layout_above="@+id/imp_news_time"
+    android:layout_alignParentRight="true"
+    android:src="@drawable/img_yipiyue" />
+
+</RelativeLayout>

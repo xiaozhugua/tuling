@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_weight="1.5" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/tljr_hq_checkbox"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/checkbox"
+                android:button="@null" />
+
+            <LinearLayout
+                android:id="@+id/gudelete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/gudelete_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="--"
+                    android:singleLine="true"
+                    android:maxEms="4"
+                    android:ellipsize="end"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/gudelete_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="--" />  
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.abct.tljr.ui.widget.RippleView
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_weight="1.5"
+        android:layout_marginRight="30dp">
+
+        <ImageView
+            android:id="@+id/gudelete_zhiding"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:contentDescription="@null"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:clickable="true"
+            android:src="@drawable/delete_gu_select_top"/>
+        
+    </com.abct.tljr.ui.widget.RippleView>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_weight="1" >
+        <ImageView
+            android:id="@+id/sortdrog"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:contentDescription="@null"
+            android:src="@drawable/img_yidong"/>
+    </RelativeLayout>
+
+</LinearLayout>

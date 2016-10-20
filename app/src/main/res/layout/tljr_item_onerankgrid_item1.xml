@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="180dp"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/tljr_rank_grp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/img_dingtiao" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:background="#7D000000"
+            android:padding="3dp" >
+
+            <TextView
+                android:id="@+id/tljr_rank_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/tljr_rank_nickname"
+                android:textColor="@color/tljr_white"
+                android:textSize="@dimen/dp_fourteen" />
+
+            <TextView
+                android:id="@+id/tljr_rank_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:textColor="@color/tljr_white"
+                android:textSize="@dimen/dp_ten" />
+
+            <TextView
+                android:id="@+id/tljr_rank_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:paddingRight="3dp"
+                android:textColor="@color/tljr_white"
+                android:textSize="@dimen/dp_ten" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:background="#7D000000" >
+
+        <TextView
+            android:id="@+id/tljr_rank_high"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:text="78.64%"
+            android:textColor="@color/tljr_white"
+            android:textSize="@dimen/dp_twelve" />
+
+        <TextView
+            android:id="@+id/tljr_rank_high1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="3dp"
+            android:text="78.64%"
+            android:textColor="@color/tljr_white"
+            android:textSize="@dimen/dp_twentyfive"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tljr_rank_high1"
+            android:background="@drawable/img_monijiaoyi_lanjiantou"
+            android:rotation="180"
+            android:textColor="@color/tljr_white" >
+        </View>
+    </RelativeLayout>
+
+</RelativeLayout>

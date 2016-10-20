@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.abct.tljr.hangqing.util.Menu.BinarySlidingMenu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:scrollbars="none"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:background="@color/white" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/tljr_grp_build_title"
+                android:layout_width="fill_parent"
+                android:layout_height="?attr/TitleHeight"
+        		android:paddingTop="?attr/TitlePadding"
+                android:background="?attr/TitleBj" >
+
+                <include
+                    android:id="@+id/tljr_img_build_back"
+                    layout="@layout/tljr_view_back" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="3dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:textColor="?attr/TitleTextColor"
+                        android:textSize="?attr/TitleTextSize"
+                        />
+
+                    <TextView
+                        android:id="@+id/btip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:textColor="?attr/TitleTextColor"
+                        android:textSize="@dimen/sp_twelve" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/tljr_img_edit"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/tljr_click"
+                    android:padding="10dp"
+                    android:src="@drawable/img_bianji" />
+            </RelativeLayout>
+
+            <com.abct.tljr.ui.widget.XScrollView
+                android:id="@+id/scrollview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/tljr_bj" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/header_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="vertical" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/tljr_bj"
+                        android:orientation="vertical" >
+
+                        <ListView
+                            android:id="@+id/tljr_grp_build_layout"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:divider="@drawable/img_shape_space"
+                            android:dividerHeight="@dimen/img_space_hight"
+                            android:orientation="vertical" >
+                        </ListView>
+
+                        <RelativeLayout
+                            android:id="@+id/tljr_grp_line_layout"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/tljr_white"
+                            android:visibility="gone" >
+
+                            <View
+                                android:id="@+id/tljr_item_build_spacing"
+                                android:layout_width="fill_parent"
+                                android:layout_height="10dp"
+                                android:background="@color/tljr_bj" />
+
+                            <RelativeLayout
+                                android:id="@+id/tljr_item_build_title"
+                                android:layout_width="fill_parent"
+                                android:layout_height="40dp"
+                                android:layout_below="@+id/tljr_item_build_spacing"
+                                android:background="@color/tljr_hq_zx_down" >
+
+                                <TextView
+                                    android:id="@+id/tljr_item_build_change"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:textColor="@color/tljr_white"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tljr_item_build_title"
+                                android:paddingTop="5dp" >
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical" >
+
+                                    <RadioGroup
+                                        android:id="@+id/tljr_item_build_rg"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="25dp"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:orientation="horizontal" >
+
+                                        <RadioButton
+                                            android:id="@+id/tljr_item_build_rb1"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:button="@null"
+                                            android:checked="true"
+                                            android:gravity="center"
+                                            android:text="分时"
+                                            android:textColor="@color/tljr_txt_checkblack"
+                                            android:textSize="@dimen/sp_sixteen" />
+
+                                        <RadioButton
+                                            android:id="@+id/tljr_item_build_rb2"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:button="@null"
+                                            android:gravity="center"
+                                            android:text="五日"
+                                            android:textColor="@color/tljr_txt_checkblack"
+                                            android:textSize="@dimen/sp_sixteen"
+                                            android:visibility="gone" />
+
+                                        <RadioButton
+                                            android:id="@+id/tljr_item_build_rb3"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:button="@null"
+                                            android:gravity="center"
+                                            android:text="日K"
+                                            android:textColor="@color/tljr_txt_checkblack"
+                                            android:textSize="@dimen/sp_sixteen"
+                                            android:visibility="gone" />
+                                    </RadioGroup>
+
+                                    <ImageView
+                                        android:id="@+id/tljr_item_build_arrow"
+                                        android:layout_width="10dp"
+                                        android:layout_height="5dp"
+                                        android:scaleType="fitXY"
+                                        android:src="@drawable/img_huisejiantou"
+                                        android:visibility="gone" />
+
+                                    <View
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="0.5dp"
+                                        android:background="@color/tljr_statusbarcolor" />
+
+                                    <FrameLayout
+                                        android:id="@android:id/tabcontent"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="120dp" >
+
+                                        <com.github.mikephil.charting.charts.LineChart
+                                            android:id="@+id/tljr_item_build_chart1"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="fill_parent" >
+                                        </com.github.mikephil.charting.charts.LineChart>
+
+                                        <com.github.mikephil.charting.charts.LineChart
+                                            android:id="@+id/tljr_item_build_chart2"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="fill_parent"
+                                            android:visibility="gone" >
+                                        </com.github.mikephil.charting.charts.LineChart>
+
+                                        <com.github.mikephil.charting.charts.CandleStickChart
+                                            android:id="@+id/tljr_item_build_chart3"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="fill_parent"
+                                            android:visibility="gone" >
+                                        </com.github.mikephil.charting.charts.CandleStickChart>
+                                    </FrameLayout>
+
+                                    <com.github.mikephil.charting.charts.BarChart
+                                        android:id="@+id/tljr_item_build_chart4"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="40dp"
+                                        android:background="@color/tljr_white"
+                                        android:visibility="gone" >
+                                    </com.github.mikephil.charting.charts.BarChart>
+
+                                    <View
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="0.5dp"
+                                        android:background="@drawable/img_222fengexian"
+                                        android:paddingBottom="10dp" />
+                                </LinearLayout>
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </com.abct.tljr.ui.widget.XScrollView>
+        </LinearLayout>
+
+        <include
+            android:id="@+id/menu"
+            layout="@layout/tljr_view_menu"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="-26dp" />
+    </LinearLayout>
+
+</com.abct.tljr.hangqing.util.Menu.BinarySlidingMenu>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_beijing" >
+    
+    <!-- 
+        android:background="@drawable/message_time"
+     -->
+    
+    <RelativeLayout 
+        android:id="@+id/rl_im"
+        android:layout_width="70dp"
+        android:layout_height="78dp"
+        android:layout_marginLeft="5dp"
+        >
+        <com.abct.tljr.ui.widget.CircularImage  
+            android:id="@+id/im"
+            android:layout_width="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="40dp"
+            android:src="@drawable/img_tou"
+            android:background="@drawable/textshixin_circlred"/>
+        <TextView 
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/im"
+            android:text="暮色萧萧"
+            android:textSize="13sp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/message_voice_image"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="16dip"
+       android:layout_gravity="left|center_vertical"
+       android:layout_toRightOf="@id/rl_im"
+       android:layout_centerVertical="true"
+       android:background="@anim/im_left_voice"
+       android:visibility="gone"/>
+    <RelativeLayout 
+        android:id="@+id/rl_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/rl_im"
+        android:layout_marginRight="60dp"
+        android:paddingRight="10dp">
+       <TextView 
+           android:id="@+id/content"
+           android:background="@drawable/im_leftbubble"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="15sp"
+           android:lineSpacingMultiplier="1.2"
+           android:textColor="@color/black"/>
+    </RelativeLayout>
+    
+    <ImageView 
+        android:id="@+id/tim"
+        android:layout_below="@id/rl_content"
+        android:layout_toRightOf="@id/rl_im"
+        android:layout_width="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="4dp"
+        android:layout_height="10dp"
+       android:src="@drawable/img_shijian1"/>
+    
+    <TextView 
+        android:id="@+id/time"
+        android:layout_below="@id/rl_content"
+        android:textSize="12sp"
+        android:layout_width="wrap_content"
+        android:text="2015-12-12 10:15"
+        android:layout_toRightOf="@id/tim"
+        android:layout_marginLeft="5dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray_light"
+        />
+ 
+ 
+</RelativeLayout>

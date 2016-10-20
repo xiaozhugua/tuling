@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.abct.tljr.main.MainActivity" >
+
+    <RelativeLayout
+        android:id="@+id/image_download_news"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/tljr_listview_selector2" >
+
+        <View
+ 
+    
+ 
+        android:background="@color/subscribe_seperate_line"
+        android:layout_width="fill_parent"
+        android:layout_height="0.01px"
+        
+ 
+ 
+            android:layout_alignParentBottom="true" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/img_lishijilu" />
+
+        <TextView
+            android:id="@+id/tv_news_search_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="关键字"
+            android:layout_toRightOf="@+id/imageView1"
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp"
+            android:lines="1"
+            android:layout_marginRight="15dp"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+ 
+    
+    
+
+</RelativeLayout>

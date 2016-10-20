@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+    <!--  
+ 
+    <RelativeLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+        
+       <ImageView
+           android:id="@+id/tljr_img_pratice_jj_item_icon"
+           android:layout_width="30dp"
+           android:layout_height="30dp"
+           android:paddingTop="5dp"
+           android:paddingBottom="5dp"
+           android:layout_centerVertical="true"
+           android:layout_marginLeft="10dp"
+            android:background="@drawable/img_paihangbang" />
+       <TextView
+           android:id="@+id/tljr_txt_pratice_jj_item_name"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="5dp"
+           android:layout_centerVertical="true"
+           android:layout_toRightOf="@+id/tljr_img_pratice_jj_item_icon"
+           android:layout_marginLeft="8dp"
+           android:text="模拟操盘大赛"
+           android:textColor="@android:color/holo_red_light"
+           android:textSize="15sp" />
+   
+       <TextView
+           android:id="@+id/tljr_txt_pratice_jj_item_time"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignLeft="@+id/tljr_txt_pratice_jj_item_name"
+           android:layout_alignParentBottom="true"
+           android:layout_marginBottom="5dp"
+           android:text="结束时间：2015-12-31"
+           android:textColor="@color/tljr_text_tishi"
+           android:textSize="12sp" />
+    </RelativeLayout>
+ 
+ 
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_fengexian1" />
+        -->
+    <ImageView
+        android:id="@+id/tljr_img_pratice_jj_item_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/img_paihangbang" />
+ 
+    <TextView
+        android:id="@+id/tljr_txt_pratice_jj_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/tljr_img_pratice_jj_item_icon"
+        android:layout_marginLeft="5dp"
+        android:text="模拟操盘大赛"
+        android:layout_centerVertical="true"
+        android:textColor="@color/gray"
+        android:textSize="16sp" />
+ 
+    <TextView
+        android:id="@+id/tljr_txt_pratice_jj_item_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tljr_txt_pratice_jj_item_name"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:text="结束时间：2015-12-31"
+        android:textColor="@color/lightgray"
+        android:textSize="12sp" />
+ 
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_fengexian1" />
+    
+ 
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:background="@color/tljr_bj"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tljr_zx_tiaocangname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:text="水晶光电" />
+
+    <TextView
+        android:id="@+id/tljr_zx_topercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:text="5.0%" />
+"
+
+    <ImageView
+        android:id="@+id/tljr_zx_percentjiantou"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/tljr_zx_topercent"
+        android:src="@drawable/img_tiaojiantou" />
+"
+
+    <TextView
+        android:id="@+id/tljr_zx_srcpercenti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/tljr_zx_percentjiantou"
+        android:text="3.0%" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:scaleType="fitXY"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/img_fengexian1" />
+
+</RelativeLayout>

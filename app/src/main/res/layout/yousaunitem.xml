@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <!-- 标题 -->
+    <RelativeLayout
+        android:id="@+id/tljr_tiaocang_header"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/TitleHeight"
+        android:background="?attr/TitleBj"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <include
+            android:id="@+id/tljr_yousuan_fanhui"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            layout="@layout/tljr_view_back" />
+
+        <TextView
+            android:id="@+id/yousuan_name"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="17sp"/>
+        
+        <TextView
+            android:id="@+id/yousuan_datatext"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/white"
+            android:layout_marginRight="10dp"
+            android:textSize="17sp"
+            android:text="交易记录"/>
+        
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/bj"
+        android:orientation="vertical" >
+
+       <include 
+       	    android:layout_width="match_parent"
+       	    android:layout_height="wrap_content"
+       	    layout="@layout/yousuanitem_message"/>
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="8dp"
+             android:background="@color/bj"/>  
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/white" >
+
+            <RelativeLayout
+                android:id="@+id/celielayout"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/celie_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textSize="12sp"
+                    android:text="策略简介" />
+
+                <ImageView
+                    android:id="@+id/celie_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentBottom="true"
+                    android:contentDescription="@null"
+                    android:src="@drawable/img_yousuanhongtiao" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/quanyilayout"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/quanyi_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textSize="12sp"
+                    android:text="权益曲线" />
+
+                <ImageView
+                    android:id="@+id/quanyi_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentBottom="true"
+                    android:contentDescription="@null"
+                    android:visibility="gone"
+                    android:src="@drawable/img_yousuanhongtiao" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/yuedulayout"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/yuedu_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textSize="12sp"
+                    android:text="月度盈亏" />
+
+                <ImageView
+                    android:id="@+id/yuedu_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentBottom="true"
+                    android:contentDescription="@null"
+                    android:visibility="gone"
+                    android:src="@drawable/img_yousuanhongtiao" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/duokonglayout"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/duokong_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textSize="12sp"
+                    android:text="多空盈亏" />
+
+                <ImageView
+                    android:id="@+id/duokong_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentBottom="true"
+                    android:contentDescription="@null"
+                    android:visibility="gone"
+                    android:src="@drawable/img_yousuanhongtiao" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/huicelayout"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/huice_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textSize="12sp"
+                    android:text="回测曲线" />
+
+                <ImageView
+                    android:id="@+id/huice_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentBottom="true"
+                    android:contentDescription="@null"
+                    android:visibility="gone"
+                    android:src="@drawable/img_yousuanhongtiao" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/yejilayout"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/yeji_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textSize="12sp"
+                    android:text="业绩报表" />
+
+                <ImageView
+                    android:id="@+id/yeji_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentBottom="true"
+                    android:contentDescription="@null"
+                    android:visibility="gone"
+                    android:src="@drawable/img_yousuanhongtiao" />
+            </RelativeLayout>
+        </LinearLayout>
+        <FrameLayout 
+            android:id="@+id/yousuanfragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/yousuanitem_deal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/yousuan_item_shiyong"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="4"
+            android:background="@color/yousuanshiyongbu"
+            android:gravity="center"
+            android:text="试用"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/yousuan_item_num"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1.5"
+            android:textSize="14sp"
+            android:background="@null"
+            android:gravity="center"
+            android:hint="金额"/>
+        
+        <Button
+            android:id="@+id/yousuan_item_goumai"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="4"
+            android:background="@color/red"
+            android:gravity="center"
+            android:text="购买"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <RelativeLayout 
+        android:id="@+id/yousuan_quhui"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="@color/bj"
+        android:visibility="gone">
+        
+        <Button
+            android:id="@+id/yousuanitem_quhui"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/nonet_bu_shape"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="取回"/>
+        
+    </RelativeLayout>
+    
+</LinearLayout>

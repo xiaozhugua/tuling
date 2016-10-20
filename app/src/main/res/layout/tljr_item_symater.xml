@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="100dp" >
+
+    <RelativeLayout
+        android:id="@+id/tljr_grp_symaster_pic"
+        android:layout_width="95dp"
+        android:layout_height="80dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="12dp"
+        android:background="@color/tljr_bjtitle"
+        android:padding="1dp" >
+
+        <ImageView
+            android:id="@+id/tljr_item_symaster_pic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/tljr_grp_symaster_pic" >
+
+        <ImageView
+            android:id="@+id/tljr_item_symaster_line"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tljr_grp_symaster_changep"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_222fengexian" />
+
+        <ImageView
+            android:id="@+id/tljr_item_symaster_market"
+            android:layout_width="30dp"
+            android:layout_height="15dp"
+            android:layout_above="@+id/tljr_item_symaster_line"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_hushen" />
+
+        <TextView
+            android:id="@+id/tljr_item_symaster_source"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tljr_item_symaster_market"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tljr_item_symaster_market"
+            android:text="主题选股"
+            android:textColor="?attr/Black"
+            android:textSize="@dimen/dp_twelve" />
+
+        <TextView
+            android:id="@+id/tljr_item_symaster_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tljr_item_symaster_market"
+            android:layout_alignLeft="@+id/tljr_item_symaster_market"
+            android:layout_marginBottom="5dp"
+            android:text="主题选股"
+            android:textColor="?attr/Black"
+            android:textSize="@dimen/dp_fourteen" />
+
+        <TextView
+            android:id="@+id/tljr_item_symaster_today"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tljr_item_symaster_market"
+            android:layout_below="@+id/tljr_item_symaster_line"
+            android:layout_marginTop="5dp"
+            android:text="今日收益"
+            android:textColor="?attr/Black"
+            android:textSize="@dimen/dp_twelve" />
+
+        <TextView
+            android:id="@+id/tljr_item_symaster_todayChangeP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tljr_item_symaster_today"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/tljr_item_symaster_today"
+            android:text="5.75%"
+            android:textColor="@color/red"
+            android:textSize="@dimen/dp_twelve" />
+
+        <TextView
+            android:id="@+id/tljr_item_symaster_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tljr_item_symaster_todayChangeP"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/tljr_item_symaster_todayChangeP"
+            android:text="[2015-09-08]"
+            android:textColor="?attr/GRAY"
+            android:textSize="@dimen/dp_twelve" />
+
+        <TextView
+            android:id="@+id/tljr_item_symaster_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tljr_item_symaster_market"
+            android:layout_below="@+id/tljr_item_symaster_today"
+            android:layout_marginTop="5dp"
+            android:text="上海证卷报"
+            android:textColor="?attr/Black"
+            android:textSize="@dimen/dp_twelve" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tljr_item_symaster_username"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/tljr_item_symaster_username"
+            android:text="管理"
+            android:textColor="?attr/GRAY"
+            android:textSize="@dimen/dp_twelve" />
+
+        <TextView
+            android:id="@+id/tljr_item_symaster_followt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tljr_item_symaster_username"
+            android:layout_alignParentRight="true"
+            android:text="人关注"
+            android:textColor="?attr/GRAY"
+            android:textSize="@dimen/dp_twelve"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tljr_item_symaster_follow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tljr_item_symaster_followt"
+            android:layout_toLeftOf="@+id/tljr_item_symaster_followt"
+            android:textColor="?attr/Black"
+            android:textSize="@dimen/dp_twelve" />
+
+        <LinearLayout
+            android:id="@+id/tljr_grp_symaster_changep"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/img_dayuan1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tljr_item_symaster_changep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="192.58%"
+                android:textColor="@color/tljr_white"
+                android:textSize="@dimen/dp_fourteen" />
+
+            <TextView
+                android:id="@+id/tljr_item_symaster_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="月收益"
+                android:textColor="@color/tljr_white"
+                android:textSize="@dimen/dp_ten" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/tljr_img_qdbj"
+        android:layout_width="fill_parent"
+        android:layout_above="@+id/tljr_grp_qd"
+        android:layout_height="match_parent"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_guanggaotu1" />
+
+    <LinearLayout
+        android:id="@+id/tljr_grp_qd"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/tljr_white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/tljr_pro_qd"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-2dp"
+            android:background="@drawable/barbj" />
+
+        <TextView
+            android:id="@+id/tljr_txt_jindu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tljr_pro_qd"
+            android:layout_marginTop="3dp"
+            android:layout_centerHorizontal="true"
+            android:text="初始化数据"
+            android:textColor="@color/drakgray"
+            android:textSize="12dp" />
+
+        <ImageView
+            android:id="@+id/tljr_img_qdlogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/img_tulingjinronglogo" />
+
+        <TextView
+            android:id="@+id/tljr_txt_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tljr_txt_info"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="3dp"
+            android:textColor="@color/drakgray"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tljr_txt_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tljr_txt_jindu"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/drakgray"
+            android:textSize="12dp" />
+
+        <!--
+         <ProgressBar
+        android:id="@+id/tljr_pro_qd"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:layout_alignParentBottom="true"
+        android:progressDrawable="@drawable/barbj" />
+        -->
+    </LinearLayout>
+
+</RelativeLayout>

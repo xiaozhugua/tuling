@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="DL-lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/DL-lib.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

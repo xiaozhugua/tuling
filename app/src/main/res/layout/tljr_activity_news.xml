@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/tljr_news_top"
+        android:layout_width="fill_parent"
+        android:layout_height="?attr/TitleHeight"
+        android:background="?attr/TitleBj"
+        android:paddingTop="?attr/TitlePadding" >
+
+        <TextView
+            android:id="@+id/tljr_txt_news_from_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:maxLength="15"
+            android:paddingTop="?attr/TitlePadding"
+            android:text="新闻"
+            android:textColor="?attr/TitleTextColor"
+            android:textSize="?attr/TitleTextSize"
+            android:visibility="visible" />
+
+        <include
+            android:id="@+id/tljr_img_news_back"
+            layout="@layout/tljr_view_back" />
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/tljr_hqss_news_mViewPager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/tljr_news_top" />
+
+</RelativeLayout>

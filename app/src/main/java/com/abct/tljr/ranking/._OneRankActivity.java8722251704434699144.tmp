@@ -1,0 +1,336 @@
+package com.abct.tljr.ranking;
+
+import java.util.ArrayList;
+import java.util.Random;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import com.abct.tljr.BaseActivity;
+import com.abct.tljr.R;
+import com.abct.tljr.StartActivity;
+import com.abct.tljr.model.OneGu;
+import com.abct.tljr.news.Options;
+import com.abct.tljr.util.HttpRequest;
+import com.abct.tljr.util.HttpRevMsg;
+import com.abct.tljr.util.TLUrl;
+import com.abct.tljr.util.Util;
+import com.abct.tljr.wxapi.loginmodule.util.ProgressDlgUtil;
+import com.abct.tljr.zrclistview.SimpleFooter;
+import com.abct.tljr.zrclistview.ZrcListView;
+import com.abct.tljr.zrclistview.ZrcListView.OnStartListener;
+import com.alibaba.fastjson.JSONArray;
+import com.nineoldandroids.animation.AnimatorSet;
+import com.nineoldandroids.animation.ObjectAnimator;
+import com.nineoldandroids.view.ViewHelper;
+import com.umeng.message.proguard.C;
+
+import android.annotation.SuppressLint;
+import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.os.Handler;
+import android.view.View;
+import android.view.ViewGroup;
+import android.view.ViewStub;
+import android.view.View.MeasureSpec;
+import android.view.View.OnClickListener;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
+import android.widget.BaseAdapter;
+import android.widget.CheckBox;
+import android.widget.ImageView;
+import android.widget.ListView;
+import android.widget.TextView;
+import android.widget.Toast;
+
+/**
+ * @author xbw
+ * @version 创建时间：2015年8月8日 下午2:21:21
+ */
+public class OneRankActivity extends BaseActivity implements OnClickListener {
+	private ZrcListView lv;
+	private ArrayList<OnePerson> list = new ArrayList<OnePerson>();
+	private ArrayList<OnePerson> mList = new ArrayList<OnePerson>();
+	private BaseAdapter adapter;
+	private String name;
+	private String type;
+	private int percent;
+	private int layout;
+	private boolean isFlush = false;
+	private int page = 0;
+	private int onePageCount = 10;
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.tljr_activity_rank_one);
+		findViewById(R.id.tljr_img_onerank_fanhui).setOnClickListener(this);
+		type = getIntent().getStringExtra("reqkey");
+		percent = getIntent().getIntExtra("percent", 0);
+		name = getIntent().getStringExtra("key");
+		layout = getIntent().getIntExtra("layout", 0);
+		if (!getIntent().getStringExtra("time").equals("")) {
+			findViewById(R.id.tljr_txt_onerank_desc)
+					.setVisibility(View.VISIBLE);
+			((TextView) findViewById(R.id.tljr_txt_onerank_desc))
+					.setText(getIntent().getStringExtra("time"));
+		}
+		((TextView) findViewById(R.id.tljr_txt_onerank_title))
+				.setText(getIntent().getStringExtra("title") + "(前100名)");
+		lv = (ZrcListView) findViewById(R.id.tljr_lv_onerank);
+		// 设置加载更多的样式（可选）
+		SimpleFooter footer = new SimpleFooter(this);
+		footer.setCircleColor(0xff33bbee);
+		lv.setFootable(footer);
+
+		// 设置列表项出现动画（可选）
+		lv.setItemAnimForTopIn(R.anim.alpha_in);
+		lv.setItemAnimForBottomIn(R.anim.alpha_in);
+		// 加载更多事件回调（可选）
+		lv.setOnLoadMoreStartListener(new OnStartListener() {
+			@Override
+			public void onStart() {
+				loadMore();
+			}
+		});
+		adapter = new BaseAdapter() {
+
+			@Override
+			public View getView(int position, View v, ViewGroup parent) {
+				// TODO Auto-generated method stub]
+				ViewHolder holder;
+				final OnePerson person = list.get(position);
+				if (v == null) {
+					holder = new ViewHolder();
+					if (layout == 1) {
+						v = View.inflate(OneRankActivity.this,
+								R.layout.tljr_item_rankother, null);
+						holder.number = (TextView) v
+								.findViewById(R.id.tljr_item_rank_time);
+						holder.valuep = (TextView) v
+								.findViewById(R.id.tljr_item_rank_valuea);
+					} else {
+						v = View.inflate(OneRankActivity.this,
+								R.layout.tljr_item_rank, null);
+						holder.number = (TextView) v
+								.findViewById(R.id.tljr_txt_item_rank_number);
+						holder.num = (ImageView) v
+								.findViewById(R.id.tljr_img_item_rank_number);
+						holder.avatar = (ImageView) v
+								.findViewById(R.id.tljr_item_rank_avatar);
+					}
+					holder.zhname = (TextView) v
+							.findViewById(R.id.tljr_item_rank_zhname);
+					holder.name = (TextView) v
+							.findViewById(R.id.tljr_item_rank_name);
+					holder.value = (TextView) v
+							.findViewById(R.id.tljr_item_rank_value);
+					holder.typeS = (TextView) v
+							.findViewById(R.id.tljr_item_rank_type);
+					v.setTag(holder);
+					// 保证控件v的渲染高度getMeasuredHeight
+					v.measure(MeasureSpec.makeMeasureSpec(0,
+							MeasureSpec.UNSPECIFIED), MeasureSpec
+							.makeMeasureSpec(0, MeasureSpec.UNSPECIFIED));
+					// 判断在屏幕显示范围内个数才播放动画
+					if (position < Util.HEIGHT / v.getMeasuredHeight()) {
+						Util.startAni(position, v);
+					}
+				} else {
+					holder = (ViewHolder) v.getTag();
+				}
+				v.setOnClickListener(new OnClickListener() {
+
+					@Override
+					public void onClick(View v) {
+						// TODO Auto-generated method stub
+						startActivity(new Intent(OneRankActivity.this,
+								OneRankInfoActivity.class)
+								.putExtra("uid", person.getUid())
+								.putExtra("zhid", person.getZhid())
+								.putExtra("name", person.getName())
+								.putExtra("zhname", person.getZhname()));
+					}
+				});
+				holder.zhname.setText(person.getZhname());
+				holder.name.setText(person.getName());
+				if (layout == 1) {
+					holder.number.setText(Util.getDateOnlyDay(person.getTime())
+							+ "创建");
+					holder.typeS.setText(name.replace("最大", ""));
+					if (percent == 0) {
+						holder.valuep.setVisibility(View.GONE);
+						holder.value.setText(Util.df.format(person.getValue()));
+					} else {
+						holder.value
+								.setText(Util.df.format(person.getValue() * 100));
+					}
+				} else {
+					if (percent == 0) {
+						holder.value.setText(Util.df.format(person.getValue()));
+					} else {
+						holder.value
+								.setText(Util.df.format(person.getValue() * 100)
+										+ "%");
+					}
+					holder.typeS.setText(name);
+					// Util.setRoundImage(person.getAvatar(), holder.avatar,
+					// handler);
+					StartActivity.imageLoader.displayImage(person.getAvatar(),
+							holder.avatar, Options.getCircleListOptions());
+					if (person.getNumber() > 3) {
+						holder.number.setVisibility(View.VISIBLE);
+						holder.number.setText(person.getNumber() + "");
+						holder.num.setVisibility(View.INVISIBLE);
+					} else {
+						holder.number.setVisibility(View.INVISIBLE);
+						holder.num.setVisibility(View.VISIBLE);
+						switch (person.getNumber()) {
+						case 1:
+							holder.num
+									.setBackgroundResource(R.drawable.img_diyiming);
+							break;
+						case 2:
+							holder.num
+									.setBackgroundResource(R.drawable.img_dierming);
+							break;
+						case 3:
+							holder.num
+									.setBackgroundResource(R.drawable.img_disanming);
+							break;
+						default:
+							break;
+						}
+					}
+				}
+
+				return v;
+			}
+
+			@Override
+			public long getItemId(int position) {
+				// TODO Auto-generated method stub
+				return position;
+			}
+
+			@Override
+			public Object getItem(int position) {
+				// TODO Auto-generated method stub
+				return list.get(position);
+			}
+
+			@Override
+			public int getCount() {
+				// TODO Auto-generated method stub
+				return list.size();
+			}
+		};
+		lv.setAdapter(adapter);
+		lv.startLoadMore();
+		loadMore();
+	}
+
+	static class ViewHolder {
+		TextView number;
+		ImageView num;
+		ImageView avatar;
+		TextView name;
+		TextView zhname;
+		TextView typeS;
+		TextView value;
+		TextView valuep;
+	}
+
+	private void getData() {
+		page++;
+		ProgressDlgUtil.showProgressDlg("", this);
+		HttpRequest.sendPost(TLUrl.URL_ranking, "method=" + type + "&page="
+				+ page + "&size=" + onePageCount, new HttpRevMsg() {
+
+			@Override
+			public void revMsg(String msg) {
+				// TODO Auto-generated method stub
+				ProgressDlgUtil.stopProgressDlg();
+				try {
+					final JSONObject object = new JSONObject(msg);
+					if (object.getInt("status") == 1) {
+						final org.json.JSONArray array = object
+								.getJSONArray("msg");
+						for (int i = 0; i < array.length(); i++) {
+							JSONObject obj = array.getJSONObject(i);
+							OnePerson person = new OnePerson();
+							person.setName(obj.optString("nickname",
+									obj.optString("desc")));
+							person.setZhname(obj.optString("zhname"));
+							person.setAvatar(obj.optString("avatar"));
+							person.setNumber(list.size() + i + 1);
+							person.setFollow(new Random().nextBoolean());
+							person.setValue((float) obj.optDouble(type,
+									(float) obj.optDouble("zongshouyi")));
+							person.setUid(obj.optString("uid"));
+							person.setZhid(obj.optString("zhid",
+									obj.optString("id")));
+							person.setTime(obj.optLong("time"));
+							mList.add(person);
+						}
+						handler.post(new Runnable() {
+
+							@Override
+							public void run() {
+								// TODO Auto-generated method stub
+								if (array.length() > 0) {
+									list.addAll(mList);
+									mList.clear();
+									lv.setLoadMoreSuccess();
+									adapter.notifyDataSetChanged();
+								} else {
+									lv.stopLoadMore();
+									showToast("没有更多数据");
+								}
+								isFlush = false;
+							}
+						});
+					} else {
+						handler.post(new Runnable() {
+
+							@SuppressLint("ShowToast")
+							@Override
+							public void run() {
+								// TODO Auto-generated method stub
+								showToast("没有更多数据");
+								lv.stopLoadMore();
+							}
+						});
+					}
+				} catch (JSONException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	private void loadMore() {
+		if (isFlush || list.size() >= 100) {
+			return;
+		}
+		isFlush = true;
+		getData();
+	}
+
+	private Handler handler = new Handler();
+
+	@Override
+	public void onClick(View v) {
+		// TODO Auto-generated method stub
+		switch (v.getId()) {
+		case R.id.tljr_img_onerank_fanhui:
+			finish();
+			break;
+		default:
+			break;
+		}
+	}
+}

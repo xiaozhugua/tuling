@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#00000000" >
+    <TextView
+         android:id="@+id/top"
+         android:layout_width="fill_parent"
+         android:layout_height="10dp"
+         android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/tljr_master"
+        android:layout_width="fill_parent"
+        android:layout_height="38dp"
+        android:background="@color/tljr_white" >
+        <ImageView
+	        android:layout_width="fill_parent"
+	        android:layout_height="0.5dp"
+	        android:scaleType="fitXY"
+	        android:src="@drawable/img_222fengexian" />
+
+        <ImageView
+            android:id="@+id/tljr_hongtiao"
+            android:layout_width="4dp"
+            android:layout_height="10dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_faxiangaoshouicon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@+id/tljr_hongtiao"
+            android:text="发现高手"
+            android:textColor="?attr/Black"
+            android:textSize="14dp" />
+
+        <RelativeLayout
+            android:id="@+id/tljr_grp_symaster"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true" >
+
+            <TextView
+                android:id="@+id/tljr_txt_symaster"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="2dp"
+                android:text="更多股市牛人"
+                android:textColor="?attr/GRAY"
+                android:textSize="11dp" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tljr_txt_symaster"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_gengduojiantou" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_222fengexian" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/tljr_grp_master"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/tljr_white"
+        android:divider="@null"
+        android:orientation="vertical" >
+    </LinearLayout>
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_222fengexian" />
+    
+
+</LinearLayout>

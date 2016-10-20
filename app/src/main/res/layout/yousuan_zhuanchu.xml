@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bj"
+    android:orientation="vertical" >
+
+    <!-- 标题 -->
+    <RelativeLayout
+        android:id="@+id/tljr_tiaocang_header"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/TitleHeight"
+        android:background="?attr/TitleBj"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <include
+            android:id="@+id/tljr_yousuan_fanhui"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            layout="@layout/tljr_view_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="转出"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/yousuan_out_message"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/tljr_tiaocang_header"
+        android:background="@drawable/img_denglubeijing" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/occft_shape_circlebj" >
+
+            <ImageView
+                android:id="@+id/xijiantou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:contentDescription="@null"
+                android:src="@drawable/img_xijiantou" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/xijiantou"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+                android:text="实时到账"
+                android:textSize="10sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/xijiantou"
+                android:layout_centerHorizontal="true"
+                android:text="金额"
+                android:textSize="10sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/xijiantou"
+                android:text="黄金矿工"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/xijiantou"
+                android:gravity="center"
+                android:text="招商银行\n储存卡(9188)"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/yousuan_money_eare"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/yousuan_out_message"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/yousuan_drivider_1"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:scaleType="fitXY"
+            android:contentDescription="@null"
+            android:src="@drawable/img_shape_space" />
+
+        <RelativeLayout
+            android:id="@+id/yousuan_money"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/yousuan_drivider_1"
+            android:layout_height="48dp" >
+            
+            <TextView
+                android:id="@+id/yousuan_money_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="@color/black"
+                android:layout_marginLeft="20dp"
+                android:text="金额"/>
+            
+            
+            <TextView
+                android:id="@+id/yousuan_money_alltip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/blue"
+                android:textSize="9sp"
+                android:text="全部转出"/>
+            
+            <EditText 
+                android:id="@+id/yousuan_money_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:hint="请输入金额"
+                android:textSize="12sp"
+                android:layout_toRightOf="@+id/yousuan_money_tip"
+                android:layout_toLeftOf="@+id/yousuan_money_alltip"
+                android:background="@null"/>
+            
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:scaleType="fitXY"
+            android:contentDescription="@null"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/img_shape_space" />
+        
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/yousuan_money_from"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/yousuan_money_eare"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/yousuan_drivider_2"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:scaleType="fitXY"
+            android:contentDescription="@null"
+            android:src="@drawable/img_shape_space" />
+
+        <RelativeLayout
+            android:id="@+id/yousuan_from"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/yousuan_drivider_2"
+            android:layout_height="48dp" >
+            
+              <TextView
+                android:id="@+id/yousuan_from_tip"  
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="@color/black"
+                android:layout_marginLeft="20dp"
+                android:text="从"/>
+            
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_centerVertical="true"
+                  android:layout_marginLeft="30dp"
+                  android:textColor="@color/black"
+                  android:layout_toRightOf="@+id/yousuan_from_tip"
+                  android:text="黄金矿工"/>
+              
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:scaleType="fitXY"
+            android:contentDescription="@null"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/img_shape_space" />
+        
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/yousuan_money_to"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/yousuan_money_from"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/yousuan_drivider_3"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:scaleType="fitXY"
+            android:contentDescription="@null"
+            android:src="@drawable/img_shape_space" />
+
+        <RelativeLayout
+            android:id="@+id/yousuan_to"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/yousuan_drivider_3"
+            android:layout_height="48dp" >
+            
+            <TextView
+                android:id="@+id/yousuan_to_tip"  
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="@color/black"
+                android:layout_marginLeft="20dp"
+                android:text="到"/>
+            
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_centerVertical="true"
+                  android:layout_marginLeft="30dp"
+                  android:textColor="@color/black"
+                  android:layout_toRightOf="@+id/yousuan_to_tip"
+                  android:text="招商银行储蓄卡(9188)"/>
+            
+              <ImageView
+                  android:layout_width="30dp"
+                  android:layout_height="30dp"
+                  android:src="@drawable/img_jiantou"
+                  android:contentDescription="@null"
+                  android:layout_marginRight="10dp"
+                  android:layout_centerVertical="true"
+                  android:layout_alignParentRight="true"/>
+              
+              
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:scaleType="fitXY"
+            android:contentDescription="@null"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/img_shape_space" />
+        
+    </RelativeLayout>
+    
+    
+    
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white"
+        android:background="@drawable/nonet_bu_shape"
+        android:text="实时转出"/>
+    
+</RelativeLayout>

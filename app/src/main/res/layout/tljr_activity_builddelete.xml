@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:background="@color/tljr_bj"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/tljr_grp_build_title"
+        android:layout_width="fill_parent"
+        android:layout_height="?attr/TitleHeight"
+        android:paddingTop="?attr/TitlePadding"
+        android:background="?attr/TitleBj" >
+
+        <include
+            android:id="@+id/tljr_img_build_back"
+            layout="@layout/tljr_view_back" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="3dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="?attr/TitleTextColor"
+                android:textSize="?attr/TitleTextSize" />
+
+            <TextView
+                android:id="@+id/btip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="?attr/TitleTextColor"
+                android:textSize="@dimen/sp_twelve" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/img_space_hight"
+            android:background="@drawable/img_shape_space" />
+
+        <View
+            android:id="@+id/space"
+            android:layout_width="@dimen/img_space_hight"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/img_shape_space" />
+
+        <TextView
+            android:id="@+id/check"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_toLeftOf="@+id/space"
+            android:gravity="center"
+            android:text="全选"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/sp_fourteen" />
+
+        <TextView
+            android:id="@+id/delete"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@+id/space"
+            android:gravity="center"
+            android:text="删除"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/sp_fourteen" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/bottom"
+        android:layout_below="@+id/tljr_grp_build_title" >
+    </ListView>
+
+</RelativeLayout>

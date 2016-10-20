@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#F0F0F0"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="0.5px"
+            android:layout_height="fill_parent"
+            android:background="#B8B8B8"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/ah_a_code"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:gravity="center"
+            android:text="A股代码"
+            android:textColor="#000000"
+            android:textSize="8sp" />
+
+        <View
+            android:layout_width="0.5px"
+            android:layout_height="fill_parent"
+            android:background="#B8B8B8"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/ah_name"
+            android:layout_width="70dip"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="名称"
+            android:textColor="#000000"
+            android:textSize="8sp" />
+
+        <View
+            android:layout_width="0.5px"
+            android:layout_height="fill_parent"
+            android:background="#B8B8B8"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/ah_h_code"
+            android:layout_width="35dip"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="H股代码"
+            android:textColor="#000000"
+            android:textSize="8sp" />
+
+        <View
+            android:layout_width="0.5px"
+            android:layout_height="fill_parent"
+            android:background="#B8B8B8"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/ah_a_price"
+            android:layout_width="35dip"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="A股价格"
+            android:textColor="#000000"
+            android:textSize="8sp" />
+
+        <View
+            android:layout_width="0.5px"
+            android:layout_height="fill_parent"
+            android:background="#B8B8B8"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/ah_a_zdf"
+            android:layout_width="40dip"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="A股涨跌幅"
+            android:textColor="#000000"
+            android:textSize="8sp" />
+
+        <View
+            android:layout_width="0.5px"
+            android:layout_height="fill_parent"
+            android:background="#B8B8B8"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/ah_h_price_gyuan"
+            android:layout_width="42dip"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="H股价格(港元)"
+            android:textColor="#000000"
+            android:textSize="8sp" />
+
+        <View
+            android:layout_width="0.5px"
+            android:layout_height="fill_parent"
+            android:background="#B8B8B8"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/ah_h_price_yuan"
+            android:layout_width="30dip"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="H股价格(元)"
+            android:textColor="#000000"
+            android:textSize="8sp" />
+
+        <View
+            android:layout_width="0.5px"
+            android:layout_height="fill_parent"
+            android:background="#B8B8B8"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/ah_h_zdf"
+            android:layout_width="35dip"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="H股涨跌幅"
+            android:textColor="#000000"
+            android:textSize="8sp" />
+
+        <View
+            android:layout_width="0.5px"
+            android:layout_height="fill_parent"
+            android:background="#B8B8B8"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/ah_ratio"
+            android:layout_width="40dip"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="比价"
+            android:textColor="#000000"
+            android:textSize="8sp" />
+
+        <View
+            android:layout_width="0.5px"
+            android:layout_height="fill_parent"
+            android:background="#B8B8B8"
+            android:visibility="visible" />
+    </LinearLayout>
+
+</LinearLayout>

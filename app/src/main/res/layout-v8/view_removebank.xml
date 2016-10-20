@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/tljr_white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/view_removebank"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="@string/activity_mybank_removebank"
+        android:textColor="@color/red"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:background="@color/tljr_bj" />
+
+    <TextView
+        android:id="@+id/view_cancel"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="@string/activity_mybank_cancel"
+        android:textColor="@color/gray"
+        android:textSize="16sp" />
+
+</LinearLayout>

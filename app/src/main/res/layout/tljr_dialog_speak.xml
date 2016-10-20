@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/tljr_bj"  >
+
+    <RelativeLayout
+          android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="?attr/TitleHeight"
+        android:background="?attr/TitleBj" >
+
+        <include
+            android:id="@+id/tljr_img_speak_fanhui"
+            android:layout_width="60dp"
+            android:layout_height="fill_parent"
+            layout="@layout/tljr_view_back" />
+
+        <TextView
+            android:id="@+id/tljr_txt_speak_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="添加评论"
+            android:textColor="?attr/TitleTextColor"
+            android:textSize="?attr/TitleTextSize" />
+
+        <Button
+            android:background="@null"
+            android:layout_width="60dp"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/white"
+            android:layout_height="fill_parent"
+               android:id="@+id/tljr_btn_speak"
+            android:text="发送" />
+    </RelativeLayout>
+
+   
+
+    <EditText
+        android:layout_below="@id/top"
+        android:id="@+id/tljr_et_speak_msg"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="left|top"
+        android:hint="请输入评论(最多200字)"
+        android:inputType="textMultiLine"
+        android:maxLength="200"
+        android:textColor="@color/gray"
+        android:background="@null"
+        android:textSize="16sp" >
+
+        <requestFocus />
+    </EditText>
+
+     
+
+</RelativeLayout>

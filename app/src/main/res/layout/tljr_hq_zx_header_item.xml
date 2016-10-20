@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/white"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/tljr_zixuan_leftimage"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="-5dp"
+            android:contentDescription="@null"
+            android:src="@drawable/img_fengtiao1" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp" >
+
+            <TextView
+                android:id="@+id/tljr_hq_zx_hu_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="@dimen/sp_eighteen" />
+
+            <TextView
+                android:id="@+id/tljr_hq_zx_hu_change"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tljr_hq_zx_hu_price"
+                android:text="0"
+                android:textSize="@dimen/sp_fourteen" />
+
+            <TextView
+                android:id="@+id/tljr_hq_zx_hu_changpercent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tljr_hq_zx_hu_price"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/tljr_hq_zx_hu_change"
+                android:text="0"
+                android:textSize="@dimen/sp_fourteen" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="1dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:background="@color/tljr_gray"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/tljr_zixuan_rightimage"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="-6dp"
+            android:contentDescription="@null"
+            android:src="@drawable/img_fengtiao2" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp" >
+
+            <TextView
+                android:id="@+id/tljr_hq_zx_sz_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="@dimen/sp_eighteen" />
+
+            <TextView
+                android:id="@+id/tljr_hq_zx_sz_change"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tljr_hq_zx_sz_price"
+                android:text="0"
+                android:textSize="@dimen/sp_fourteen" />
+
+            <TextView
+                android:id="@+id/tljr_hq_zx_sz_changpercent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tljr_hq_zx_sz_price"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/tljr_hq_zx_sz_change"
+                android:text="0"
+                android:textSize="@dimen/sp_fourteen" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

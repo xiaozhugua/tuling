@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tljr_bj"
+    android:orientation="vertical" >
+
+    <!-- 小莫写的onegu页面的布局 -->
+
+    <!-- 放回箭头，标题，加入组合 -->
+    <RelativeLayout
+        android:id="@+id/tljr_grp_hq_top"
+        android:layout_width="fill_parent"
+        android:layout_height="?attr/TitleHeight"
+        android:background="?attr/TitleBj"
+        android:paddingTop="?attr/TitlePadding" >
+
+        <TextView
+            android:id="@+id/tljr_txt_hq_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingTop="?attr/TitlePadding"
+            android:textColor="?attr/TitleTextColor"
+            android:textSize="?attr/TitleTextSize" />
+
+        <LinearLayout
+            android:id="@+id/tljr_grp_hq_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tljr_grp_hq_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tljr_grp_hq_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tljr_grp_hq_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tljr_grp_hq_change"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tljr_grp_hq_chengpercent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <include
+            android:id="@+id/tljr_img_hq_fanhui"
+            layout="@layout/tljr_view_back" />
+
+        <TextView
+            android:id="@+id/tljr_txt_tjzx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/tljr_click"
+            android:paddingTop="?attr/TitlePadding"
+            android:text="加入组合"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_fourteen" />
+    </RelativeLayout>
+
+  <android.support.v4.widget.SwipeRefreshLayout
+       xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/activity_onegu2_sr"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            <!-- 中间部分是Viewpager部分 -->
+            <android.support.v4.view.ViewPager
+                android:id="@+id/activity_onegu2_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+            </android.support.v4.view.ViewPager>
+        </LinearLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <!-- 分割线 -->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@drawable/img_222fengexian" />
+
+    <!-- 下面是5个点击切换按钮 -->
+
+    <LinearLayout
+        android:id="@+id/activity_onegu2_ll_buts"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="#ffffff" >
+
+        <LinearLayout
+            android:id="@+id/activity_onegu2_ll_0"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/activity_onegu2_ll_0_img"
+                style="@style/oneguimg"
+                android:src="@drawable/img_guzhi1" />
+
+            <TextView
+                android:id="@+id/activity_onegu2_ll_0_tv"
+                style="@style/onegutv"
+                android:text="估值" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/activity_onegu2_ll_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/activity_onegu2_ll_1_img"
+                style="@style/oneguimg"
+                android:src="@drawable/img_caiwu1" />
+
+            <TextView
+                android:id="@+id/activity_onegu2_ll_1_tv"
+                style="@style/onegutv"
+                android:text="财务" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/activity_onegu2_ll_2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/activity_onegu2_ll_2_img"
+                style="@style/oneguimg"
+                android:src="@drawable/img_xinwen1" />
+
+            <TextView
+                android:id="@+id/activity_onegu2_ll_2_tv"
+                style="@style/onegutv"
+                android:text="新闻" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/activity_onegu2_ll_3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/activity_onegu2_ll_3_img"
+                style="@style/oneguimg"
+                android:src="@drawable/img_gaikuang1" />
+
+            <TextView
+                android:id="@+id/activity_onegu2_ll_3_tv"
+                style="@style/onegutv"
+                android:text="概况" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/activity_onegu2_ll_4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/activity_onegu2_ll_4_img"
+                style="@style/oneguimg"
+                android:src="@drawable/img_zhiyan1" />
+
+            <RelativeLayout
+                android:id="@+id/activity_onegu2_ll_4_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:gravity="center_horizontal" >
+
+                <TextView
+                    android:id="@+id/activity_onegu2_ll_4_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="图灵智研"
+                    android:textSize="11dp" />
+
+                <TextView
+                    android:id="@+id/activity_onegu2_ll_4_tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/activity_onegu2_ll_4_tv"
+                    android:layout_toRightOf="@+id/activity_onegu2_ll_4_tv"
+                    android:text="™"
+                    android:textSize="11dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

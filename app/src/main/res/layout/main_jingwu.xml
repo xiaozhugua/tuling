@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="38dp" >
+
+        <ImageView
+            android:id="@+id/rankview_img"
+            android:layout_width="3dp"
+            android:layout_height="10dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="3dp"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_shequmonichaogudasai" />
+
+        <TextView
+            android:id="@+id/rankview_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/rankview_img"
+            android:text="图灵智研【综合推荐】"
+            android:textColor="@color/black" />
+
+        <LinearLayout
+            android:id="@+id/tljr_rankview_more"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="7dp"
+                android:text="(仅供参考，不作为投资依据)"
+                android:textColor="?attr/GRAY"
+                android:textSize="11dp" />
+
+            <ImageView
+                android:id="@+id/tljr_rankview_more_image"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:contentDescription="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_gengduojiantou" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/tljr_rankview_jingwu_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="205dp" 
+        android:visibility="gone" />
+
+	<RelativeLayout
+	     android:id="@+id/jingwu_relative" 
+	     android:layout_width="match_parent"
+	     android:layout_height="250dp"
+	     android:visibility="gone">
+	    
+	    <ProgressBar 
+	        android:id="@+id/jingwu_progressbar"
+	        android:layout_width="50dp"
+	        android:layout_height="50dp"
+	        android:layout_centerInParent="true"
+	        style="?android:attr/progressBarStyleSmallTitle"/>
+	    
+		<RelativeLayout 
+		    android:id="@+id/main_chongzai"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerInParent="true"
+		    android:visibility="gone">
+		    
+		    	<Button 
+		    	    android:id="@+id/main_jingwu_bu"
+		    	    android:layout_width="wrap_content"
+		    	    android:layout_height="wrap_content"
+		    	    android:background="@drawable/nonet_bu_shape"
+		    	    android:layout_centerHorizontal="true"
+		    	    android:layout_marginBottom="5dp"
+		    	    android:textColor="@color/white"
+		    	    android:text="重新加载"/>
+		    
+		    	<TextView
+		    	    android:layout_width="wrap_content"
+		    	    android:layout_height="wrap_content"
+		    	    android:layout_below="@+id/main_jingwu_bu"
+		    	    android:text="数据获取失败，请重新加载"/>
+		    		
+		</RelativeLayout>	        
+	    
+	</RelativeLayout>        
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp" >
+
+        <LinearLayout
+            android:id="@+id/rankview_footer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_222fengexian" />
+
+</LinearLayout>

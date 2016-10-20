@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:background="@drawable/img_tishibeijing"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="选择图片"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <View
+            android:id="@+id/guanbi"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/img_guanbi" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp" >
+
+        <Button
+            android:id="@+id/paizhao"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?attr/BackClick"
+            android:drawableTop="@drawable/img_paizhao"
+            android:text="拍照"
+            android:textColor="@color/lightgray"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/xiangce"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?attr/BackClick"
+            android:drawableTop="@drawable/img_zhaopian"
+            android:text="从相册选择"
+            android:textColor="@color/lightgray"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/moren"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?attr/BackClick"
+            android:drawableTop="@drawable/img_xitongmoren"
+            android:text="系统默认"
+            android:textColor="@color/lightgray"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>
